@@ -1,10 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Initial Website</title>
+	<title>Landing Page</title>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Adding a favicon to the title -->
+	<link rel="icon" href="assets/img/mylogo.png" sizes="16x16" type="image/png">
+	<!-- EXTERNAL STYLESHEET? -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-	<p>Test to see this file on Github</p>
+	<div class="background"></div>
+	<header>
+		<div class="banner">
+			<div class="banner_content">
+				<h1>Welcome to my concept website.</h1>
+				<p>A showcase Website acting as portfolio and an online resume.</p>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img src="assets/img/mylogo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Separated link</a>
+					</div>
+				</li>
+			</ul>
+			<span class="navbar-text">
+				Navbar text with an inline element
+			</span>
+		</div>
+	</nav>
+
+	<section class="section1">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col col-sm-6">
+					<p id="bottom">padding</p>
+				</div>
+				<div class="col col-sm-6">
+					<img src="#" alt="Some Image here">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section2" style="height: auto;">
+		<div class="container">
+			<div class="row">
+				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-left" alt="assets/img/mylogo.png">
+				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-right" alt="assets/img/mylogo.png">
+				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-left" alt="assets/img/mylogo.png">
+				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-right" alt="assets/img/mylogo.png">
+				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-left" alt="assets/img/mylogo.png">
+				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-right" alt="assets/img/mylogo.png">				
+			</div>
+		</div>
+	</section>
+
+	<section class="section3">
+		<div class="container">
+			<div class="row">
+				<div class="card-deck">
+					<div class="card">
+						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>This is my website and is currently under construction.</p>
+	</footer>
+	
+	<!-- BOOTSTRAP jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- BOOTSTRAP JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- BOOTSTRAP Popper.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 </body>
 </html>
