@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 html {
 	font-size: 62.5%;  /* 1rem = 10px */
 }
@@ -5,8 +8,82 @@ html {
 html, body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Roboto', Arial , sans-serif;
+	font-family: 'Roboto', Arial , sans-serif; /*Main font-family, one of many in the link from google-fonts.*/
 }
+
+.navbar {
+	font-size: 2rem;
+	padding: 0.2rem 2rem;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+.navbar > .navbar-brand > img {
+	width: 50px;
+	height: 50px;
+	margin: 0px 20px 0px 10px;
+	box-shadow: 5px 5px 20px black;
+	border-radius: 50%;
+}
+
+.navbar > #navbarText > .navbar-nav > .nav-item {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	padding:0 2rem; 
+	text-align: center;
+	transition: 0.2s;
+}
+
+.navbar > #navbarText > .navbar-nav > .nav-item:hover {
+	transform: scale(1.3,1.3);
+	background-color: rgba(0,0,0,0.5);
+}
+
+.navbar > #navbarText > .navbar-nav > .nav-item:active {
+	transform: scale(0.9,0.9);
+}
+
+.nav_icon {
+	text-align: center;
+	color: red;
+}
+
+.nav_icon > a > div > .fa-angle-double-down{
+	color:white;
+	animation: navicon 3s infinite;
+}
+
+@keyframes navicon {
+    0%   {color:white;transform: translateY(0px);}
+    50%   {color: steelgrey; transform: translateY(10px);}    
+
+}
+
+.nav_dropdown {
+	width: 100%;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.nav_buttons {
+	margin: 1rem 2rem;
+	font-size: 2.5rem;
+	color: black;
+	border:0.2rem solid slategrey;
+	box-shadow: 5px 5px 20px black;
+	transition: 0.2s;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+
+.nav_buttons:hover {
+	transform: scale(1.1,1.1);
+}
+
+.nav_buttons:active {
+	transform: scale(0.9,0.9);
+}
+	
  /*landing page background*/
 .background {
 	background-image: url('assets/img/background.jpeg');
@@ -27,7 +104,7 @@ html, body {
 	height: 100vh;
 	z-index: 100;
 }
-
+/*Makes the .background act up has been solved somehow but will not recommend tinkering unless you wish to fix it!*/
 .banner > .banner_content {
 	position: relative;
 	width:auto;
@@ -35,17 +112,26 @@ html, body {
 	background-color: rgba(0,0,0,0);
 	margin: 0 auto 0 auto;
 	/*border: 1px solid black;*/
-	padding-top: 45vh; 
+	padding-top: 40vh; 
 	line-height: 10rem;
 }
 
-.banner > .banner_content > span > #welcome {
+#welcome {
+	font-family: 'IBM Plex Mono', monospace;
 	text-align: center;
 	color: white;
 	font-weight: bold;
-	font-size: 7rem;
+	font-size: 10rem;
 	text-transform: uppercase;
-	filter: drop-shadow(.5rem .5rem .5rem #888);
+	filter: drop-shadow(.5rem .5rem 2rem #000);
+	animation: banneranimation 5s infinite;
+}
+
+@keyframes banneranimation {
+	0% {color:white;}	
+	33% {color:lightsteelblue;}	
+	67% {color:lightgrey;}	
+	100% {color:aqua;}		
 }
 
 .banner_content > hr {
@@ -60,105 +146,26 @@ html, body {
 }
 
 .banner > .banner_content > p {
+	font-family: 'Libre Barcode 39', cursive;
 	text-align: center;
 	color: white;
-	font-weight: bold;
 	font-size: 4rem;
-	background-color: rgba(176, 196, 222, 0.5);
+	background-color: rgba(176, 196, 222, 0.2);
 	width: 50%;
+	padding:1rem;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px;
 	box-shadow: 0 0 1rem lightgrey;
-	transition: 1s;
+	transition: 0.2s;
 }
 
-/*.navbar-collapse {
-	text-align: center;
-}
-*/
 .banner > .banner_content > p:hover {
-	transform: scale(1.2,1.2);
-}
-
-.navbar {
-	font-size: 2rem;
-	padding: 0.2rem 2rem;
-	text-align: center;
-}
-
-.navbar > .navbar-brand > img {
-	width: 50px;
-	height: 50px;
-	padding: 2px 2px;
-}
-
-nav > div > ul > li {
-	margin-right: 2rem;
-	margin-left: 2rem;
-	padding:0 2rem; 
-	/*width: 15rem;*/
-	text-align: center;
-	transition: 0.2s;
-}
-
-nav > div > ul > li:hover {
-	transform: scale(1.3,1.3);
-	background-color: rgba(0,0,0,0.5);
-}
-
-nav > div > ul > li:active {
-	transform: scale(0.9,0.9);
-}
-.nav_icon {
-	text-align: center;
-
-}
-
-.nav_icon > a > div > i {
-	filter: brightness(1);
-}
-
-.nav_dropdown {
-	width: 100%;
-	font-size: 2rem;
-	text-align: center;
-}
-
-.btn {
-	margin: 2rem 1.5rem;
-	/*padding: 1rem;*/
-	font-size: 2rem;
-	color: black;
-	box-shadow: 5px 5px 20px black;
-	transition: 0.2s;
-
-}
-
-.btn:hover {
-	transform: scale(1.1,1.1);
-}
-
-.btn:active {
-	transform: scale(0.9,0.9);
-}
-
-.card {
-	margin: 10px 10px;
-}
-
-
-img {
-	width:300px;
-	height: 300px;
-}
-
-section:nth-child(odd) {
-	background: linear-gradient(135deg, #667eea, #764ba2); /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/ /*8. Plum Plate*/
+	transform: scale(1.05,1.05);
 }
 
 section {
-	padding: 20px;
+	padding: 10rem 0rem;
 }
 
 .section1 {
@@ -168,10 +175,10 @@ section {
 
 .section1 > div > div > div > #bottom {
 	text-align: justify;
-	margin: 15rem 10rem;
+	margin: 0rem 10rem;
 	line-height: 4rem;
-	font-weight: bold;
-	font-size: 3rem;
+	font-weight: normal;
+	font-size: 4rem;
 	font-variant-caps: small-caps;
 }
 
@@ -180,17 +187,25 @@ section {
 	margin-right: auto;
 	width: 100%;
 	height: 40rem;
-	margin: 10rem 0rem;
+	margin: 2rem 0rem;
+	border: 1px solid white;
+	box-shadow: 0.5rem 0.5rem 2rem black;
+}
+
+.section2 {
+	background: linear-gradient(135deg, #667eea, #764ba2); /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/ /*8. Plum Plate*/
 }
 
 .section2 > div > div > .languages {
 	text-align: center;
-	padding:5rem;
-	color: white;
+	padding: 5rem;
+	color: rgba(0,0,0,0.65);
+	font-size: 4rem;
+	text-decoration: underline;
+	text-decoration-color: slategrey;
 }
 
 .section2 > div > div > div {
-	/*border:1px solid black;*/
 	margin-left: auto;
 	text-align: center;
 }
@@ -198,20 +213,23 @@ section {
 .section2 > div > div > div > i {
 	margin: 4rem auto;
 	padding: 2rem;
-	font-size: 12rem;
-	/*box-shadow: 0px 0px 10px black;*/
-	/*border: 1px solid;*/
 	width: auto;
 	height: auto;
-	background-color: rgba(255,255,255,0.1);
-}
-
-.section2 > div > .languages_cards > img {
-	/*box-shadow: 0px 0px 10px black;*/
 }
 
 .work_header {
 	text-align: center;
+	color: white;
+	font-size: 5rem;
+}
+
+.section3 {
+	background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	overflow: hidden;
 }
 
 footer{
