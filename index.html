@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Landing Page</title>
 	<!-- BOOTSTRAP CDN-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -9,22 +10,12 @@
 	<!-- EXTERNAL STYLESHEET? -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!-- FONT AWESOME FONTS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
-	<div class="background"></div>
-	<header>
-		<div class="banner">
-			<div class="banner_content">
-				<span><p id="welcome">Welcome</p></span>
-				<hr>
-				<br>
-				<p>Sivaram's Online Portfolio cum Resume</p>
-			</div>
-		</div>
-	</header>
-
-	<nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#"><img src="assets/img/mylogo.png"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -37,22 +28,36 @@
 				<li class="nav-item">
 					<a class="nav-link" href="#">Contact</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+				<li class="nav-item dropdown nav_icon">
+					<a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="true"><div><i class="fas fa-angle-double-down"></i></div></a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
+						<a class="dropdown-item nav_dropdown " href="#">Action</a>
+						<a class="dropdown-item nav_dropdown" href="#">Another action</a>
+						<a class="dropdown-item nav_dropdown" href="#">Something else here</a>
 						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="#">Separated link</a>
+						<a class="dropdown-item nav_dropdown" href="#">Separated link</a>
 					</div>
 				</li>
 			</ul>
-			<span class="navbar-text">
-				Navbar text with an inline element
-			</span>
+			<button type="button" class="btn btn-primary btn-lg">Large button</button>
+			<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+<!-- 			<span class="navbar-text">
+				<a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">FIND OUT MORE!</a>
+				<a href="#" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">HIRE ME</a>
+			</span> -->
 		</div>
-	</nav>
+	</nav>	
+	<div class="background"></div>
+	<header>
+		<div class="banner">
+			<div class="banner_content">
+				<span><p id="welcome">Welcome</p></span>
+				<hr>
+				<br>
+				<p>Sivaram's Online Portfolio cum Resume</p>
+			</div>
+		</div>
+	</header>
 
 	<section class="section1">
 		<div class="container-fluid">
@@ -71,16 +76,30 @@
 			</div>
 		</div>
 	</section>
-	<section class="section2" style="height: auto;">
-		<div class="container">
+	<section class="section2">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="languages col-sm-12"><h1>Known languages and frameworks</h1></div>
-				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-left" alt="assets/img/mylogo.png">
-				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-right" alt="assets/img/mylogo.png">
-				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-left" alt="assets/img/mylogo.png">
-				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-right" alt="assets/img/mylogo.png">
-				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-left" alt="assets/img/mylogo.png">
-				<img src="assets/img/mylogo.png" class="col-sm-4 rounded float-right" alt="assets/img/mylogo.png">				
+				<div class="languages col-sm-12">
+					<h1>Known languages and frameworks</h1>
+				</div>
+				<div class="col-6 col-sm-2">
+					<i class="fab fa-html5"></i>
+				</div>
+				<div class="col-6 col-sm-2">
+					<i class="fab fa-css3-alt"></i>
+				</div>
+				<div class="col-6 col-sm-2">
+					<i class="fab fa-js-square"></i>
+				</div>
+				<div class="col-6 col-sm-2">
+					<i class="fab fa-php"></i>
+				</div>				
+				<div class="col-6 col-sm-2">
+					<i class="fab fa-node"></i>
+				</div>
+				<div class="col-6 col-sm-2">
+					<i class="fab fa-react"></i>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -88,30 +107,30 @@
 	<section class="section3">
 		<div class="container">
 			<div class="row">
-				<div class="work_header"><h1>My portfolio</h1></div>
+				<div class="work_header col-sm-12"><h1>My portfolio</h1></div>
 				<div class="card-deck">
-					<div class="card">
+					<div class="card col-sm-4">
 						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 						</div>
 					</div>
-					<div class="card">
+					<div class="card col-sm-4">
 						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 						</div>
 					</div>
-					<div class="card">
+					<div class="card col-sm-4">
 						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 						</div>
 					</div>
 				</div>
