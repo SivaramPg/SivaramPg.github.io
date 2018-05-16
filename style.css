@@ -1,13 +1,13 @@
 html {
-	font-size: 62.5%;
+	font-size: 62.5%;  /* 1rem = 10px */
 }
 
 html, body {
 	padding: 0;
 	margin: 0;
-	font-family: Courier;
+	font-family: 'Roboto', Arial , sans-serif;
 }
- 
+ /*landing page background*/
 .background {
 	background-image: url('assets/img/background.jpeg');
 	background-repeat: no-repeat;
@@ -22,8 +22,62 @@ html, body {
 	position: absolute;
 }
 
+.banner {
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+}
+
+.banner > .banner_content {
+	position: relative;
+	width:auto;
+	height: auto;
+	background-color: rgba(0,0,0,0);
+	margin: 0 auto 0 auto;
+	/*border: 1px solid black;*/
+	padding-top: 45vh; 
+	line-height: 10rem;
+}
+
+.banner > .banner_content > span > #welcome {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 7rem;
+	text-transform: uppercase;
+	filter: drop-shadow(.5rem .5rem .5rem #888);
+}
+
+.banner_content > hr {
+	background-color: red;
+	padding: 0.2rem;
+	width: 10rem;
+	transition: 1s;
+}
+
+.banner_content > hr:hover {
+	width: 20%;
+}
+
+.banner > .banner_content > p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 4rem;
+	background-color: rgba(176, 196, 222, 0.5);
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	box-shadow: 0 0 1rem lightgrey;
+	transition: 1s;
+}
+
+.banner > .banner_content > p:hover {
+	transform: scale(1.2,1.2);
+}
+
 .navbar {
-	border: 3px solid red;
 	font-size: 2rem;
 	padding: 2px 10px;
 }
@@ -33,52 +87,10 @@ html, body {
 	padding: 2px 2px;
 }
 
-.banner {
-	width: 100%;
-	height: 100vh;
-	z-index: 100;
-
-}
-
-.banner > .banner_content {
-	position: relative;
-	width:auto;
-	height: auto;
-	background-color: rgba(0,0,0,0);
-	margin: 0 auto 0 auto;
-	border: 1px solid black;
-	padding-top: 50vh; 
-
-}
-
-.banner > .banner_content > h1 {
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	font-size: 4rem;
-}
-
-.banner > .banner_content > p {
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	font-size: 2rem;
-}
-
 .card {
-margin: 10px 10px;
+	margin: 10px 10px;
 }
 
-footer{
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	margin-top: 20px;
-
-}
 
 img {
 	width:300px;
@@ -91,4 +103,36 @@ section:nth-child(odd) {
 
 section {
 	padding: 20px;
+}
+
+.section1 {
+	background-color: AliceBlue;
+}
+
+.section1 > div > div > div > #bottom {
+	text-align: justify;
+	margin: 12rem 10rem;
+	line-height: 4rem;
+	font-weight: bold;
+	font-size: 3rem;
+	font-variant-caps: small-caps;
+}
+
+.section1 > div > div > div > img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 40rem;
+	margin: 10rem 0rem;
+
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 15px;
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
 }
