@@ -55,7 +55,7 @@ html, body {
 
 @keyframes navicon {
     0%   {color:white;transform: translateY(0px);}
-    50%   {color: steelgrey; transform: translateY(10px);}    
+    50%   {color: steelblue; transform: translateY(10px);}    
 
 }
 
