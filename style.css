@@ -16,18 +16,21 @@ html, body {
   postion: fixed;
   margin: 0 -15px;
 }
+
 .navbar-brand , .navbar-nav {
   font-size: 2rem;
   padding: 2rem;
 }
+
 .navbar-nav > li {
   margin: auto 1rem;
 }
+
 .btn {
   font-size: 2rem;
   padding: 1rem;
 }	
- /*landing page background*/
+/*landing page background*/
 .wrapper {
   margin: 1 rem;
   padding: 1 rem;
@@ -113,7 +116,7 @@ html, body {
   padding: 1rem;
   margin: 1rem;
   color: white;
-    word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .scrolldown {
@@ -146,10 +149,10 @@ section {
   margin:0;
   left:0;
   top:0;
-/*   background: linear-gradient(to bottom left, #a1c4fd, #c2e9fb); */
+  /*   background: linear-gradient(to bottom left, #a1c4fd, #c2e9fb); */
   background: linear-gradient(to top right, #89f7fe, #66a6ff );
   z-index:10;
-    
+
 }
 
 .aboutme {
@@ -172,21 +175,21 @@ section {
   display: block;
   postion: relative;
   margin: 5rem auto ;
-    z-index: 999;
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    border: 0.1rem solid black;
-    background-color: pink;
+  z-index: 999;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: 0.1rem solid black;
+  background-color: pink;
 }
 
 .intro {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 2rem;
-    word-spacing: 0.25rem;
-    padding: 2rem;
-    margin: 2rem auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  word-spacing: 0.25rem;
+  padding: 2rem;
+  margin: 2rem auto;
 }
 
 .socialmedia {
@@ -197,22 +200,19 @@ section {
 
 .socialmedia > div > div > i {
   padding: 2.5rem;
-    text-align: center;
-    background-color: rgba(255,255,255,1);
-    border-radius: 35%;
-    transition: 0.5s;
+  text-align: center;
+  background-color: rgba(255,255,255,1);
+  border-radius: 35%;
+  transition: 0.5s;
 
 }
 
 .socialmedia > div > div > i:hover {
-    /*transform: scale(1.1,1.1);*/
-    border-radius: 0.5rem;
-       color: tomato;
-       background-color: black;
+  /*transform: scale(1.1,1.1);*/
+  border-radius: 0.5rem;
+  color: tomato;
+  background-color: black;
 }
-
-
-
 
 .section2 {
 	background: linear-gradient(135deg, #667eea, #764ba2); /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/ /*8. Plum Plate*/
@@ -246,16 +246,16 @@ section {
 }
 
 .section3 {
-/*	background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');*/
-/*background-image: url('https://images.pexels.com/photos/2988/pattern-triangles.jpg?cs=srgb&dl=pattern-triangles-2988.jpg&fm=jpg');*/
-/*background-image: url('https://images.pexels.com/photos/158678/garage-door-texture-wooden-wall-panels-158678.jpeg?cs=srgb&dl=architecture-design-hardwood-158678.jpg&fm=jpg');*/
-/*background-image: url('https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?cs=srgb&dl=abstract-art-artistic-325649.jpg&fm=jpg');*/
-background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: scroll;
-	background-size: cover;
-	overflow: hidden;
+  /*	background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');*/
+  /*background-image: url('https://images.pexels.com/photos/2988/pattern-triangles.jpg?cs=srgb&dl=pattern-triangles-2988.jpg&fm=jpg');*/
+  /*background-image: url('https://images.pexels.com/photos/158678/garage-door-texture-wooden-wall-panels-158678.jpeg?cs=srgb&dl=architecture-design-hardwood-158678.jpg&fm=jpg');*/
+  /*background-image: url('https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?cs=srgb&dl=abstract-art-artistic-325649.jpg&fm=jpg');*/
+  background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .card {
@@ -263,18 +263,20 @@ background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-109
   border: 0;
   margin: 5rem auto;
 }
+
 .card-image {
   padding: 1rem;
 }
+
 .card-title {
   text-align: center;
   font-size: 2rem;
 }
 
 .card-text {
-    text-align: center;
-    font-size: 1.5rem;
-    display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
 }
 
 footer{
