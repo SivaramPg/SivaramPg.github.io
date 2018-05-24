@@ -175,7 +175,7 @@ section {
     z-index: 999;
     width: 30rem;
     height: 30rem;
-    border-radius: 10rem;
+    border-radius: 50%;
     border: 0.1rem solid black;
     background-color: pink;
 }
@@ -190,8 +190,29 @@ section {
 }
 
 .socialmedia {
-  
+  padding: 5rem;
+  text-align: center;
+  padding-bottom: 10rem;
 }
+
+.socialmedia > div > div > i {
+  padding: 2.5rem;
+    text-align: center;
+    background-color: rgba(255,255,255,1);
+    border-radius: 35%;
+    transition: 0.5s;
+
+}
+
+.socialmedia > div > div > i:hover {
+    /*transform: scale(1.1,1.1);*/
+    border-radius: 0.5rem;
+       color: tomato;
+       background-color: black;
+}
+
+
+
 
 .section2 {
 	background: linear-gradient(135deg, #667eea, #764ba2); /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/ /*8. Plum Plate*/
@@ -220,12 +241,16 @@ section {
 
 .work_header {
 	text-align: center;
-	color: white;
+	color: black;
 	font-size: 5rem;
 }
 
 .section3 {
-	background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');
+/*	background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');*/
+/*background-image: url('https://images.pexels.com/photos/2988/pattern-triangles.jpg?cs=srgb&dl=pattern-triangles-2988.jpg&fm=jpg');*/
+/*background-image: url('https://images.pexels.com/photos/158678/garage-door-texture-wooden-wall-panels-158678.jpeg?cs=srgb&dl=architecture-design-hardwood-158678.jpg&fm=jpg');*/
+/*background-image: url('https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?cs=srgb&dl=abstract-art-artistic-325649.jpg&fm=jpg');*/
+background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: scroll;
