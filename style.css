@@ -1,290 +1,338 @@
 * {
-	box-sizing: border-box;
-}
-html {
-	font-size: 62.5%;  /* 1rem = 10px */
+    box-sizing: border-box;
 }
 
-html, body {
-	padding: 0;
-	margin: 0;
-	font-family:'Open Sans',  'Roboto', sans-serif; /*Main font-family, one of many in the link from google-fonts.*/
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    /*Main font-family, one of many in the link from google-fonts.*/
+}
+
+
 
 /*navbar styling*/
+
 .nav_ext {
-  postion: fixed;
-  margin: 0 -15px;
+    postion: fixed;
+    margin: 0 -15px;
 }
 
-.navbar-brand , .navbar-nav {
-  font-size: 2rem;
-  padding: 2rem;
+.navbar-brand {
+    font-size: 3rem;
+    padding: 1rem;
 }
 
-.navbar-nav > li {
-  margin: auto 1rem;
+.navbar-nav {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.navbar-nav>li {
+    margin: 0 1rem;
+    padding: 1rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.navbar-nav>li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .btn {
-  font-size: 2rem;
-  padding: 1rem;
-}	
+    font-size: 2rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 2rem black;
+    transition: 0.15s;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.btn:active {
+    transform: scale(0.95, 0.95);
+}
+
+
+
 /*landing page background*/
+
 .wrapper {
-  margin: 1 rem;
-  padding: 1 rem;
-  display: block;
-  width:100%;
-  height:100vh;
-  /*border: 1px solid black;*/
+    margin: 1 rem;
+    padding: 1 rem;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    /*border: 1px solid black;*/
 }
 
 .background {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url("http://usersthink.com/wp-content/uploads/15-usersthink-stock-image.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  display: block;
-  z-index: -1;
-  filter: brightness(0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("http://usersthink.com/wp-content/uploads/15-usersthink-stock-image.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: block;
+    z-index: -1;
+    filter: brightness(0.5);
 }
 
 .backgroundoverlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(51,153,255,0.3);
-  background-attachment: fixed; 
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  display: block;
-  z-index: -1;
-  filter: brightness(0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 153, 255, 0.3);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: block;
+    z-index: -1;
+    filter: brightness(0.5);
 }
 
 
 .content {
-  position: relative;
-  left: 50%;
-  top: 45%;
-  width: 50%;
-  z-index: 10;
-  transform: translate(-50%, -50%);
-  padding: 1rem;
+    position: relative;
+    left: 50%;
+    top: 45%;
+    width: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
 }
 
 .bannerimg {
-  width: 10rem;
-  height: 10rem;
-  border: 0.2rem dotted white;
-  margin: 1rem auto;
-  border-radius: 50%;
-  background-color: lightsteelblue;
+    width: 10rem;
+    height: 10rem;
+    border: 0.2rem dotted white;
+    margin: 1rem auto;
+    border-radius: 50%;
+    background-color: lightsteelblue;
 }
 
 .contentheading {
-  text-align: center;
-  font-size: 7rem;
-  /*text-decoration: underline solid lightsteelblue;*/
-  text-decoration-skip: ink;
-  padding: 1rem;
-  margin: 1rem;
-  color: white;
-  word-wrap: break-word;
+    text-align: center;
+    font-size: 7rem;
+    /*text-decoration: underline solid lightsteelblue;*/
+    text-decoration-skip: ink;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    word-wrap: break-word;
 }
 
 .separation {
-	width:10rem;
-	padding:0.3rem;
-	background-color: tomato /*#33DAFF*/;
-	border-radius: 2.5rem;
+    width: 10rem;
+    padding: 0.3rem;
+    background-color: tomato/*#33DAFF*/
+    ;
+    border-radius: 2.5rem;
 }
 
 .contentmaterial {
-  text-align: center;
-  font-size: 2rem;
-  padding: 1rem;
-  margin: 1rem;
-  color: white;
-  word-wrap: break-word;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    word-wrap: break-word;
 }
 
 .scrolldown {
-	position: relative;
-	top: 60%;
-	left: 50%;
-	/*border: 1px solid black;*/
-	transform: translate(-50%, -50%);
-	color: white;
-	/*z-index: 999;*/
-	text-align: center;
-	animation: pointdown 1s infinte;
+    position: relative;
+    top: 60%;
+    left: 50%;
+    padding: 2rem;
+    width: 10rem;
+    /*border: 1px solid black;*/
+    transform: translate(-50%, -50%);
+    color: white;
+    /*z-index: 999;*/
+    text-align: center;
+}
+
+.scrolldown>i {
+    animation: pointdown 1.5s infinite;
+    ;
 }
 
 @keyframes pointdown {
-	0% {color: white;}
-	50% {color: blue;}
+    0% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(1.5rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
 }
 
 section {
-	padding: 10rem 0rem;
+    padding: 10rem 0rem;
 }
 
 .section1 {
-  position: relative ;
-  display: block;
-  width:100%;
-  height:auto;
-  padding:0;
-  margin:0;
-  left:0;
-  top:0;
-  /*   background: linear-gradient(to bottom left, #a1c4fd, #c2e9fb); */
-  background: linear-gradient(to top right, #89f7fe, #66a6ff );
-  z-index:10;
-
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    /*   background: linear-gradient(to bottom left, #a1c4fd, #c2e9fb); */
+    background: linear-gradient(to top right, #89f7fe, #66a6ff);
+    z-index: 10;
 }
 
 .aboutme {
-  display:block;
-  position: relative;
-  top: 0;
-  left: 0;
-  padding: 2.5rem;;
-  margin: 1rem 50%;
-  height: auto;
-  width: 50%;
-  font-size: 4rem;
-  text-align: center;
-  /*border: 1px solid black;*/
-  z-index:999;
-  transform: translateX(-50% )
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2.5rem;
+    ;
+    margin: 5rem 50% 0rem 50%;
+    height: auto;
+    width: 50%;
+    font-size: 4rem;
+    text-align: center;
+    /*border: 1px solid black;*/
+    z-index: 999;
+    transform: translateX(-50%)
 }
 
 .myimg {
-  display: block;
-  postion: relative;
-  margin: 5rem auto ;
-  z-index: 999;
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  border: 0.1rem solid black;
-  background-color: pink;
+    display: block;
+    postion: relative;
+    margin: 7rem auto;
+    z-index: 999;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    border: 0.1rem solid black;
+    background-color: pink;
 }
 
 .intro {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
-  word-spacing: 0.25rem;
-  padding: 2rem;
-  margin: 2rem auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    word-spacing: 0.25rem;
+    padding: 2rem;
+    margin: 2rem auto;
 }
 
 .socialmedia {
-  padding: 5rem;
-  text-align: center;
-  padding-bottom: 10rem;
+    padding: 5rem;
+    text-align: center;
+    padding-bottom: 10rem;
 }
 
-.socialmedia > div > div > i {
-  padding: 2.5rem;
-  text-align: center;
-  background-color: rgba(255,255,255,1);
-  border-radius: 35%;
-  transition: 0.5s;
-
+.socialmedia>div>div>i {
+    padding: 2.5rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 35%;
+    transition: 0.5s;
 }
 
-.socialmedia > div > div > i:hover {
-  /*transform: scale(1.1,1.1);*/
-  border-radius: 0.5rem;
-  color: tomato;
-  background-color: black;
+.socialmedia>div>div>i:hover {
+    /*transform: scale(1.1,1.1);*/
+    border-radius: 0.5rem;
+    color: tomato;
+    background-color: black;
 }
 
 .section2 {
-	background: linear-gradient(135deg, #667eea, #764ba2); /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/ /*8. Plum Plate*/
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/
+    /*8. Plum Plate*/
 }
 
-.section2 > div > div > .languages {
-	text-align: center;
-	padding: 5rem;
-	color: rgba(0,0,0,0.65);
-	font-size: 4rem;
-	text-decoration: underline;
-	text-decoration-color: slategrey;
+.section2>div>div>.languages {
+    text-align: center;
+    padding: 5rem;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 4rem;
+    text-decoration: underline;
+    text-decoration-color: slategrey;
 }
 
-.section2 > div > div > div {
-	margin-left: auto;
-	text-align: center;
+.section2>div>div>div {
+    margin-left: auto;
+    text-align: center;
 }
 
-.section2 > div > div > div > i {
-	margin: 4rem auto;
-	padding: 2rem;
-	width: auto;
-	height: auto;
+.section2>div>div>div>i {
+    margin: 4rem auto;
+    padding: 2rem;
+    width: auto;
+    height: auto;
 }
 
 .work_header {
-	text-align: center;
-	color: black;
-	font-size: 5rem;
+    text-align: center;
+    color: black;
+    font-size: 5rem;
 }
 
 .section3 {
-  /*	background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');*/
-  /*background-image: url('https://images.pexels.com/photos/2988/pattern-triangles.jpg?cs=srgb&dl=pattern-triangles-2988.jpg&fm=jpg');*/
-  /*background-image: url('https://images.pexels.com/photos/158678/garage-door-texture-wooden-wall-panels-158678.jpeg?cs=srgb&dl=architecture-design-hardwood-158678.jpg&fm=jpg');*/
-  /*background-image: url('https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?cs=srgb&dl=abstract-art-artistic-325649.jpg&fm=jpg');*/
-  background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-  overflow: hidden;
+    /*  background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');*/
+    /*background-image: url('https://images.pexels.com/photos/2988/pattern-triangles.jpg?cs=srgb&dl=pattern-triangles-2988.jpg&fm=jpg');*/
+    /*background-image: url('https://images.pexels.com/photos/158678/garage-door-texture-wooden-wall-panels-158678.jpeg?cs=srgb&dl=architecture-design-hardwood-158678.jpg&fm=jpg');*/
+    /*background-image: url('https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?cs=srgb&dl=abstract-art-artistic-325649.jpg&fm=jpg');*/
+    background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .card {
-  background-color: transparent;
-  border: 0;
-  margin: 5rem auto;
+    background-color: transparent;
+    border: 0;
+    margin: 5rem auto;
 }
 
 .card-image {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .card-title {
-  text-align: center;
-  font-size: 2rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .card-text {
-  text-align: center;
-  font-size: 1.5rem;
-  display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
 }
 
-footer{
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-size: 15px;
-	width: 100%;
-	height: 100%;
-	padding:5rem ;
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 5rem;
 }
