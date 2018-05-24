@@ -3,73 +3,92 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>Landing Page</title>
-	<!-- BOOTSTRAP CDN-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- Adding a favicon to the title -->
 	<link rel="icon" href="assets/img/mylogo.png" sizes="16x16" type="image/png">
+	<!-- BOOTSTRAP CDN-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- EXTERNAL STYLESHEET? -->
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- GOOGLE FONTS (IBM PLEX MONO, LIBRE BARCODE, ROBOTO) -->
-	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Libre+Barcode+39|Roboto" rel="stylesheet">	
+	<!-- GOOGLE FONTS (ROBOTO,OPEN SANS) -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">	
 	<!-- FONT AWESOME FONTS -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body>
-	<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand"  href="#"><img src="assets/img/mylogo.png"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#"><i class="fas fa-home"></i>&nbsp&nbspHome<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#"><i class="fas fa-envelope-open"></i>&nbsp&nbspContact</a>
-				</li>
-				<li class="nav-item dropdown nav_icon">
-					<a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="true"><div><i class="fas fa-angle-double-down fa-1x"></i></div></a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item nav_dropdown " href="#">Action</a>
-						<a class="dropdown-item nav_dropdown" href="#">Another action</a>
-						<a class="dropdown-item nav_dropdown" href="#">Something else here</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item nav_dropdown" href="#">Separated link</a>
-					</div>
-				</li>
-			</ul>
-			<a href="#" class="btn btn-info btn-lg nav_buttons" role="button" aria-pressed="true">Subscribe</a>
-			<a href="#" class="btn btn-danger btn-lg nav_buttons" role="button" aria-pressed="true">Hire Me</a>
+
+
+
+
+
+  <div class="container-fluid">
+	<div class="wrapper">
+		<div class="background">
+			<div class="backgroundoverlay"></div>
 		</div>
-	</nav>	
-	<div class="background"></div>
-	<header>
-		<div class="banner">
-			<div class="banner_content">
-				<span><p id="welcome">Welcome</p></span>
-				<hr>
-				<br>
-				<p>Sivaram's Online Portfolio cum Resume</p>
+			<!-- NAVBAR FROM BOOTSTRAP -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light nav_ext">
+		<div class="container">	
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+
+				<form class="form-inline my-2 my-lg-0">
+					<button class="btn btn-danger my-2 my-sm-0" type="submit">Subscribe</button>
+				</form>
 			</div>
 		</div>
-	</header>
+	</nav>
+		<div class="content">
+			<h1 class="contentheading">
+				HEY THERE!
+			</h1>
+			<hr class="separation">
+			<p class="contentmaterial">
+				It's <strong>SIVARAM'S</strong> <em>Fancy new website!</em>
+			</p>
+		</div>
+		<div class="scrolldown"><i class="fas fa-angle-double-down fa-3x"></i></div>
+	</div>
+</div>
+
 
 	<section class="section1">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
-				<div class="col-12 col-lg-6">
-					<p id="bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-12 col-sm-6 offset-sm-3">  
+					<h1 class="aboutme">About Me</h1>
+					<hr class="separation">
+					<img src="assets/img/mylogo.png" alt="Sivaram Pg" class="myimg">
 				</div>
-				<div class="col-12 col-lg-4 offset-lg-1">
-					<img src="assets/img/book-computer-design-326424.jpg" alt="Some Image here">
-				</div>
+				<p class="intro">An Electronics Engineering Graduate who's very tech savvy and has a keen interest in technology and computers.</p>
+				<div class="socialmedia"></div>
 			</div>
 		</div>
 	</section>
@@ -106,23 +125,50 @@
 	<section class="section3">
 		<div class="container">
 			<div class="row">
-				<div class="work_header col-sm-12"><p>My portfolio</p></div>
+				<div class="work_header col-xl-12"><p>My portfolio</p></div>
+			</div>
+			<div class="row">
 				<div class="card-deck">
-					<div class="card col-sm-4">
+					<div class="card col-xl-4">
 						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 						</div>
-					</div>
-					<div class="card col-sm-4">
+					</div >
+					<div class="card col-xl-4">
 						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
 							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 						</div>
 					</div>
-					<div class="card col-sm-4">
+					<div class="card col-xl-4">
+						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card-deck">
+										<div class="card col-xl-4">
+						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+					<div class="card col-xl-4">
+						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+					</div>
+					<div class="card col-xl-4">
 						<img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title">Card title</h5>
@@ -135,7 +181,7 @@
 	</section>
 
 	<footer>
-		<p>This is my website and is currently under construction. | &copy Sivaram Pandariganthan 2018</p>
+		<p>This is my website and is currently under construction. | Sivaram Pandariganthan 2018</p>
 	</footer>
 	
 	<!-- BOOTSTRAP jQuery -->

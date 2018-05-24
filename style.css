@@ -8,160 +8,129 @@ html {
 html, body {
 	padding: 0;
 	margin: 0;
-	font-family: 'Roboto', Arial , sans-serif; /*Main font-family, one of many in the link from google-fonts.*/
+	font-family:'Open Sans',  'Roboto', sans-serif; /*Main font-family, one of many in the link from google-fonts.*/
 }
 
-.navbar {
-	font-size: 2rem;
-	padding: 0.2rem 2rem;
-	text-align: center;
-	font-variant: small-caps;
+/*navbar styling*/
+.nav_ext {
+  postion: fixed;
+  margin: 0 -15px;
 }
-
-.navbar > .navbar-brand > img {
-	width: 50px;
-	height: 50px;
-	margin: 0px 20px 0px 10px;
-	box-shadow: 5px 5px 20px black;
-	border-radius: 50%;
+.navbar-brand , .navbar-nav {
+  font-size: 2rem;
+  padding: 2rem;
 }
-
-.navbar > #navbarText > .navbar-nav > .nav-item {
-	margin-right: 2rem;
-	margin-left: 2rem;
-	padding:0 2rem; 
-	text-align: center;
-	transition: 0.2s;
+.navbar-nav > li {
+  margin: auto 1rem;
 }
-
-.navbar > #navbarText > .navbar-nav > .nav-item:hover {
-	transform: scale(1.3,1.3);
-	background-color: rgba(0,0,0,0.5);
-}
-
-.navbar > #navbarText > .navbar-nav > .nav-item:active {
-	transform: scale(0.9,0.9);
-}
-
-.nav_icon {
-	text-align: center;
-	color: red;
-}
-
-.nav_icon > a > div > .fa-angle-double-down{
-	color:white;
-	animation: navicon 3s infinite;
-}
-
-@keyframes navicon {
-    0%   {color:white;transform: translateY(0px);}
-    50%   {color: steelblue; transform: translateY(10px);}    
-
-}
-
-.nav_dropdown {
-	width: 100%;
-	font-size: 2rem;
-	text-align: center;
-}
-
-.nav_buttons {
-	margin: 1rem 2rem;
-	font-size: 2.5rem;
-	color: black;
-	border:0.2rem solid slategrey;
-	box-shadow: 5px 5px 20px black;
-	transition: 0.2s;
-	text-transform: uppercase;
-	font-weight: lighter;
-}
-
-.nav_buttons:hover {
-	transform: scale(1.1,1.1);
-}
-
-.nav_buttons:active {
-	transform: scale(0.9,0.9);
-}
-	
+.btn {
+  font-size: 2rem;
+  padding: 1rem;
+}	
  /*landing page background*/
+.wrapper {
+  margin: 1 rem;
+  padding: 1 rem;
+  display: block;
+  width:100%;
+  height:100vh;
+  /*border: 1px solid black;*/
+}
+
 .background {
-	background-image: url('assets/img/background.jpeg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-	background-attachment: fixed;
-	filter:brightness(0.3);
-	z-index: -10;
-	width: 100%;
-	height: 100vh;
-	position: absolute;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("http://usersthink.com/wp-content/uploads/15-usersthink-stock-image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: block;
+  z-index: -1;
+  filter: brightness(0.5);
 }
 
-.banner {
-	width: 100%;
-	height: 100vh;
-	z-index: 100;
+.backgroundoverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(51,153,255,0.3);
+  background-attachment: fixed; 
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: block;
+  z-index: -1;
+  filter: brightness(0.5);
 }
-/*Makes the .background act up has been solved somehow but will not recommend tinkering unless you wish to fix it!*/
-.banner > .banner_content {
+
+
+.content {
+  position: relative;
+  left: 50%;
+  top: 45%;
+  width: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+.bannerimg {
+  width: 10rem;
+  height: 10rem;
+  border: 0.2rem dotted white;
+  margin: 1rem auto;
+  border-radius: 50%;
+  background-color: lightsteelblue;
+}
+
+.contentheading {
+  text-align: center;
+  font-size: 7rem;
+  /*text-decoration: underline solid lightsteelblue;*/
+  text-decoration-skip: ink;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+  word-wrap: break-word;
+}
+
+.separation {
+	width:10rem;
+	padding:0.3rem;
+	background-color: tomato /*#33DAFF*/;
+	border-radius: 2.5rem;
+}
+
+.contentmaterial {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  color: white;
+    word-wrap: break-word;
+}
+
+.scrolldown {
 	position: relative;
-	width:auto;
-	height: auto;
-	background-color: rgba(0,0,0,0);
-	margin: 0 auto 0 auto;
+	top: 60%;
+	left: 50%;
 	/*border: 1px solid black;*/
-	padding-top: 40vh; 
-	line-height: 10rem;
-}
-
-#welcome {
-	font-family: 'IBM Plex Mono', monospace;
-	text-align: center;
+	transform: translate(-50%, -50%);
 	color: white;
-	font-weight: bold;
-	font-size: 10rem;
-	text-transform: uppercase;
-	filter: drop-shadow(.5rem .5rem 2rem #000);
-	animation: banneranimation 5s infinite;
-}
-
-@keyframes banneranimation {
-	0% {color:white;}	
-	33% {color:lightsteelblue;}	
-	67% {color:lightgrey;}	
-	100% {color:aqua;}		
-}
-
-.banner_content > hr {
-	background-color: red;
-	padding: 0.2rem;
-	width: 10rem;
-	transition: 1s;
-}
-
-.banner_content > hr:hover {
-	width: 20%;
-}
-
-.banner > .banner_content > p {
-	font-family: 'Libre Barcode 39', cursive;
+	/*z-index: 999;*/
 	text-align: center;
-	color: white;
-	font-size: 4rem;
-	background-color: rgba(176, 196, 222, 0.2);
-	width: 50%;
-	padding:1rem;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 20px;
-	box-shadow: 0 0 1rem lightgrey;
-	transition: 0.2s;
+	animation: pointdown 1s infinte;
 }
 
-.banner > .banner_content > p:hover {
-	transform: scale(1.05,1.05);
+@keyframes pointdown {
+	0% {color: white;}
+	50% {color: blue;}
 }
 
 section {
@@ -169,27 +138,59 @@ section {
 }
 
 .section1 {
-	background: linear-gradient(-45deg, #f5f7fa, #c3cfe2) ; /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/ /*7. Saint Petersburg*/
+  position: relative ;
+  display: block;
+  width:100%;
+  height:auto;
+  padding:0;
+  margin:0;
+  left:0;
+  top:0;
+/*   background: linear-gradient(to bottom left, #a1c4fd, #c2e9fb); */
+  background: linear-gradient(to top right, #89f7fe, #66a6ff );
+  z-index:10;
+    
 }
 
-
-.section1 > div > div > div > #bottom {
-	text-align: justify;
-	margin: 0rem 10rem;
-	line-height: 4rem;
-	font-weight: normal;
-	font-size: 4rem;
-	font-variant-caps: small-caps;
+.aboutme {
+  display:block;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 2.5rem;;
+  margin: 1rem 50%;
+  height: auto;
+  width: 50%;
+  font-size: 4rem;
+  text-align: center;
+  /*border: 1px solid black;*/
+  z-index:999;
+  transform: translateX(-50% )
 }
 
-.section1 > div > div > div > img {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: 40rem;
-	margin: 2rem 0rem;
-	border: 1px solid white;
-	box-shadow: 0.5rem 0.5rem 2rem black;
+.myimg {
+  display: block;
+  postion: relative;
+  margin: 5rem auto ;
+    z-index: 999;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 10rem;
+    border: 0.1rem solid black;
+    background-color: pink;
+}
+
+.intro {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    word-spacing: 0.25rem;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+.socialmedia {
+  
 }
 
 .section2 {
@@ -230,6 +231,25 @@ section {
 	background-attachment: scroll;
 	background-size: cover;
 	overflow: hidden;
+}
+
+.card {
+  background-color: transparent;
+  border: 0;
+  margin: 5rem auto;
+}
+.card-image {
+  padding: 1rem;
+}
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1.5rem;
+    display: none;
 }
 
 footer{
