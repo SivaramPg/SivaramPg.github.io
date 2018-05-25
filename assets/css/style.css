@@ -305,12 +305,17 @@ section {
     background-attachment: scroll;
     background-size: cover;
     overflow: hidden;
+    padding: auto;
 }
 
 .card {
     background-color: transparent;
     border: 0;
     margin: 5rem auto;
+}
+
+.card-deck {
+    margin: auto 5rem;
 }
 
 .card-image {
