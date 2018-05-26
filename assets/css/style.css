@@ -22,6 +22,7 @@ body {
 
 
 
+
 /*navbar styling*/
 
 .nav_ext {
@@ -32,6 +33,7 @@ body {
 .navbar-brand {
     font-size: 3rem;
     padding: 1rem;
+    color: lightsalmon !important;
 }
 
 .navbar-nav {
@@ -64,6 +66,7 @@ body {
 .btn:active {
     transform: scale(0.95, 0.95);
 }
+
 
 
 
@@ -272,32 +275,34 @@ section {
     /*8. Plum Plate*/
 }
 
-.section2>div>div>.languages {
-    text-align: center;
-    padding: 5rem;
-    color: rgba(0, 0, 0, 0.65);
-    font-size: 4rem;
-    text-decoration: underline;
-    text-decoration-color: slategrey;
-}
-
-.section2>div>div>div {
-    margin-left: auto;
+.skillheading {
+    font-size: 5rem;
     text-align: center;
 }
 
-.section2>div>div>div>i {
-    margin: 4rem auto;
-    padding: 2rem;
+.skills {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.skills>h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.skills>i {
+    margin: 2rem;
+    padding: 1rem;
     width: auto;
     height: auto;
+    text-align: center;
 }
 
-.work_header {
-    text-align: center;
-    color: black;
-    font-size: 5rem;
-}
+
+
+
+
+/*Portfolio section starts here*/
 
 .section3 {
     /*background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");*/
@@ -308,6 +313,12 @@ section {
     background-size: cover;
     overflow: hidden;
     padding: auto;
+}
+
+.work_header {
+    text-align: center;
+    color: black;
+    font-size: 5rem;
 }
 
 .card {
