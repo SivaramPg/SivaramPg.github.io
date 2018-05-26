@@ -2,6 +2,10 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sivaram's professional website ">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Sivaram, Pg, Pandariganthan, Skills, portfolio, about, contact, subscribe, mailing list, social media links">
+    <meta name="author" content="Sivaram Pandariganthan">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Landing Page</title>
     <!-- Adding a favicon to the title -->
@@ -9,7 +13,7 @@
     <!-- BOOTSTRAP CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- EXTERNAL STYLESHEET? -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!-- GOOGLE FONTS (ROBOTO,OPEN SANS) -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <!-- FONT AWESOME FONTS -->
@@ -32,39 +36,49 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">About Me <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#"><i class="fas fa-user-graduate"></i>&nbspAbout Me <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Me</a>
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>&nbspContact Me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										Placeholder
-									</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Placeholder</a>
-                                    <a class="dropdown-item" href="#">Placeholder</a>
-                                    <div class="dropdown-divider">Placeholder</div>
-                                    <a class="dropdown-item" href="#">Still Placholder</a>
-                                </div>
+                                <a class="nav-link" href="#"><i class="fas fa-folder"></i>&nbspPortfolio</a>
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <button class="btn btn-danger my-2 my-sm-0" type="">Subscribe</button>
-                        </form>
+                        <!-- Begin MailChimp Signup Form -->
+                        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">
+                        #mc_embed_signup {
+                            clear: left;
+                            font: 14px Helvetica, Arial, sans-serif;
+                        }
+                        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                        </style>
+                        <div id="mc_embed_signup">
+                            <form action="https://github.us18.list-manage.com/subscribe/post?u=164555def3e7b7f0d2305633c&amp;id=bc25f84229" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_164555def3e7b7f0d2305633c_bc25f84229" tabindex="-1" value="">
+                                    </div>
+                                    <div class="clear">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-danger my-2 my-sm-0">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
                     </div>
                 </div>
             </nav>
             <div class="content">
                 <h1 class="contentheading">
-					HEY THERE!
-					</h1>
+                    HEY THERE!
+                    </h1>
                 <hr class="separation">
                 <p class="contentmaterial">
-                    It's <strong>SIVARAM'S</strong> <em>Fancy new website!</em>
+                    It's <strong>MY</strong> <em>Fancy new website!</em>
                 </p>
             </div>
             <div class="scrolldown"><i class="fas fa-angle-double-down fa-3x"></i></div>
@@ -76,52 +90,51 @@
                 <div class="col-12 col-sm-6 offset-sm-3">
                     <h1 class="aboutme">About Me</h1>
                     <hr class="separation">
-                    <img src="assets/img/mylogo.png" alt="Sivaram Pg" class="myimg">
+                    <img src="assets/img/mylogowixsquare.jpg" alt="Sivaram Pg" class="myimg">
                 </div>
-                <p class="intro">An Electronics Engineering Graduate who's very tech savvy and has a keen interest in technology and computers.</p>
+                <p class="intro"><strong>An Electronics Engineering Graduate</strong> who's very tech savvy and has a very keen interest in technology and computers. Keeping updated and connected. Enthusiastic, Motivated and Passionate to achieve my goals. Getting things done is how I roll. Quick learner and a sound listener solving problems and debugging my way through LIFE!. Aspiring to be a full stack developer and contributing to this beautiful place called the WEB.</p>
+                <br>
+                <p class="intro"> <code>const life = "Give 100% to everything";</code>
+                    <kbd>ctrl + c</kbd> =
+                    <samp> Successful </samp>
+                </p>
             </div>
             <div class="socialmedia">
                 <div class="row">
-                    <div class="col-1 offset-3"><i class="fab fa-github fa-3x"></i></div>
-                    <div class="col-1"><i class="fab fa-codepen fa-3x"></i></div>
-                    <div class="col-1"><i class="fab fa-linkedin-in fa-3x"></i></div>
-                    <div class="col-1"><i class="fab fa-twitter fa-3x"></i></div>
-                    <div class="col-1"><i class="fab fa-google fa-3x"></i></div>
-                    <div class="col-1"><i class="fab fa-instagram fa-3x"></i></div>
+                    <div class="col-12 col-xl-1 offset-xl-3 offset-lg-3 col-lg-1 col-sm-4 col-md-2"> <a href="https://github.com/SivaramPg" target="_blank"><i class="fab fa-github fa-3x"></i></a> </div>
+                    <div class="col-12 col-xl-1 col-lg-1 col-sm-4 col-md-2"><a href="https://codepen.io/kaizoku_95/" target="_blank"><i class="fab fa-codepen fa-3x"></i></a></div>
+                    <div class="col-12 col-xl-1 col-lg-1 col-sm-4 col-md-2"><a href="#" target="_blank"><i class="fab fa-linkedin-in fa-3x"></i></a></div>
+                    <div class="col-12 col-xl-1 col-lg-1 col-sm-4 col-md-2"><a href="#" target="_blank"><i class="fab fa-twitter fa-3x"></i></a></div>
+                    <div class="col-12 col-xl-1 col-lg-1 col-sm-4 col-md-2"><a href="#" target="_blank"><i class="fab fa-google fa-3x"></i></a></div>
+                    <div class="col-12 col-xl-1 col-lg-1 col-sm-4 col-md-2"><a href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="section2">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="languages col-sm-12">
-                    <p>Known languages and frameworks</p>
+                <div class="col-12">
+                    <h1 class="skillheading">Skill set</h1>
+                    <hr class="separation">
                 </div>
-                <hr class="text-center">
-                <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
-                    <i class="fab fa-html5 fa-9x " title="HTML"></i>
+                <div class="col-6 skills">
+                    <h1>Coding Skills</h1>
+                    <i class="fab fa-html5 fa-5x " title="HTML"></i>
+                    <i class="fab fa-css3-alt fa-5x" title="CSS"></i>
+                    <i class="fab fa-js-square fa-5x" title="JavaScript"></i>
+                    <i class="fab fa-php fa-5x" title="php"></i>
+                    <i class="fab fa-node fa-5x" title="node.js"></i>
+                    <i class="fab fa-react fa-5x" title="react.js"></i>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-                    <i class="fab fa-css3-alt fa-9x" title="CSS"></i>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-                    <i class="fab fa-js-square fa-9x" title="JavaScript"></i>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-                    <i class="fab fa-php fa-9x" title="php"></i>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-                    <i class="fab fa-node fa-9x" title="node.js"></i>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-3 col-xl-2">
-                    <i class="fab fa-react fa-9x" title="react.js"></i>
+                <div class="col-6 skills">
+                    <h1>Other Skills</h1>
                 </div>
             </div>
         </div>
     </section>
     <section class="section3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="work_header col-xl-12">
                     <p>My portfolio</p>
@@ -130,25 +143,22 @@
             </div>
             <div class="row">
                 <div class="card-deck">
-                    <div class="card col-xl-4">
-                        <img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+                    <div class="card col-xl-4 col-md-6">
+                        <img class="card-img-top img-fluid" src="assets/img/randombackgroundgenerator.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
-                    <div class="card col-xl-4">
-                        <img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+                    <div class="card col-xl-4 col-md-6">
+                        <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
-                    <div class="card col-xl-4">
-                        <img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+                    <div class="card col-xl-4 col-md-6">
+                        <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
                     </div>
                 </div>
@@ -156,24 +166,21 @@
             <div class="row">
                 <div class="card-deck">
                     <div class="card col-xl-4">
-                        <img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                     <div class="card col-xl-4">
-                        <img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                         </div>
                     </div>
                     <div class="card col-xl-4">
-                        <img class="card-img-top" src="assets/img/mylogo.png" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
                     </div>
                 </div>
@@ -181,6 +188,7 @@
         </div>
     </section>
     <footer>
+        <p>Made with &nbsp<i class="fas fa-heart"></i></p>
         <p>This is my website and is currently under construction. | Sivaram Pandariganthan 2018</p>
     </footer>
     <!-- BOOTSTRAP jQuery -->
@@ -189,6 +197,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP Popper.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Main script file -->
+    <script type="text/JavaScript" src="assets/js/script.js"></script>
 </body>
 
 </html>

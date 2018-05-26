@@ -17,6 +17,12 @@ body {
 
 
 
+
+
+
+
+
+
 /*navbar styling*/
 
 .nav_ext {
@@ -27,6 +33,7 @@ body {
 .navbar-brand {
     font-size: 3rem;
     padding: 1rem;
+    color: lightsalmon !important;
 }
 
 .navbar-nav {
@@ -62,6 +69,10 @@ body {
 
 
 
+
+
+
+
 /*landing page background*/
 
 .wrapper {
@@ -70,7 +81,6 @@ body {
     display: block;
     width: 100%;
     height: 100vh;
-    /*border: 1px solid black;*/
 }
 
 .background {
@@ -79,7 +89,10 @@ body {
     top: 0;
     width: 100%;
     height: 100vh;
-    background-image: url("http://usersthink.com/wp-content/uploads/15-usersthink-stock-image.jpg");
+    /*background-image: url("http://usersthink.com/wp-content/uploads/15-usersthink-stock-image.jpg");*/
+    /* very inportant */
+    /*    background-image: url("https://images.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg?cs=srgb&dl=black-and-white-buildings-city-2255.jpg&fm=jpg"); Same image but from pexels.com*/
+    background-image: url(../img/landingbackground.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -128,7 +141,6 @@ body {
 .contentheading {
     text-align: center;
     font-size: 7rem;
-    /*text-decoration: underline solid lightsteelblue;*/
     text-decoration-skip: ink;
     padding: 1rem;
     margin: 1rem;
@@ -159,16 +171,13 @@ body {
     left: 50%;
     padding: 2rem;
     width: 10rem;
-    /*border: 1px solid black;*/
     transform: translate(-50%, -50%);
     color: white;
-    /*z-index: 999;*/
     text-align: center;
 }
 
 .scrolldown>i {
     animation: pointdown 1.5s infinite;
-    ;
 }
 
 @keyframes pointdown {
@@ -196,7 +205,6 @@ section {
     margin: 0;
     left: 0;
     top: 0;
-    /*   background: linear-gradient(to bottom left, #a1c4fd, #c2e9fb); */
     background: linear-gradient(to top right, #89f7fe, #66a6ff);
     z-index: 10;
 }
@@ -207,13 +215,11 @@ section {
     top: 0;
     left: 0;
     padding: 2.5rem;
-    ;
     margin: 5rem 50% 0rem 50%;
     height: auto;
     width: 50%;
     font-size: 4rem;
     text-align: center;
-    /*border: 1px solid black;*/
     z-index: 999;
     transform: translateX(-50%)
 }
@@ -225,36 +231,39 @@ section {
     z-index: 999;
     width: 30rem;
     height: 30rem;
-    border-radius: 50%;
-    border: 0.1rem solid black;
-    background-color: pink;
+    /*border-radius: 50%;*/
+    border: 0.2rem solid white;
+    background-color: lightgrey;
+    box-shadow: 0 0 5rem black;
 }
 
 .intro {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 3rem;
     word-spacing: 0.25rem;
-    padding: 2rem;
+    padding: 2rem 2rem;
     margin: 2rem auto;
+    text-align: center;
 }
 
 .socialmedia {
-    padding: 5rem;
+    padding: 1rem;
     text-align: center;
-    padding-bottom: 10rem;
+    padding-bottom: 7.5rem;
 }
 
-.socialmedia>div>div>i {
+.socialmedia>div>div>a>i {
     padding: 2.5rem;
+    margin: 2.5rem auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 35%;
     transition: 0.5s;
+    color: initial;
 }
 
-.socialmedia>div>div>i:hover {
-    /*transform: scale(1.1,1.1);*/
+.socialmedia>div>div>a>i:hover {
     border-radius: 0.5rem;
     color: tomato;
     background-color: black;
@@ -266,25 +275,44 @@ section {
     /*8. Plum Plate*/
 }
 
-.section2>div>div>.languages {
-    text-align: center;
-    padding: 5rem;
-    color: rgba(0, 0, 0, 0.65);
-    font-size: 4rem;
-    text-decoration: underline;
-    text-decoration-color: slategrey;
-}
-
-.section2>div>div>div {
-    margin-left: auto;
+.skillheading {
+    font-size: 5rem;
     text-align: center;
 }
 
-.section2>div>div>div>i {
-    margin: 4rem auto;
-    padding: 2rem;
+.skills {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.skills>h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.skills>i {
+    margin: 2rem;
+    padding: 1rem;
     width: auto;
     height: auto;
+    text-align: center;
+}
+
+
+
+
+
+/*Portfolio section starts here*/
+
+.section3 {
+    /*background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");*/
+    background-image: url("../img/portfoliobackgroundwhitetexture.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    overflow: hidden;
+    padding: auto;
 }
 
 .work_header {
@@ -293,38 +321,24 @@ section {
     font-size: 5rem;
 }
 
-.section3 {
-    /*  background-image: url('https://images.pexels.com/photos/273680/pexels-photo-273680.jpeg?cs=srgb&dl=abstract-aluminum-architectural-273680.jpg&fm=jpg');*/
-    /*background-image: url('https://images.pexels.com/photos/2988/pattern-triangles.jpg?cs=srgb&dl=pattern-triangles-2988.jpg&fm=jpg');*/
-    /*background-image: url('https://images.pexels.com/photos/158678/garage-door-texture-wooden-wall-panels-158678.jpeg?cs=srgb&dl=architecture-design-hardwood-158678.jpg&fm=jpg');*/
-    /*background-image: url('https://images.pexels.com/photos/325649/pexels-photo-325649.jpeg?cs=srgb&dl=abstract-art-artistic-325649.jpg&fm=jpg');*/
-    background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: cover;
-    overflow: hidden;
-}
-
 .card {
     background-color: transparent;
     border: 0;
     margin: 5rem auto;
 }
 
+.card-deck {
+    margin: auto 5rem;
+}
+
 .card-image {
     padding: 1rem;
+    height: 40rem;
 }
 
 .card-title {
     text-align: center;
     font-size: 2rem;
-}
-
-.card-text {
-    text-align: center;
-    font-size: 1.5rem;
-    display: none;
 }
 
 footer {
@@ -335,4 +349,8 @@ footer {
     width: 100%;
     height: 100%;
     padding: 5rem;
+}
+
+footer>p>i {
+    color: red;
 }
