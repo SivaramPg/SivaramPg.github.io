@@ -23,6 +23,7 @@ body {
 
 
 
+
 /*navbar styling*/
 
 .nav_ext {
@@ -71,6 +72,7 @@ body {
 .btn:active {
     transform: scale(0.95, 0.95);
 }
+
 
 
 
@@ -302,6 +304,7 @@ section {
     height: auto;
     text-align: center;
 }
+
 
 
 
