@@ -130,10 +130,11 @@ body {
     position: relative;
     left: 50%;
     top: 45%;
-    width: 50%;
+    max-width: 100%;
     z-index: 10;
     transform: translate(-50%, -50%);
     padding: 1rem;
+    max-height: 100vh;
 }
 
 .bannerimg {
@@ -148,7 +149,6 @@ body {
 .contentheading {
     text-align: center;
     font-size: 7rem;
-    text-decoration-skip: ink;
     padding: 1rem;
     margin: 1rem;
     color: white;
