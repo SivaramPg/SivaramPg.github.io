@@ -21,7 +21,7 @@ body {
 
 /*navbar styling*/
 
-.nav_ext {
+body > .container-fluid > .wrapper >.nav_ext {
     postion: fixed;
     margin: 0 -15px;
     background-color: black;
@@ -49,21 +49,22 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.navbar-collapse {
+.nav_ext > .container > .navbar-collapse {
     /*background-color: rgba(0,0,0,0.8);*/
     text-align: center;
 }
 
-.btn {
+.clear > .btn {
     font-size: 2rem;
     padding: 1rem;
     margin: 1rem;
     box-shadow: 0.5rem 0.5rem 2rem black;
     border-radius: 0.25rem;
-    -webkit-transition: 0.15s;
-    -moz-transition: 0.15s;
-    -o-transition: 0.15s;
-    transition: 0.15s;
+    text-align: center;
+    -webkit-transition: 0.15s ease ;
+    -moz-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: 0.15s ease;
 
 }
 
