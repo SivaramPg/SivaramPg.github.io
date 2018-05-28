@@ -17,16 +17,14 @@ body {
 
 
 
+
 /*navbar styling*/
 
 .nav_ext {
     postion: fixed;
     margin: 0 -15px;
-}
-
-.whitenav {
-    background-color: white !important;
-    color: black !important;
+    background-color: black;
+    z-index: 99;
 }
 
 .navbar-brand {
@@ -50,9 +48,15 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+.navbar-collapse {
+    /*background-color: rgba(0,0,0,0.8);*/
+    text-align: center;
+}
+
 .btn {
     font-size: 2rem;
     padding: 1rem;
+    margin: 1rem;
     box-shadow: 0.5rem 0.5rem 2rem black;
     transition: 0.15s;
     border-radius: 0.25rem;
@@ -65,6 +69,7 @@ body {
 .btn:active {
     transform: scale(0.95, 0.95);
 }
+
 
 
 
@@ -115,9 +120,9 @@ body {
 
 
 .content {
-    position: relative;
+    position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     max-width: 100%;
     z-index: 10;
     transform: translate(-50%, -50%);
@@ -161,8 +166,8 @@ body {
 }
 
 .scrolldown {
-    position: relative;
-    top: 60%;
+    position: absolute;
+    top: 90%;
     left: 50%;
     padding: 2rem;
     width: 10rem;
@@ -186,6 +191,7 @@ body {
         transform: translateY(0rem);
     }
 }
+
 
 
 
@@ -270,6 +276,7 @@ section {
 
 
 
+
 /*My skills section starts here*/
 
 .section2 {
@@ -308,6 +315,7 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
+
 
 
 
