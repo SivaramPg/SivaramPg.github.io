@@ -32,9 +32,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 .navbgblackonclick {
     background-color: black;
-    border-bottom: 0.1rem solid dodgerblue;
-    box-shadow: 0 0 5rem grey;
-    border-radius: 0.5rem;
+    border-bottom: 0.2rem solid dodgerblue;
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
