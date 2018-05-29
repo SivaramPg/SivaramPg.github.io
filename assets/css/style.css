@@ -20,6 +20,7 @@ body {
 
 /*navbar styling*/
 
+/*Whole Navbar Styling*/
 body>.container-fluid>.wrapper>.nav_ext {
     postion: fixed;
     margin: 0 -15px;
@@ -27,9 +28,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     transition: 0.3s ease-in-out;
 }
 
-
 /*This class gets added when the navbar-toggle is clicked, done using JavaScipt*/
-
 .navbgblackonclick {
     background-color: black;
     border-bottom: 0.2rem solid dodgerblue;
@@ -39,12 +38,14 @@ body>.container-fluid>.wrapper>.nav_ext {
     transition: 0.3s ease-in-out;
 }
 
+/*My name styling on the left side of the navbar*/
 .navbar-brand {
     font-size: 3rem;
     padding: 1rem;
     color: lightsalmon !important;
 }
 
+/*Whole navbar navigations link styling*/
 .navbar-nav {
     font-size: 2rem;
     padding: 1rem;
@@ -60,10 +61,12 @@ body>.container-fluid>.wrapper>.nav_ext {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/*Styling collapsed navbar*/
 .nav_ext>.container>.navbar-collapse {
     text-align: center;
 }
 
+/*Subscribe button styling*/
 .btn {
     font-size: 2rem;
     padding: 1rem;
@@ -90,6 +93,8 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 /*landing page background*/
 
+/*The entire landing front page is nested inside this wrapper and should not be tinkered with as it is working fine currently!
+All the properties as working fine and don't change the values*/
 .wrapper {
     margin: 0rem;
     padding: 0rem;
@@ -98,6 +103,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     height: 100vh;
 }
 
+/*The background image part of the wrapper*/
 .background {
     position: fixed;
     left: 0;
@@ -124,6 +130,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     /*fix*/
 }
 
+/*The overlay atop the background image element in wrapper*/
 .backgroundoverlay {
     position: absolute;
     left: 0;
@@ -141,7 +148,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     position: fixed;
 }
 
-
+/*Content on Landing page*/
 .content {
     position: absolute;
     left: 50%;
@@ -155,6 +162,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     max-height: 50vh;
 }
 
+/*Content heading for landing page*/
 .contentheading {
     text-align: center;
     font-size: 7rem;
@@ -164,6 +172,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     word-wrap: break-word;
 }
 
+/*The tomato colored horizontal line that is being used a divider/ underline*/
 .separation {
     width: 10rem;
     padding: 0.3rem;
@@ -172,6 +181,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     border-radius: 2.5rem;
 }
 
+/*The content material on Landing page*/
 .contentmaterial {
     text-align: center;
     font-size: 2rem;
@@ -181,6 +191,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     word-wrap: break-word;
 }
 
+/*The downward pointing icon on the landing page*/
 .scrolldown {
     position: absolute;
     top: 92%;
@@ -252,6 +263,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 /*About section styling starts here*/
 
+/*Common property for all the sections.*/
 section {
     padding: 10rem 0rem;
 }
@@ -267,6 +279,7 @@ section {
     z-index: 10;
 }
 
+/*About me heading styled*/
 .aboutme {
     padding: 2.5rem;
     margin: 5rem 50% 0rem 50%;
@@ -278,6 +291,7 @@ section {
     transform: translateX(-50%);
 }
 
+/*My logo creation styled*/
 .myimg {
     display: block;
     position: relative;
@@ -290,6 +304,7 @@ section {
     box-shadow: 0 0 5rem black;
 }
 
+/*The short introduction about myself*/
 .intro {
     font-size: 2rem;
     font-weight: 500;
@@ -300,6 +315,7 @@ section {
     text-align: center;
 }
 
+/*The social media buttons*/
 .socialmedia {
     width: auto;
     height: auto;
@@ -340,11 +356,13 @@ section {
     z-index: 10;
 }
 
+/*My skills heading*/
 .skillheading {
     font-size: 5rem;
     text-align: center;
 }
 
+/*The font awesome icons styled*/
 .skills {
     margin: 5rem auto;
     text-align: center;
@@ -363,6 +381,7 @@ section {
     text-align: center;
 }
 
+/*Smaller horizontal line between two elements*/
 .minorseparation {
     width: 5%;
     height: auto;
@@ -387,12 +406,14 @@ section {
     padding: auto;
 }
 
+/*My portfolio heading*/
 .work_header {
     text-align: center;
     color: black;
     font-size: 5rem;
 }
 
+/*Individual cards styled and positioned optimally*/
 .card {
     background-color: transparent;
     border: 0;
@@ -421,10 +442,12 @@ section {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/*The entire card deck styled*/
 .card-deck {
     margin: auto 5rem;
 }
 
+/*Portfolio card title*/
 .card-title {
     text-align: center;
     font-size: 2rem;
@@ -433,6 +456,7 @@ section {
     color: crimson;
 }
 
+/*Footer styling starts here*/
 footer {
     background-color: black;
     color: white;
