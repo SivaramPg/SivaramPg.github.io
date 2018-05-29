@@ -129,27 +129,21 @@ body>.container-fluid>.wrapper>.nav_ext {
     display: block;
     z-index: -1;
     filter: brightness(0.5);
+    position: fixed;
 }
 
 
 .content {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
+    min-width: 80%;
     max-width: 100%;
     z-index: 10;
     transform: translate(-50%, -50%);
     padding: 1rem;
-    max-height: 100vh;
-}
-
-.bannerimg {
-    width: 10rem;
-    height: 10rem;
-    border: 0.2rem dotted white;
-    margin: 1rem auto;
-    border-radius: 50%;
-    background-color: lightsteelblue;
+    min-height: 30vh;
+    max-height: 50vh;
 }
 
 .contentheading {
@@ -180,7 +174,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 .scrolldown {
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: 50%;
     padding: 2rem;
     width: 10rem;
@@ -252,8 +246,6 @@ section {
 }
 
 .section1 {
-    position: relative;
-    display: block;
     width: 100%;
     height: auto;
     padding: 0;
@@ -265,10 +257,6 @@ section {
 }
 
 .aboutme {
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
     padding: 2.5rem;
     margin: 5rem 50% 0rem 50%;
     height: auto;
@@ -276,12 +264,12 @@ section {
     font-size: 4rem;
     text-align: center;
     z-index: 999;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 
 .myimg {
     display: block;
-    postion: relative;
+    position: relative;
     margin: 7rem auto;
     z-index: 999;
     width: 30rem;
@@ -302,22 +290,28 @@ section {
 }
 
 .socialmedia {
+    width: auto;
+    height: auto;
     padding: 1rem;
+    margin: 0;
     text-align: center;
     padding-bottom: 7.5rem;
 }
 
-.socialmedia>div>div>a>i {
+.socialmedia > div > div > a > i {
     padding: 2.5rem;
     margin: 2.5rem auto;
     text-align: center;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 35%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     color: initial;
 }
 
-.socialmedia>div>div>a>i:hover {
+.socialmedia > div > div > a >i:hover {
     border-radius: 0.5rem;
     color: tomato;
     background-color: black;
@@ -330,6 +324,7 @@ section {
     background: linear-gradient(135deg, #667eea, #764ba2);
     /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/
     /*8. Plum Plate*/
+    z-index: 10;
 }
 
 .skillheading {
