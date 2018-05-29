@@ -92,7 +92,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 .background {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
