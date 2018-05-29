@@ -17,17 +17,28 @@ body {
 
 
 
+
 /*navbar styling*/
 
 body>.container-fluid>.wrapper>.nav_ext {
     postion: fixed;
     margin: 0 -15px;
-    /*background-color: black;*/
     z-index: 99;
+    transition: 0.3s ease-in-out;
 }
+
+
+/*This class gets added when the navbar-toggle is clicked, done using JavaScipt*/
 
 .navbgblackonclick {
     background-color: black;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    border-bottom: 0.1rem solid dodgerblue;
+    box-shadow: 0 0 5rem grey;
+    border-radius: 0.5rem;
 }
 
 .navbar-brand {
@@ -75,6 +86,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 .btn:active {
     transform: scale(0.95, 0.95);
 }
+
 
 
 
@@ -239,6 +251,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 
 
+
 /*About section styling starts here*/
 
 section {
@@ -319,6 +332,7 @@ section {
 
 
 
+
 /*My skills section starts here*/
 
 .section2 {
@@ -358,6 +372,7 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
+
 
 
 
