@@ -16,6 +16,7 @@ body {
 }
 
 
+
 /*navbar styling*/
 
 body>.container-fluid>.wrapper>.nav_ext {
@@ -79,6 +80,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 
+
 /*landing page background*/
 
 .wrapper {
@@ -134,7 +136,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 
 .content {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 50%;
     min-width: 80%;
@@ -239,6 +241,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 
+
 /*About section styling starts here*/
 
 section {
@@ -298,7 +301,7 @@ section {
     padding-bottom: 7.5rem;
 }
 
-.socialmedia > div > div > a > i {
+.socialmedia>div>div>a>i {
     padding: 2.5rem;
     margin: 2.5rem auto;
     text-align: center;
@@ -311,11 +314,12 @@ section {
     color: initial;
 }
 
-.socialmedia > div > div > a >i:hover {
+.socialmedia>div>div>a>i:hover {
     border-radius: 0.5rem;
     color: tomato;
     background-color: black;
 }
+
 
 
 /*My skills section starts here*/
@@ -357,6 +361,7 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
+
 
 
 /*Portfolio section starts here*/
