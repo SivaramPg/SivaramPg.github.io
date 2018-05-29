@@ -19,9 +19,10 @@ body {
 
 
 
+
 /*navbar styling*/
 
-body > .container-fluid > .wrapper >.nav_ext {
+body>.container-fluid>.wrapper>.nav_ext {
     postion: fixed;
     margin: 0 -15px;
     background-color: black;
@@ -49,18 +50,18 @@ body > .container-fluid > .wrapper >.nav_ext {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.nav_ext > .container > .navbar-collapse {
+.nav_ext>.container>.navbar-collapse {
     /*background-color: rgba(0,0,0,0.8);*/
     text-align: center;
 }
 
 .clear {
     background-color: transparent;
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 1rem;
 }
 
-.clear > .btn {
+.clear>.btn {
     font-size: 2rem;
     padding: 1rem;
     /*margin: 1rem;*/
@@ -73,7 +74,6 @@ body > .container-fluid > .wrapper >.nav_ext {
     transition: 0.15s ease;
     border: 0;
     /*background-color: transparent;*/
-
 }
 
 .btn:hover {
@@ -83,6 +83,7 @@ body > .container-fluid > .wrapper >.nav_ext {
 .btn:active {
     transform: scale(0.95, 0.95);
 }
+
 
 
 
@@ -256,6 +257,7 @@ body > .container-fluid > .wrapper >.nav_ext {
 
 
 
+
 /*About section styling starts here*/
 
 section {
@@ -339,6 +341,7 @@ section {
 
 
 
+
 /*My skills section starts here*/
 
 .section2 {
@@ -377,6 +380,7 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
+
 
 
 
