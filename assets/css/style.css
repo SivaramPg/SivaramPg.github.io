@@ -86,7 +86,6 @@ body>.container-fluid>.wrapper>.nav_ext {
     box-shadow: 0.5rem 0.5rem 2rem black;
     border-radius: 0.25rem;
     text-align: center;
-    border: 0;
     -webkit-transition: 0.15s ease;
     -moz-transition: 0.15s ease;
     -o-transition: 0.15s ease;
