@@ -11,16 +11,19 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', 'Roboto','Arial', sans-serif;
+    font-family: 'Open Sans', 'Roboto', 'Arial', sans-serif;
     /*Main font-family, one of many in the link from google-fonts.*/
 }
 
 
 
 
+
 /*navbar styling*/
 
+
 /*Whole Navbar Styling*/
+
 body>.container-fluid>.wrapper>.nav_ext {
     postion: fixed;
     margin: 0 -15px;
@@ -28,7 +31,9 @@ body>.container-fluid>.wrapper>.nav_ext {
     transition: 0.3s ease-in-out;
 }
 
+
 /*This class gets added when the navbar-toggle is clicked, done using JavaScipt*/
+
 .navbgblackonclick {
     background-color: black;
     border-bottom: 0.2rem solid dodgerblue;
@@ -38,14 +43,18 @@ body>.container-fluid>.wrapper>.nav_ext {
     transition: 0.3s ease-in-out;
 }
 
+
 /*My name styling on the left side of the navbar*/
+
 .navbar-brand {
     font-size: 3rem;
     padding: 1rem;
     color: lightsalmon !important;
 }
 
+
 /*Whole navbar navigations link styling*/
+
 .navbar-nav {
     font-size: 1.5rem;
     padding: 1rem;
@@ -61,12 +70,16 @@ body>.container-fluid>.wrapper>.nav_ext {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+
 /*Styling collapsed navbar*/
+
 .nav_ext>.container>.navbar-collapse {
     text-align: center;
 }
 
+
 /*Subscribe button styling*/
+
 .btn {
     font-size: 2rem;
     padding: 1rem;
@@ -91,10 +104,13 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 
 
+
 /*landing page background*/
+
 
 /*The entire landing front page is nested inside this wrapper and should not be tinkered with as it is working fine currently!
 All the properties as working fine and don't change the values*/
+
 .wrapper {
     margin: 0rem;
     padding: 0rem;
@@ -103,7 +119,9 @@ All the properties as working fine and don't change the values*/
     height: 100vh;
 }
 
+
 /*The background image part of the wrapper*/
+
 .background {
     position: fixed;
     left: 0;
@@ -130,7 +148,9 @@ All the properties as working fine and don't change the values*/
     /*fix*/
 }
 
+
 /*The overlay atop the background image element in wrapper*/
+
 .backgroundoverlay {
     position: absolute;
     left: 0;
@@ -148,7 +168,9 @@ All the properties as working fine and don't change the values*/
     position: fixed;
 }
 
+
 /*Content on Landing page*/
+
 .content {
     position: absolute;
     left: 50%;
@@ -162,7 +184,9 @@ All the properties as working fine and don't change the values*/
     max-height: 50vh;
 }
 
+
 /*Content heading for landing page*/
+
 .contentheading {
     text-align: center;
     font-size: 7rem;
@@ -172,7 +196,9 @@ All the properties as working fine and don't change the values*/
     word-wrap: break-word;
 }
 
+
 /*The tomato colored horizontal line that is being used a divider/ underline*/
+
 .separation {
     width: 10rem;
     padding: 0.3rem;
@@ -181,7 +207,9 @@ All the properties as working fine and don't change the values*/
     border-radius: 2.5rem;
 }
 
+
 /*The content material on Landing page*/
+
 .contentmaterial {
     text-align: center;
     font-size: 2rem;
@@ -191,7 +219,9 @@ All the properties as working fine and don't change the values*/
     word-wrap: break-word;
 }
 
+
 /*The downward pointing icon on the landing page*/
+
 .scrolldown {
     position: absolute;
     top: 92%;
@@ -261,9 +291,12 @@ All the properties as working fine and don't change the values*/
 
 
 
+
 /*About section styling starts here*/
 
+
 /*Common property for all the sections.*/
+
 section {
     padding: 10rem 0rem;
 }
@@ -279,7 +312,9 @@ section {
     z-index: 10;
 }
 
+
 /*About me heading styled*/
+
 .aboutme {
     padding: 2.5rem;
     margin: 5rem 50% 0rem 50%;
@@ -291,7 +326,9 @@ section {
     transform: translateX(-50%);
 }
 
+
 /*My logo creation styled*/
+
 .myimg {
     display: block;
     position: relative;
@@ -304,7 +341,9 @@ section {
     box-shadow: 0 0 5rem black;
 }
 
+
 /*The short introduction about myself*/
+
 .intro {
     font-size: 2rem;
     font-weight: 500;
@@ -315,7 +354,9 @@ section {
     text-align: center;
 }
 
+
 /*The social media buttons*/
+
 .socialmedia {
     width: auto;
     height: auto;
@@ -347,6 +388,7 @@ section {
 
 
 
+
 /*My skills section starts here*/
 
 .section2 {
@@ -356,13 +398,17 @@ section {
     z-index: 10;
 }
 
+
 /*My skills heading*/
+
 .skillheading {
     font-size: 5rem;
     text-align: center;
 }
 
+
 /*The font awesome icons styled*/
+
 .skills {
     margin: 5rem auto;
     text-align: center;
@@ -381,7 +427,9 @@ section {
     text-align: center;
 }
 
+
 /*Smaller horizontal line between two elements*/
+
 .minorseparation {
     width: 5%;
     height: auto;
@@ -389,6 +437,7 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
+
 
 
 
@@ -406,14 +455,18 @@ section {
     padding: auto;
 }
 
+
 /*My portfolio heading*/
+
 .work_header {
     text-align: center;
     color: black;
     font-size: 5rem;
 }
 
+
 /*Individual cards styled and positioned optimally*/
+
 .card {
     background-color: transparent;
     border: 0;
@@ -442,12 +495,16 @@ section {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+
 /*The entire card deck styled*/
+
 .card-deck {
     margin: auto 5rem;
 }
 
+
 /*Portfolio card title*/
+
 .card-title {
     text-align: center;
     font-size: 2rem;
@@ -456,7 +513,136 @@ section {
     color: crimson;
 }
 
+.section4 {
+    background: white;
+    margin: auto;
+}
+
+form {
+    /*max-width: 400px;*/
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid black;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+#contact h3 {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+.contactdetails {
+    padding-top: 25rem;
+    text-align: center;
+}
+
+
 /*Footer styling starts here*/
+
 footer {
     background-color: black;
     color: white;
