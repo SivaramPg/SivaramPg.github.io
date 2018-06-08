@@ -67,7 +67,7 @@ body {
 /*Whole Navbar Styling*/
 
 body>.container-fluid>.wrapper>.nav_ext {
-    postion: fixed;
+    position: fixed;
     margin: 0 -15px;
     z-index: 99;
     transition: 0.3s ease-in-out;
