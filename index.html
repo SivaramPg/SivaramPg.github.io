@@ -22,7 +22,11 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="top" id="top"><i class="fas fa-arrow-up"></i><br>Top</div>
+    <div class="bottom" id="bottom">Bottom<br><i class="fas fa-arrow-down"></i></div>
+
+
+    <div id="beginning" class="container-fluid">
         <div class="wrapper">
             <div class="background">
                 <div class="backgroundoverlay"></div>
@@ -30,7 +34,7 @@
             <!-- NAVBAR FROM BOOTSTRAP -->
             <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-none nav_ext">
                 <div class="container">
-                    <a class="navbar-brand" href="#">P.SIVARAM</a>
+                    <a id="easteregg" class="navbar-brand" href="https://sivarampg.github.io">P.SIVARAM</a>
                     <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -82,13 +86,13 @@
                     <strong>Glad</strong> <em>you</em> are here!
                 </p>
             </div>
-            <div class="scrolldown"><i class="fas fa-angle-double-down fa-3x"></i></div>
+            <div id="scrolldown" class="scrolldown"><i class="fas fa-angle-double-up fa-3x"></i></div>
         </div>
     </div>
     <section id="aboutmesection" class="section1">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-6 offset-sm-3 ">
+                <div class="col-12 col-sm-10 offset-sm-1 ">
                     <h1 class="aboutme">About Me</h1>
                     <hr class="separation">
                     <img src="assets/img/mylogowixsquare.jpg" alt="Sivaram Pg" class="myimg">
@@ -199,7 +203,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                         </div>
-                    </div>n
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -229,7 +233,7 @@
     <section id="contactmesection" class="section4">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 offset-md-1 col-sm-12">
+                <div class="col-md-5 offset-md-1 col-sm-12">
                     <div class="contactform ">
                         <!--                         <form action="POST">
                             Name: <input type="text" name="name"><br>
@@ -260,7 +264,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-md-5 offset-md-1 d-block d-sm-none d-xs-none d-md-block">
+                <div class="col-md-4 offset-md-1 d-block d-sm-none d-xs-none d-md-block">
                     <div class="contactdetails">
                         <h2>Get in touch with me @</h2>
                         <br>
@@ -271,8 +275,9 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="ending">
         <p>Made with &nbsp<i class="fas fa-heart"></i></p>
+        <br>
         <p>This is my website and is currently under construction. | Sivaram Pandariganthan 2018</p>
         <p id="thanks">A special thanks to Ameya, Gautam, Ashwin & Tinu!</p>
     </footer>
