@@ -6,6 +6,9 @@ const contactMeNavButton = document.getElementById("contactme");
 const portfolioNavButton = document.getElementById("portfolio");
 const navBarToggler = document.getElementById("navbar-toggler");
 const navbar = document.getElementById("navbar");
+const aboutMeSection = document.getElementById("aboutmesection");
+const contactMeSection = document.getElementById("contactmesection");
+const portfolioSection = document.getElementById("portfoliosection");
 
 //
 ////// Functions
@@ -15,15 +18,15 @@ const navbar = document.getElementById("navbar");
 const changeNavBg = () => navbar.classList.toggle("navbgblackonclick") ;
 
 //Functions for taking to different sections of website on click of respective navbar button...... Some more could be added later.
-// const goToAbout = () => html.body.animate({scrollTop: .section1});
-// const goToContact = () => ;
-// const goToPortfolio = () => ;
+const goToAbout = () => aboutMeSection.scrollIntoView({behavior: 'smooth', block:'start'});
+const goToContact = () => contactMeSection.scrollIntoView({behavior: 'smooth', block:'start'});
+const goToPortfolio = () => portfolioSection.scrollIntoView({behavior: 'smooth', block:'start'});
 
 //
 ////// Event Listeners on Elements
 // 
 navBarToggler.addEventListener("click", changeNavBg );
-// aboutMeNavButton.addEventListener("click", goToAbout);
-// contactMeNavButton.addEventListener("click", goToContact);
-// portfolioNavButton.addEventListener("click", goToPortfolio);
+aboutMeNavButton.addEventListener("click", goToAbout);
+contactMeNavButton.addEventListener("click", goToContact);
+portfolioNavButton.addEventListener("click", goToPortfolio);
 

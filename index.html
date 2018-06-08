@@ -37,13 +37,13 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a id="aboutme" class="nav-link" href=""><i class="fas fa-user-graduate"></i>&nbspAbout Me <span class="sr-only">(current)</span></a>
+                                <a id="aboutme" class="nav-link"><i class="fas fa-user-graduate"></i>&nbspAbout Me <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a id="contactme" class="nav-link active" href=""><i class="fas fa-envelope"></i>&nbspContact Me</a>
+                                <a id="portfolio" class="nav-link active"><i class="fas fa-folder"></i>&nbspPortfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a id="portfolio" class="nav-link active" href=""><i class="fas fa-folder"></i>&nbspPortfolio</a>
+                                <a id="contactme" class="nav-link active"><i class="fas fa-envelope"></i>&nbspContact Me</a>
                             </li>
                         </ul>
                         <!-- Begin MailChimp Signup Form -->
@@ -64,7 +64,7 @@
                                         <input type="text" name="b_164555def3e7b7f0d2305633c_bc25f84229" tabindex="-1" value="">
                                     </div> -->
                                     <div class="clear">
-                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger my-2 my-sm-0">
+                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger active my-2 my-sm-0">
                                     </div>
                                 </div>
                             </form>
@@ -85,7 +85,7 @@
             <div class="scrolldown"><i class="fas fa-angle-double-down fa-3x"></i></div>
         </div>
     </div>
-    <section class="section1">
+    <section id="aboutmesection" class="section1">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6 offset-sm-3 ">
@@ -135,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="section2">
+    <section id="portfoliosection" class="section2">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -226,43 +226,44 @@
             </div>
         </div>
     </section>
-    <section class="section4">
-        <div class="container">
+    <section id="contactmesection" class="section4">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-6 offset-1">
-                    <div class="contactform">
+                <div class="col-4 offset-1">
+                    <div class="contactform ">
                         <!--                         <form action="POST">
                             Name: <input type="text" name="name"><br>
                             Email Id: <input type="text" name="emailid"><br>
                             Message: <input type="textfield" name="message"><br>
                         </form> -->
-                        <form id="contact" action="" method="post">
+                        <form id="contact"  action="" method="post">
                             <h3>Contact Me</h3>
                             <br>
-                            <fieldset>
-                                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                            <fieldset disabled>
+                                <input placeholder="Your name" type="text" tabindex="1" required>
                             </fieldset>
-                            <fieldset>
+                            <fieldset disabled>
                                 <input placeholder="Your Email Address" type="email" tabindex="2" required>
                             </fieldset>
-                            <fieldset>
+                            <fieldset disabled>
                                 <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
                             </fieldset>
-                            <fieldset>
+                            <fieldset disabled>
                                 <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
                             </fieldset>
-                            <fieldset>
+                            <fieldset disabled>
                                 <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
                             </fieldset>
-                            <fieldset>
-                                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                            <fieldset disabled="">
+                                <button name="submitform" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                             </fieldset>
                         </form>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-5 offset-1">
                     <div class="contactdetails">
                         <h2>Get in touch with me @</h2>
+                        <br>
                         <p>sivarampg95@gmail.com</p>
                         <p>Panvel, Navi Mumbai</p>
                     </div>

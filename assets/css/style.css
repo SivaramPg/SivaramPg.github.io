@@ -64,6 +64,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     margin: 0 1rem;
     padding: 1rem 1rem;
     border-radius: 0.25rem;
+    cursor: pointer;
 }
 
 .navbar-nav>li:hover {
@@ -298,6 +299,7 @@ All the properties as working fine and don't change the values*/
 
 section {
     padding: 10rem 0rem;
+    display: block;
 }
 
 .section1 {
@@ -635,8 +637,17 @@ fieldset {
 }
 
 .contactdetails {
-    padding-top: 25rem;
+    margin-top:10rem;
+    padding: 10rem;
+    width: 100%;
     text-align: center;
+    border-left: 2px dashed lightgrey;
+    font-size: 2rem;
+}
+
+.contactdetails > h2 {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 
