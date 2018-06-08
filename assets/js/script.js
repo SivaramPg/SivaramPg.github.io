@@ -19,20 +19,20 @@ const ending = document.getElementById("ending");
 //
 
 // Function for changing the navbar background to black on click of navbar-toggle button
-const changeNavBg = () => navbar.classList.toggle("navbgblackonclick") ;
+const changeNavBg = () => navbar.classList.toggle("navbgblackonclick");
 
 //Functions for taking to different sections of website on click of respective navbar button...... Some more could be added later.
-const goToAbout = () => aboutMeSection.scrollIntoView({behavior: 'smooth', block:'start'});
-const goToContact = () => contactMeSection.scrollIntoView({behavior: 'smooth', block:'start'});
-const goToPortfolio = () => portfolioSection.scrollIntoView({behavior: 'smooth', block:'start'});
-const goToTop = () => beginning.scrollIntoView({behavior: 'smooth', block:'start'});
-const goToBottom = ()=> ending.scrollIntoView({behavior: 'smooth', block:'start'});
+const goToAbout = () => aboutMeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+const goToContact = () => contactMeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+const goToPortfolio = () => portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+const goToTop = () => beginning.scrollIntoView({ behavior: 'smooth', block: 'start' });
+const goToBottom = () => ending.scrollIntoView({ behavior: 'smooth', block: 'start' });
 //
 ////// Event Listeners on Elements
 // 
 goTop.addEventListener("click", goToTop);
 goBottom.addEventListener("click", goToBottom);
-navBarToggler.addEventListener("click", changeNavBg );
+navBarToggler.addEventListener("click", changeNavBg);
 aboutMeNavButton.addEventListener("click", goToAbout);
 contactMeNavButton.addEventListener("click", goToContact);
 portfolioNavButton.addEventListener("click", goToPortfolio);
