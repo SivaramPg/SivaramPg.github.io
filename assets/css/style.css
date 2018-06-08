@@ -16,47 +16,50 @@ body {
 }
 
 
-.top{
-    display: block;
-    position: fixed;
-    padding:1rem;
-    text-align: center;
-    width: 6rem;
-    height:auto;
-    float: right;
-    right: 0;
-    margin: 30rem 0.5rem 0 0;
-    z-index: 99;
-    background: rgba(255,255,255,0.05);
-    cursor: pointer;
-    border-radius:5%;
-    transition: 0.5s;
-    color: rgba(0,0,0,0.5);
-}
-
-.bottom{
+.top {
     display: block;
     position: fixed;
     padding: 1rem;
     text-align: center;
     width: 6rem;
-    height:auto;
+    height: auto;
+    float: right;
+    right: 0;
+    margin: 30rem 0.5rem 0 0;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    border-radius: 5%;
+    transition: 0.5s;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom {
+    display: block;
+    position: fixed;
+    padding: 1rem;
+    text-align: center;
+    width: 6rem;
+    height: auto;
     float: right;
     right: 0;
     margin: 35rem 0.5rem 0 0;
     z-index: 99;
-    background: rgba(255,255,255,0.05);;
+    background: rgba(255, 255, 255, 0.05);
+    ;
     cursor: pointer;
-    border-radius:5%;
+    border-radius: 5%;
     transition: 0.5s;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.top:hover, .bottom:hover {
+.top:hover,
+.bottom:hover {
     background: black;
     box-shadow: 0 0 2rem black;
     color: dodgerblue;
 }
+
 
 /*navbar styling*/
 
@@ -72,6 +75,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 
+
 /*This class gets added when the navbar-toggle is clicked, done using JavaScipt*/
 
 .navbgblackonclick {
@@ -84,6 +88,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 
+
 /*My name styling on the left side of the navbar*/
 
 .navbar-brand {
@@ -91,6 +96,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     padding: 1rem;
     color: lightsalmon !important;
 }
+
 
 
 /*Whole navbar navigations link styling*/
@@ -113,12 +119,14 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 
+
 /*Styling collapsed navbar*/
 
 .nav_ext>.container>.navbar-collapse {
     text-align: center;
     z-index: 9999;
 }
+
 
 
 /*Subscribe button styling*/
@@ -147,6 +155,7 @@ body>.container-fluid>.wrapper>.nav_ext {
 
 
 
+
 /*landing page background*/
 
 
@@ -160,6 +169,7 @@ All the properties as working fine and don't change the values*/
     width: 100%;
     height: 100vh;
 }
+
 
 
 /*The background image part of the wrapper*/
@@ -191,6 +201,7 @@ All the properties as working fine and don't change the values*/
 }
 
 
+
 /*The overlay atop the background image element in wrapper*/
 
 .backgroundoverlay {
@@ -211,6 +222,7 @@ All the properties as working fine and don't change the values*/
 }
 
 
+
 /*Content on Landing page*/
 
 .content {
@@ -227,6 +239,7 @@ All the properties as working fine and don't change the values*/
 }
 
 
+
 /*Content heading for landing page*/
 
 .contentheading {
@@ -237,6 +250,7 @@ All the properties as working fine and don't change the values*/
     color: white;
     word-wrap: break-word;
 }
+
 
 
 /*The tomato colored horizontal line that is being used a divider/ underline*/
@@ -250,6 +264,7 @@ All the properties as working fine and don't change the values*/
 }
 
 
+
 /*The content material on Landing page*/
 
 .contentmaterial {
@@ -260,6 +275,7 @@ All the properties as working fine and don't change the values*/
     color: white;
     word-wrap: break-word;
 }
+
 
 
 /*The downward pointing icon on the landing page*/
@@ -335,6 +351,7 @@ All the properties as working fine and don't change the values*/
 
 
 
+
 /*About section styling starts here*/
 
 
@@ -357,6 +374,7 @@ section {
 }
 
 
+
 /*About me heading styled*/
 
 .aboutme {
@@ -369,6 +387,7 @@ section {
     z-index: 99;
     transform: translateX(-50%);
 }
+
 
 
 /*My logo creation styled*/
@@ -386,6 +405,7 @@ section {
 }
 
 
+
 /*The short introduction about myself*/
 
 .intro {
@@ -397,6 +417,7 @@ section {
     margin: 2rem auto;
     text-align: justify;
 }
+
 
 
 /*The social media buttons*/
@@ -433,6 +454,7 @@ section {
 
 
 
+
 /*My skills section starts here*/
 
 .section2 {
@@ -443,12 +465,14 @@ section {
 }
 
 
+
 /*My skills heading*/
 
 .skillheading {
     font-size: 5rem;
     text-align: center;
 }
+
 
 
 /*The font awesome icons styled*/
@@ -472,6 +496,7 @@ section {
 }
 
 
+
 /*Smaller horizontal line between two elements*/
 
 .minorseparation {
@@ -481,6 +506,7 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
+
 
 
 
@@ -500,6 +526,7 @@ section {
 }
 
 
+
 /*My portfolio heading*/
 
 .work_header {
@@ -507,6 +534,7 @@ section {
     color: black;
     font-size: 5rem;
 }
+
 
 
 /*Individual cards styled and positioned optimally*/
@@ -541,11 +569,13 @@ section {
 }
 
 
+
 /*The entire card deck styled*/
 
 .card-deck {
     margin: auto 5rem;
 }
+
 
 
 /*Portfolio card title*/
@@ -681,7 +711,7 @@ fieldset {
 }
 
 .contactdetails {
-    margin-top:10rem;
+    margin-top: 10rem;
     padding: 10rem;
     width: 100%;
     text-align: center;
@@ -689,10 +719,11 @@ fieldset {
     font-size: 2rem;
 }
 
-.contactdetails > h2 {
+.contactdetails>h2 {
     font-size: 3rem;
     font-weight: bold;
 }
+
 
 
 /*Footer styling starts here*/
