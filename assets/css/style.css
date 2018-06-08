@@ -15,6 +15,7 @@ body {
     /*Main font-family, one of many in the link from google-fonts.*/
 }
 
+/* Button on the right side to go to the top of the webpage */
 
 .top {
     display: block;
@@ -34,6 +35,8 @@ body {
     color: rgba(0, 0, 0, 0.5);
 }
 
+/* Button on the right side to go to the bottom of the page */
+
 .bottom {
     display: block;
     position: fixed;
@@ -46,7 +49,6 @@ body {
     margin: 35rem 0.5rem 0 0;
     z-index: 99;
     background: rgba(255, 255, 255, 0.05);
-    ;
     cursor: pointer;
     border-radius: 5%;
     transition: 0.5s;
@@ -58,6 +60,7 @@ body {
     background: black;
     box-shadow: 0 0 2rem black;
     color: dodgerblue;
+    opacity: 0.75;
 }
 
 
@@ -74,9 +77,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     z-index: 9999;
 }
 
-
-
-/*This class gets added when the navbar-toggle is clicked, done using JavaScipt*/
+/*This class gets added when the navbar-toggle is clicked, done using JavaScript*/
 
 .navbgblackonclick {
     background-color: black;
@@ -87,8 +88,6 @@ body>.container-fluid>.wrapper>.nav_ext {
     transition: 0.3s ease-in-out;
 }
 
-
-
 /*My name styling on the left side of the navbar*/
 
 .navbar-brand {
@@ -96,8 +95,6 @@ body>.container-fluid>.wrapper>.nav_ext {
     padding: 1rem;
     color: lightsalmon !important;
 }
-
-
 
 /*Whole navbar navigations link styling*/
 
@@ -127,7 +124,7 @@ body>.container-fluid>.wrapper>.nav_ext {
     z-index: 9999;
 }
 
-
+/* Something seems to have messed the button styling up and has added a border around the button. Need to fix it some time soon. */
 
 /*Subscribe button styling*/
 
@@ -152,10 +149,6 @@ body>.container-fluid>.wrapper>.nav_ext {
 }
 
 
-
-
-
-
 /*landing page background*/
 
 
@@ -169,8 +162,6 @@ All the properties as working fine and don't change the values*/
     width: 100%;
     height: 100vh;
 }
-
-
 
 /*The background image part of the wrapper*/
 
@@ -200,8 +191,6 @@ All the properties as working fine and don't change the values*/
     /*fix*/
 }
 
-
-
 /*The overlay atop the background image element in wrapper*/
 
 .backgroundoverlay {
@@ -221,8 +210,6 @@ All the properties as working fine and don't change the values*/
     position: fixed;
 }
 
-
-
 /*Content on Landing page*/
 
 .content {
@@ -238,8 +225,6 @@ All the properties as working fine and don't change the values*/
     max-height: 50vh;
 }
 
-
-
 /*Content heading for landing page*/
 
 .contentheading {
@@ -251,8 +236,6 @@ All the properties as working fine and don't change the values*/
     word-wrap: break-word;
 }
 
-
-
 /*The tomato colored horizontal line that is being used a divider/ underline*/
 
 .separation {
@@ -262,8 +245,6 @@ All the properties as working fine and don't change the values*/
     /*#33DAFF*/
     border-radius: 2.5rem;
 }
-
-
 
 /*The content material on Landing page*/
 
@@ -275,8 +256,6 @@ All the properties as working fine and don't change the values*/
     color: white;
     word-wrap: break-word;
 }
-
-
 
 /*The downward pointing icon on the landing page*/
 
@@ -347,13 +326,7 @@ All the properties as working fine and don't change the values*/
     }
 }
 
-
-
-
-
-
 /*About section styling starts here*/
-
 
 /*Common property for all the sections.*/
 
@@ -373,8 +346,6 @@ section {
     z-index: 10;
 }
 
-
-
 /*About me heading styled*/
 
 .aboutme {
@@ -387,8 +358,6 @@ section {
     z-index: 99;
     transform: translateX(-50%);
 }
-
-
 
 /*My logo creation styled*/
 
@@ -404,9 +373,7 @@ section {
     box-shadow: 0 0 5rem black;
 }
 
-
-
-/*The short introduction about myself*/
+/*A short introduction about myself*/
 
 .intro {
     font-size: 2rem;
@@ -417,8 +384,6 @@ section {
     margin: 2rem auto;
     text-align: justify;
 }
-
-
 
 /*The social media buttons*/
 
@@ -450,11 +415,6 @@ section {
     background-color: black;
 }
 
-
-
-
-
-
 /*My skills section starts here*/
 
 .section2 {
@@ -464,16 +424,12 @@ section {
     z-index: 10;
 }
 
-
-
 /*My skills heading*/
 
 .skillheading {
     font-size: 5rem;
     text-align: center;
 }
-
-
 
 /*The font awesome icons styled*/
 
@@ -495,8 +451,6 @@ section {
     text-align: center;
 }
 
-
-
 /*Smaller horizontal line between two elements*/
 
 .minorseparation {
@@ -506,11 +460,6 @@ section {
     margin: 2rem auto;
     background-color: white;
 }
-
-
-
-
-
 
 /*Portfolio section starts here*/
 
@@ -525,8 +474,6 @@ section {
     padding: auto;
 }
 
-
-
 /*My portfolio heading*/
 
 .work_header {
@@ -534,8 +481,6 @@ section {
     color: black;
     font-size: 5rem;
 }
-
-
 
 /*Individual cards styled and positioned optimally*/
 
@@ -568,15 +513,11 @@ section {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-
 /*The entire card deck styled*/
 
 .card-deck {
     margin: auto 5rem;
 }
-
-
 
 /*Portfolio card title*/
 
@@ -592,6 +533,8 @@ section {
     background: white;
     margin: auto;
 }
+
+/* Contact form styling */
 
 form {
     /*max-width: 400px;*/
@@ -723,8 +666,6 @@ fieldset {
     font-size: 3rem;
     font-weight: bold;
 }
-
-
 
 /*Footer styling starts here*/
 
