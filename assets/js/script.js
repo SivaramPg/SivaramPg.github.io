@@ -36,7 +36,7 @@ const goToBottom = () =>
 ////// Event Listeners on Elements
 //
 goTop.addEventListener("click", goToTop);
-goBottom.addEventListener("click", goToBottom);
+// goBottom.addEventListener("click", goToBottom);
 navBarToggler.addEventListener("click", changeNavBg);
 aboutMeNavButton.addEventListener("click", goToAbout);
 contactMeNavButton.addEventListener("click", goToContact);
