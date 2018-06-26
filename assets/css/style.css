@@ -379,6 +379,22 @@ section {
   text-align: justify;
 }
 
+/* Resume link styling */
+
+.resume_link {
+text-align: center;
+}
+
+/* The resume button */
+
+a > .resume {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
 /*The social media buttons*/
 
 .socialmedia {
