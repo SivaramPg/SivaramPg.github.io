@@ -382,17 +382,21 @@ section {
 /* Resume link styling */
 
 .resume_link {
-text-align: center;
+ text-align: center;
+ margin: auto 50%;
+ transform: translateX(-50%);
 }
 
 /* The resume button */
 
-a > .resume {
+.resume {
   margin: 0;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-align: center;
-
+  width: 15rem;
+  height: 5rem;
+  cursor: pointer;
 }
 
 /*The social media buttons*/
