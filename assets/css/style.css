@@ -379,6 +379,42 @@ section {
   text-align: justify;
 }
 
+/* Resume link styling */
+
+.resume_link {
+ text-align: center;
+ margin: auto 50%;
+ transform: translateX(-50%);
+}
+
+/* The resume button */
+
+.resume {
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 15rem;
+  height: 5rem;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.resume:hover {
+  border-radius: 0.5rem;
+  color: tomato;
+  background-color: black;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+}
+
 /*The social media buttons*/
 
 .socialmedia {
@@ -407,6 +443,7 @@ section {
   border-radius: 0.5rem;
   color: tomato;
   background-color: black;
+  box-shadow: 0.5rem 0.5rem 1rem lightslategray;
 }
 
 /*My skills section starts here*/
@@ -675,4 +712,10 @@ footer {
 
 footer > p > i {
   color: red;
+  animation: heartbeat 0.8s infinite;
+}
+
+@keyframes heartbeat {
+  0% {transform: scale(1,1)}
+  100% {transform: scale(1.5, 1.5)}
 }
