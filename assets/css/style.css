@@ -201,7 +201,7 @@ All the properties as working fine and don't change the values*/
   display: block;
   z-index: -1;
   filter: brightness(0.5);
-  position: fixed;
+  /* position: fixed; */
 }
 
 /*Content on Landing page*/
@@ -685,8 +685,8 @@ fieldset {
 }
 
 .contactdetails {
-  margin-top: 10rem;
-  padding: 10rem;
+  margin-top: 20rem;
+  /* padding: 10rem; */
   width: 100%;
   text-align: center;
   border-left: 2px dashed lightgrey;
@@ -696,6 +696,14 @@ fieldset {
 .contactdetails > h2 {
   font-size: 3rem;
   font-weight: bold;
+  text-align: center;
+}
+
+#contactemail {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: dodgerblue;
+  text-align: center;
 }
 
 /*Footer styling starts here*/
