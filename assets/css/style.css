@@ -201,7 +201,7 @@ All the properties as working fine and don't change the values*/
   display: block;
   z-index: -1;
   filter: brightness(0.5);
-  position: fixed;
+  /* position: fixed; */
 }
 
 /*Content on Landing page*/
