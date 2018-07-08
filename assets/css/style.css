@@ -22,15 +22,15 @@ body {
   position: fixed;
   padding: 1rem;
   text-align: center;
-  width: 5rem;
-  height: auto;
+  width: 4rem;
+  height: 4rem;
   float: right;
   right: 0;
-  margin: 90vh 0.5rem 0 0;
+  margin: 90vh 1rem 0 0;
   z-index: 99;
   background: rgba(255, 255, 255, 0.25);
   cursor: pointer;
-  border-radius: 5%;
+  border-radius: 50%;
   transition: 0.5s;
   color: tomato;
 }
@@ -472,6 +472,7 @@ section {
 .skills > h1 {
   font-size: 3rem;
   font-weight: bold;
+  color: white;
 }
 
 .skills > i {
@@ -534,7 +535,8 @@ section {
 
 .card:hover {
   box-shadow: 0 0 2rem black;
-  transform: scale(1.05, 1.05);
+  transform: scale(1.125, 1.125);
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
@@ -559,6 +561,10 @@ section {
   font-weight: bold;
   color: crimson;
 }
+
+/* ****
+**** Contact Me Section 
+**** */
 
 .section4 {
   background: white;
