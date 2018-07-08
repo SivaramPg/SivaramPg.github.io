@@ -28,18 +28,25 @@ const goToPortfolio = () =>
   portfolioSection.scrollIntoView({ behavior: "smooth", block: "start" });
 const goToTop = () =>
   beginning.scrollIntoView({ behavior: "smooth", block: "start" });
-const toggleGoTop = () => {
-  if (screen.availWidth <=768) {
-    goTop.style.display = 'none';
+
+const hideOnScroll = () => {
+  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350){
+      if (screen.availWidth <=768) {
+        goTop.style.display = 'none';
+      } else {
+        goTop.style.display = 'block';
+      }
   } else {
-    goTop.style.display = 'block';
+    goTop.style.display = 'none';
   }
 }
 
 //
 ////// Event Listeners on Elements
 //
-window.addEventListener("resize", toggleGoTop)
+window.addEventListener("scroll", hideOnScroll);
+window.addEventListener("load", hideOnScroll);
+window.addEventListener("resize", hideOnScroll);
 goTop.addEventListener("click", goToTop);
 navBarToggler.addEventListener("click", changeNavBg);
 aboutMeNavButton.addEventListener("click", goToAbout);
