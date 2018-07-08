@@ -560,7 +560,7 @@ section {
   
   .card-deck .card:not(:first-child) {
     margin-left: 0px;
-}
+  }
   
 }
 
@@ -726,7 +726,7 @@ fieldset {
 
 /*Footer styling starts here*/
 
-footer {
+.footer {
   background-color: black;
   color: white;
   text-align: center;
@@ -736,7 +736,7 @@ footer {
   padding: 2.5rem;
 }
 
-footer > p > i {
+.footer > p > i {
   color: red;
   animation: heartbeat 0.8s infinite;
 }
