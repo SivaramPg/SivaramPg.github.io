@@ -472,6 +472,7 @@ section {
 .skills > h1 {
   font-size: 3rem;
   font-weight: bold;
+  color: white;
 }
 
 .skills > i {
@@ -503,10 +504,6 @@ section {
   background-size: cover;
   overflow: hidden;
   padding: auto;
-}
-
-.dimbg {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 /*My portfolio heading*/
@@ -564,6 +561,10 @@ section {
   font-weight: bold;
   color: crimson;
 }
+
+/* ****
+**** Contact Me Section 
+**** */
 
 .section4 {
   background: white;
