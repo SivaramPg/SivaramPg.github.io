@@ -28,11 +28,18 @@ const goToPortfolio = () =>
   portfolioSection.scrollIntoView({ behavior: "smooth", block: "start" });
 const goToTop = () =>
   beginning.scrollIntoView({ behavior: "smooth", block: "start" });
-
+const toggleGoTop = () => {
+  if (screen.availWidth <=768) {
+    goTop.style.display = 'none';
+  } else {
+    goTop.style.display = 'block';
+  }
+}
 
 //
 ////// Event Listeners on Elements
 //
+window.addEventListener("resize", toggleGoTop)
 goTop.addEventListener("click", goToTop);
 navBarToggler.addEventListener("click", changeNavBg);
 aboutMeNavButton.addEventListener("click", goToAbout);
