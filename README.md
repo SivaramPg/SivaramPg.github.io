@@ -1,9 +1,12 @@
-# SivaramPg.github.io
+# [__SivaramPg.github.io__](https://sivarampg.github.io)
 
-My Portfolio website where I apply all that I am learing to improve its design and the functionality.
+My Personal Portfolio Website built using __HTML5__, __CSS3__ and __JavaScript__ and made responsive using __Bootstrap__ library.
 
-This website is built using HTML5, CSS, Bootstrap and Javascript.
+It showcases my projects and skills that I have acquired until now.
 
-This website is currently a reflection of all the knowledge and experience I am gaining in the field of web developement and will continue to improve and evolve along side me.
-This is my playground for implementing all the skills I am acquiring so as to see the real world results of my work.
+Update frequently to reflect my learnings and experiences with existing and newer technologies
+
+
+
+
 
