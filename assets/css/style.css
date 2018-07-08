@@ -375,22 +375,29 @@ section {
   width: 15rem;
   height: 5rem;
   cursor: pointer;
-  background-color: white;
+  color: tomato;
+  background-color: black;
   border: none;
-  border-radius: 5rem;
+  border-radius: 1.5rem;
+  text-decoration: underline;
   text-transform: uppercase;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .resume:hover {
-  border-radius: 0.5rem;
-  color: tomato;
-  background-color: black;
-  transform: scale(1.05, 1.05);
+  border-radius: 0.25rem;
+  color: black;
+  background-color: white;
   box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+  text-decoration: none;
+}
+
+.resume:active {
+  transform: scale(0.95, 0.95);
+  text-decoration: none;
 }
 
 /*The social media buttons*/
@@ -422,6 +429,10 @@ section {
   color: tomato;
   background-color: black;
   box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+}
+
+.socialmedia > div > div > a > i:active {
+  transform: scale(0.95, 0.95);
 }
 
 /*My skills section starts here*/
@@ -549,7 +560,7 @@ section {
   
   .card-deck .card:not(:first-child) {
     margin-left: 0px;
-}
+  }
   
 }
 
@@ -715,7 +726,7 @@ fieldset {
 
 /*Footer styling starts here*/
 
-footer {
+.footer {
   background-color: black;
   color: white;
   text-align: center;
@@ -725,7 +736,7 @@ footer {
   padding: 2.5rem;
 }
 
-footer > p > i {
+.footer > p > i {
   color: red;
   animation: heartbeat 0.8s infinite;
 }
