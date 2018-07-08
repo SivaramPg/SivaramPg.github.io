@@ -11,7 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Roboto", "Arial", sans-serif;
+  font-family: "Fira Sans", "Open Sans", "Arial", sans-serif;
   /*Main font-family, one of many in the link from google-fonts.*/
 }
 
@@ -119,7 +119,7 @@ body > .container-fluid > .wrapper > .nav_ext {
   transform: scale(1.05, 1.05);
 }
 
-.btn:active {
+.btn:focus {
   transform: scale(0.95, 0.95);
 }
 

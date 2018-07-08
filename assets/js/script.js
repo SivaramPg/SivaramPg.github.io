@@ -30,16 +30,19 @@ const goToTop = () =>
   beginning.scrollIntoView({ behavior: "smooth", block: "start" });
 
 const hideOnScroll = () => {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350){
-      if (screen.availWidth <=768) {
-        goTop.style.display = 'none';
-      } else {
-        goTop.style.display = 'block';
-      }
+  if (
+    document.body.scrollTop > 350 ||
+    document.documentElement.scrollTop > 350
+  ) {
+    if (screen.availWidth <= 768) {
+      goTop.style.display = "none";
+    } else {
+      goTop.style.display = "block";
+    }
   } else {
-    goTop.style.display = 'none';
+    goTop.style.display = "none";
   }
-}
+};
 
 //
 ////// Event Listeners on Elements
