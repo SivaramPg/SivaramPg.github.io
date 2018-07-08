@@ -18,45 +18,24 @@ body {
 /* Button on the right side to go to the top of the webpage */
 
 .top {
-  display: block;
+  display: none;
   position: fixed;
-  padding: 1rem;
-  text-align: center;
   width: 4rem;
   height: 4rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 90vh 1rem 0 0;
   float: right;
   right: 0;
-  margin: 90vh 1rem 0 0;
-  z-index: 99;
+  border-radius: 50%;
+  color: tomato;
   background: rgba(255, 255, 255, 0.25);
   cursor: pointer;
-  border-radius: 50%;
-  transition: 0.5s;
-  color: tomato;
-}
-
-/* Button on the right side to go to the bottom of the page */
-
-.bottom {
-  display: block;
-  position: fixed;
-  padding: 1rem;
-  text-align: center;
-  width: 6rem;
-  height: auto;
-  float: right;
-  right: 0;
-  margin: 35rem 0.5rem 0 0;
   z-index: 99;
-  background: rgba(255, 255, 255, 0.05);
-  cursor: pointer;
-  border-radius: 5%;
   transition: 0.5s;
-  color: rgba(0, 0, 0, 0.5);
 }
 
-.top:hover,
-.bottom:hover {
+.top:hover {
   background: black;
   box-shadow: 0 0 2rem black;
   color: dodgerblue;
@@ -201,7 +180,6 @@ All the properties as working fine and don't change the values*/
   display: block;
   z-index: -1;
   filter: brightness(0.5);
-  /* position: fixed; */
 }
 
 /*Content on Landing page*/
