@@ -122,24 +122,24 @@ downPointer.addEventListener("mouseover", goToAbout);
 // })
 
 
-// $(window).scroll(function () {
-//     // console.log($(window).scrollTop());
-//     // var topDivHeight = $(".wrapper").height();
-//     // var viewPortSize = $(window).height();
+$(window).scroll(function logovis() {
+  if ($(window).scrollTop() >= 350) {
+    $('.myimg').css('visibility', 'visible');
+    $('.myimg').animate({
+      left: '0px',
+      opacity: '1'
+    }, 800);
+    $('.myimg').off('scroll');
+  }
+});
 
-//     // var triggerAt = 350;
-//     // var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
-
-//     if ($(window).scrollTop() >= 550) {
-//         $('.myimg').css('visibility', 'visible');
-//         $('.myimg').hide();
-//         $('.myimg').fadeIn();
-//         $(this).off('scroll');
-//     } else {
-//             $('.myimg').css('visibility', 'hidden');
-//             // $('.myimg').hide();
-//             // $('.myimg').fadeOut();
-//             $(this).off('scroll');
-//     }
-// });
+$(window).scroll(function introvis() {
+  if ($(window).scrollTop() >= 700) {
+    $('.intro').css('visibility', 'visible');
+      $('.intro').animate({
+        opacity: '1',
+      }, 1000);
+      $('.intro').off('scroll');
+    }
+});
 

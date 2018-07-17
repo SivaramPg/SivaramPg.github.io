@@ -335,8 +335,10 @@ section {
 
 .myimg {
   display: block;
-  /* visibility: hidden; */
+  visibility: hidden;
   position: relative;
+  left: -500px;
+  opacity: 0;
   margin: 7rem auto;
   z-index: 99;
   width: 30rem;
@@ -344,11 +346,15 @@ section {
   border: 0.2rem solid white;
   background-color: lightgrey;
   box-shadow: 0 0 5rem black;
+  overflow: hidden;
 }
 
 /*A short introduction about myself*/
 
 .intro {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
   font-size: 2rem;
   font-weight: 500;
   line-height: 3rem;
