@@ -148,7 +148,7 @@ $(window).scroll(function logovis() {
     $('.myimg').animate({
       left: '0px',
       opacity: '1'
-    }, 500, "linear");
+    }, 800, "linear");
     $('.myimg').off('scroll');
   }
 });
