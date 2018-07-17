@@ -124,19 +124,21 @@ downPointer.addEventListener("mouseover", goToAbout);
 $(window).on('load', function () {
     $('.contentheading').animate({
       top: '0px',
-      left: '0px'
-    }, 800);
+      left: '0px',
+      opacity: '1'
+    }, 800, "linear");
 
     $('.mainpageseparation').css('visibility','visible');
     $('.mainpageseparation').animate({
       left: '0px',
       opacity: '1'
-    }, 800);
+    }, 800, "linear");
 
     $('.contentmaterial').animate({
       top: '0px',
-      left: '0px'
-    }, 800);
+      left: '0px',
+      opacity: '1'
+    }, 800, "linear");
 });
 
 
@@ -146,7 +148,7 @@ $(window).scroll(function logovis() {
     $('.myimg').animate({
       left: '0px',
       opacity: '1'
-    }, 800);
+    }, 500, "linear");
     $('.myimg').off('scroll');
   }
 });
@@ -156,7 +158,7 @@ $(window).scroll(function introvis() {
     $('.intro').css('visibility', 'visible');
       $('.intro').animate({
         opacity: '1',
-      }, 1000);
+      }, 800, "linear");
       $('.intro').off('scroll');
     }
 });
