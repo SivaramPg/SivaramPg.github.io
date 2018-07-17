@@ -121,6 +121,24 @@ downPointer.addEventListener("mouseover", goToAbout);
 //   }
 // })
 
+$(window).on('load', function () {
+    $('.contentheading').animate({
+      top: '0px',
+      left: '0px'
+    }, 800);
+
+    $('.mainpageseparation').css('visibility','visible');
+    $('.mainpageseparation').animate({
+      left: '0px',
+      opacity: '1'
+    }, 800);
+
+    $('.contentmaterial').animate({
+      top: '0px',
+      left: '0px'
+    }, 800);
+});
+
 
 $(window).scroll(function logovis() {
   if ($(window).scrollTop() >= 350) {
