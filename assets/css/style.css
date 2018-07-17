@@ -200,12 +200,16 @@ All the properties as working fine and don't change the values*/
 /*Content heading for landing page*/
 
 .contentheading {
+  display: block;
+  position: relative;
   text-align: center;
   font-size: 7rem;
   padding: 1rem;
   margin: 1rem;
   color: white;
   word-wrap: break-word;
+  top: -100px;
+  opacity: 0;
 }
 
 /*The tomato colored horizontal line that is being used a divider/ underline*/
@@ -218,15 +222,27 @@ All the properties as working fine and don't change the values*/
   border-radius: 2.5rem;
 }
 
+.mainpageseparation {
+  display: block;
+  position: relative;
+  left: 150px;
+  visibility: hidden;
+  opacity: 0;
+}
+
 /*The content material on Landing page*/
 
 .contentmaterial {
+  display: block;
+  position: relative;
   text-align: center;
   font-size: 2rem;
   padding: 1rem;
   margin: 1rem;
   color: white;
   word-wrap: break-word;
+  top: 100px;
+  opacity: 0;
 }
 
 /*The downward pointing icon on the landing page*/
@@ -337,7 +353,7 @@ section {
   display: block;
   visibility: hidden;
   position: relative;
-  left: -500px;
+  left: 20px;
   opacity: 0;
   margin: 7rem auto;
   z-index: 99;
@@ -562,7 +578,7 @@ section {
 	.card-deck .card {
 	    display: block;
 	    margin-bottom: .75rem;
-	    vertical-align: top;
+	    /* vertical-align: top; */
 	}
 
   .card-deck .card:not(:first-child) {
