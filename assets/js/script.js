@@ -120,3 +120,26 @@ downPointer.addEventListener("mouseover", goToAbout);
 //     goTop.style.display = "none";
 //   }
 // })
+
+
+// $(window).scroll(function () {
+//     // console.log($(window).scrollTop());
+//     // var topDivHeight = $(".wrapper").height();
+//     // var viewPortSize = $(window).height();
+
+//     // var triggerAt = 350;
+//     // var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+//     if ($(window).scrollTop() >= 550) {
+//         $('.myimg').css('visibility', 'visible');
+//         $('.myimg').hide();
+//         $('.myimg').fadeIn();
+//         $(this).off('scroll');
+//     } else {
+//             $('.myimg').css('visibility', 'hidden');
+//             // $('.myimg').hide();
+//             // $('.myimg').fadeOut();
+//             $(this).off('scroll');
+//     }
+// });
+
