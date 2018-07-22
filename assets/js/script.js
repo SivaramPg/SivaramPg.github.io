@@ -28,15 +28,15 @@ const goToAbout = () => {
 
 const goToContact = () => {
   contactMeSection.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+};
 
 const goToPortfolio = () => {
   portfolioSection.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+};
 
 const goToTop = () => {
   beginning.scrollIntoView({ behavior: "smooth", block: "start" });
-}
+};
 
 // Function to change display property of the goToTop button
 const hideOnScroll = () => {
@@ -67,7 +67,6 @@ contactMeNavButton.addEventListener("click", goToContact);
 portfolioNavButton.addEventListener("click", goToPortfolio);
 goTop.addEventListener("click", goToTop);
 downPointer.addEventListener("mouseover", goToAbout);
-
 
 //CONVERTING THE ABOVE TO jQuery for learning reasons
 //NEED TO CONVERT VANILLA JS SYNTAX TO JQUERY SYNTAX LIKE classlist toggle and scrollintoview
@@ -121,45 +120,63 @@ downPointer.addEventListener("mouseover", goToAbout);
 //   }
 // })
 
-$(window).on('load', function () {
-    $('.contentheading').animate({
-      top: '0px',
-      left: '0px',
-      opacity: '1'
-    }, 800, "linear");
+$(window).on("load", function() {
+  $(".contentheading").animate(
+    {
+      top: "0px",
+      left: "0px",
+      opacity: "1"
+    },
+    800,
+    "linear"
+  );
 
-    $('.mainpageseparation').css('visibility','visible');
-    $('.mainpageseparation').animate({
-      left: '0px',
-      opacity: '1'
-    }, 800, "linear");
+  $(".mainpageseparation").css("visibility", "visible");
+  $(".mainpageseparation").animate(
+    {
+      left: "0px",
+      opacity: "1"
+    },
+    800,
+    "linear"
+  );
 
-    $('.contentmaterial').animate({
-      top: '0px',
-      left: '0px',
-      opacity: '1'
-    }, 800, "linear");
+  $(".contentmaterial").animate(
+    {
+      top: "0px",
+      left: "0px",
+      opacity: "1"
+    },
+    800,
+    "linear"
+  );
 });
-
 
 $(window).scroll(function logovis() {
   if ($(window).scrollTop() >= 350) {
-    $('.myimg').css('visibility', 'visible');
-    $('.myimg').animate({
-      left: '0px',
-      opacity: '1'
-    }, 800, "linear");
-    $('.myimg').off('scroll');
+    $(".myimg").css("visibility", "visible");
+    $(".myimg").animate(
+      {
+        left: "0px",
+        opacity: "1"
+      },
+      800,
+      "linear"
+    );
+    $(".myimg").off("scroll");
   }
 });
 
 $(window).scroll(function introvis() {
   if ($(window).scrollTop() >= 700) {
-    $('.intro').css('visibility', 'visible');
-      $('.intro').animate({
-        opacity: '1',
-      }, 800, "linear");
-      $('.intro').off('scroll');
-    }
+    $(".intro").css("visibility", "visible");
+    $(".intro").animate(
+      {
+        opacity: "1"
+      },
+      800,
+      "linear"
+    );
+    $(".intro").off("scroll");
+  }
 });
-
