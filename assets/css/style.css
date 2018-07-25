@@ -51,12 +51,9 @@ body {
 /*Whole Navbar Styling*/
 
 .nav_ext {
-  position: relative;
-  z-index: 99;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  z-index: 9999;
 }
 
 /*This class gets added when the navbar-toggle is clicked, done using JavaScript*/
