@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -41,7 +41,7 @@ body {
 .top:hover {
   background: black;
   -webkit-box-shadow: 0 0 2rem black;
-          box-shadow: 0 0 2rem black;
+  box-shadow: 0 0 2rem black;
   color: dodgerblue;
   opacity: 0.75;
 }
@@ -50,9 +50,8 @@ body {
 
 /*Whole Navbar Styling*/
 
-body > .container-fluid > .wrapper > .nav_ext {
+.nav_ext {
   position: relative;
-  margin: 0 -15px;
   z-index: 99;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -112,7 +111,7 @@ body > .container-fluid > .wrapper > .nav_ext {
   font-size: 2rem;
   padding: 1rem;
   -webkit-box-shadow: 0.5rem 0.5rem 2rem black;
-          box-shadow: 0.5rem 0.5rem 2rem black;
+  box-shadow: 0.5rem 0.5rem 2rem black;
   border-radius: 0.25rem;
   text-align: center;
   -webkit-transition: 0.15s ease;
@@ -122,14 +121,14 @@ body > .container-fluid > .wrapper > .nav_ext {
 
 .btn:hover {
   -webkit-transform: scale(1.05, 1.05);
-          -ms-transform: scale(1.05, 1.05);
-      transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
 }
 
 .btn:focus {
   -webkit-transform: scale(0.95, 0.95);
-          -ms-transform: scale(0.95, 0.95);
-      transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
 }
 
 /*landing page background*/
@@ -154,7 +153,7 @@ All the properties as working fine and don't change the values*/
   width: 100%;
   height: 100vh;
   /*background-image: url("http://usersthink.com/wp-content/uploads/15-usersthink-stock-image.jpg");*/
-  /* very inportant */
+  /* very important */
   /*    background-image: url("https://images.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg?cs=srgb&dl=black-and-white-buildings-city-2255.jpg&fm=jpg"); Same image but from pexels.com*/
   background-image: url(../img/landingbackground.jpg);
   background-attachment: fixed;
@@ -165,7 +164,7 @@ All the properties as working fine and don't change the values*/
   display: block;
   z-index: -1;
   -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  filter: brightness(0.5);
   /*Works a fix for laggy background fixed property in mozilla and other browsers*/
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -188,7 +187,7 @@ All the properties as working fine and don't change the values*/
   display: block;
   z-index: -1;
   -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 /*Content on Landing page*/
@@ -201,8 +200,8 @@ All the properties as working fine and don't change the values*/
   max-width: 100%;
   z-index: 10;
   -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   padding: 1rem;
   min-height: 30vh;
   max-height: 50vh;
@@ -265,8 +264,8 @@ All the properties as working fine and don't change the values*/
   padding: 2rem;
   width: 10rem;
   -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: white;
   text-align: center;
   cursor: pointer;
@@ -280,30 +279,30 @@ All the properties as working fine and don't change the values*/
 @-webkit-keyframes pointdown {
   0% {
     -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    transform: translateY(0rem);
   }
   50% {
     -webkit-transform: translateY(1.5rem);
-            transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
   }
   100% {
     -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    transform: translateY(0rem);
   }
 }
 
 @keyframes pointdown {
   0% {
     -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    transform: translateY(0rem);
   }
   50% {
     -webkit-transform: translateY(1.5rem);
-            transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
   }
   100% {
     -webkit-transform: translateY(0rem);
-            transform: translateY(0rem);
+    transform: translateY(0rem);
   }
 }
 
@@ -323,7 +322,13 @@ section {
   margin: 0;
   left: 0;
   top: 0;
-  background: -webkit-gradient(linear, left bottom, right top, from(#89f7fe), to(#66a6ff));
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    right top,
+    from(#89f7fe),
+    to(#66a6ff)
+  );
   background: -webkit-linear-gradient(bottom left, #89f7fe, #66a6ff);
   background: -o-linear-gradient(bottom left, #89f7fe, #66a6ff);
   background: linear-gradient(to top right, #89f7fe, #66a6ff);
@@ -341,8 +346,8 @@ section {
   text-align: center;
   z-index: 99;
   -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /*My logo creation styled*/
@@ -360,7 +365,7 @@ section {
   border: 0.2rem solid white;
   background-color: lightgrey;
   -webkit-box-shadow: 0 0 5rem black;
-          box-shadow: 0 0 5rem black;
+  box-shadow: 0 0 5rem black;
   overflow: hidden;
 }
 
@@ -382,11 +387,11 @@ section {
 /* Resume link styling */
 
 .resume_link {
- text-align: center;
- margin: auto 50%;
- -webkit-transform: translateX(-50%);
-         -ms-transform: translateX(-50%);
-     transform: translateX(-50%);
+  text-align: center;
+  margin: auto 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* The resume button */
@@ -415,14 +420,14 @@ section {
   color: black;
   background-color: white;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem lightslategray;
-          box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+  box-shadow: 0.5rem 0.5rem 1rem lightslategray;
   text-decoration: none;
 }
 
 .resume:active {
   -webkit-transform: scale(0.95, 0.95);
-          -ms-transform: scale(0.95, 0.95);
-      transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
   text-decoration: none;
 }
 
@@ -454,13 +459,13 @@ section {
   color: tomato;
   background-color: black;
   -webkit-box-shadow: 0.5rem 0.5rem 1rem lightslategray;
-          box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+  box-shadow: 0.5rem 0.5rem 1rem lightslategray;
 }
 
 .socialmedia > div > div > a > i:active {
   -webkit-transform: scale(0.95, 0.95);
-          -ms-transform: scale(0.95, 0.95);
-      transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
 }
 
 /*My skills section starts here*/
@@ -553,20 +558,20 @@ section {
 
 .card:hover {
   -webkit-box-shadow: 0 0 2rem black;
-          box-shadow: 0 0 2rem black;
+  box-shadow: 0 0 2rem black;
   -webkit-transform: scale(1.125, 1.125);
-          -ms-transform: scale(1.125, 1.125);
-      transform: scale(1.125, 1.125);
+  -ms-transform: scale(1.125, 1.125);
+  transform: scale(1.125, 1.125);
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.05);
 }
 
 .card:active {
   -webkit-box-shadow: 0 0 3rem black;
-          box-shadow: 0 0 3rem black;
+  box-shadow: 0 0 3rem black;
   -webkit-transform: scale(0.95, 0.95);
-          -ms-transform: scale(0.95, 0.95);
-      transform: scale(0.95, 0.95);
+  -ms-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -578,25 +583,26 @@ section {
 
 /* Set width to make card deck cards 100% width */
 @media (max-width: 992px) {
-
-	.card-deck-wrapper {margin-right:0;margin-left:0;}
-	.card-deck {
-	    display: block;
-	    width: 100%;
-	    margin-bottom: .75rem;
-	    table-layout: fixed;
-	    border-spacing: 1.25rem 0;
-	}
-	.card-deck .card {
-	    display: block;
-	    margin-bottom: .75rem;
-	    /* vertical-align: top; */
-	}
+  .card-deck-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .card-deck {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    table-layout: fixed;
+    border-spacing: 1.25rem 0;
+  }
+  .card-deck .card {
+    display: block;
+    margin-bottom: 0.75rem;
+    /* vertical-align: top; */
+  }
 
   .card-deck .card:not(:first-child) {
     margin-left: 0px;
   }
-
 }
 
 /*Portfolio card title*/
@@ -714,7 +720,7 @@ fieldset {
 
 #contact button[type="submit"]:active {
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 #contact input:focus,
@@ -758,7 +764,7 @@ fieldset {
   font-weight: bold;
   text-decoration: underline;
   -webkit-text-decoration-color: dodgerblue;
-          text-decoration-color: dodgerblue;
+  text-decoration-color: dodgerblue;
   text-align: center;
 }
 
@@ -777,15 +783,27 @@ fieldset {
 .footer > p > i {
   color: red;
   -webkit-animation: heartbeat 0.8s infinite;
-          animation: heartbeat 0.8s infinite;
+  animation: heartbeat 0.8s infinite;
 }
 
 @-webkit-keyframes heartbeat {
-  0% {-webkit-transform: scale(1,1);transform: scale(1,1)}
-  100% {-webkit-transform: scale(1.5, 1.5);transform: scale(1.5, 1.5)}
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
 }
 
 @keyframes heartbeat {
-  0% {-webkit-transform: scale(1,1);transform: scale(1,1)}
-  100% {-webkit-transform: scale(1.5, 1.5);transform: scale(1.5, 1.5)}
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
 }
