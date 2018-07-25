@@ -180,3 +180,14 @@ $(window).scroll(function introvis() {
     $(".intro").off("scroll");
   }
 });
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 400) {
+    $("nav").removeClass("bg-none");
+    $("nav").addClass("bg-dark");
+    $(".nav_ext").css("boxShadow", "0 0 10px 1px black");
+  }
+  $("nav").off("scroll");
+});
+
+
