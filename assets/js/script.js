@@ -182,7 +182,7 @@ $(window).scroll(function introvis() {
 });
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 400) {
+  if ($(window).scrollTop() > 150) {
     $("nav").removeClass("bg-none");
     $("nav").addClass("bg-dark");
     $(".nav_ext").css("boxShadow", "0 0 10px 1px black");
