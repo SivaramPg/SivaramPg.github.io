@@ -50,9 +50,8 @@ body {
 
 /*Whole Navbar Styling*/
 
-body > .container-fluid > .wrapper > .nav_ext {
+.nav_ext {
   position: relative;
-  margin: 0 -15px;
   z-index: 99;
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
