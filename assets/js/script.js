@@ -3,14 +3,14 @@
 //
 
 const aboutMeNavButton = document.getElementById("aboutme");
-const contactMeNavButton = document.getElementById("contactme");
+const skillsNavButton = document.getElementById("skills");
 const portfolioNavButton = document.getElementById("portfolio");
 const navBarToggler = document.getElementById("navbar-toggler");
 const navbar = document.getElementById("navbar");
 const downPointer = document.getElementById("scrolldown");
 const goTop = document.getElementById("top");
 const aboutMeSection = document.getElementById("aboutmesection");
-const contactMeSection = document.getElementById("contactmesection");
+const skillsSection = document.getElementById("skillssection");
 const portfolioSection = document.getElementById("portfoliosection");
 const beginning = document.getElementById("beginning");
 
@@ -26,8 +26,8 @@ const goToAbout = () => {
   aboutMeSection.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
-const goToContact = () => {
-  contactMeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+const goToSkills = () => {
+  skillsSection.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 const goToPortfolio = () => {
@@ -63,7 +63,7 @@ window.addEventListener("load", hideOnScroll);
 window.addEventListener("resize", hideOnScroll);
 navBarToggler.addEventListener("click", changeNavBg);
 aboutMeNavButton.addEventListener("click", goToAbout);
-contactMeNavButton.addEventListener("click", goToContact);
+skillsNavButton.addEventListener("click", goToSkills);
 portfolioNavButton.addEventListener("click", goToPortfolio);
 goTop.addEventListener("click", goToTop);
 downPointer.addEventListener("mouseover", goToAbout);
@@ -182,7 +182,7 @@ $(window).scroll(function introvis() {
 });
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 400) {
+  if ($(window).scrollTop() > 150) {
     $("nav").removeClass("bg-none");
     $("nav").addClass("bg-dark");
     $(".nav_ext").css("boxShadow", "0 0 10px 1px black");
