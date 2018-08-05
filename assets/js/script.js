@@ -181,7 +181,7 @@ $(window).scroll(function introvis() {
   }
 });
 
-$(window).scroll(function () {
+$(window).scroll(function() {
   if ($(window).scrollTop()) {
     $("nav").removeClass("bg-none");
     $("nav").addClass("bg-dark");
@@ -192,5 +192,3 @@ $(window).scroll(function () {
     $(".nav_ext").css("boxShadow", "0 0 0 0 transparent");
   }
 });
-
-
