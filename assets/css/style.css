@@ -315,7 +315,7 @@ section {
 .section1 {
   width: 100%;
   height: auto;
-  padding: 0;
+  padding: 2rem;
   margin: 0;
   left: 0;
   top: 0;
@@ -340,7 +340,7 @@ section {
   margin: 5rem 50% 0rem 50%;
   height: auto;
   width: 50%;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   z-index: 99;
   -webkit-transform: translateX(-50%);
@@ -402,21 +402,22 @@ section {
   width: 15rem;
   height: 5rem;
   cursor: pointer;
-  color: tomato;
-  background-color: black;
+  color: black;
+  background-color: white;
   border: none;
   border-radius: 1.5rem;
   text-decoration: underline;
   text-transform: uppercase;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .resume:hover {
   border-radius: 0.25rem;
-  color: black;
-  background-color: white;
+  color: tomato;
+  background-color: black;
   -webkit-box-shadow: 0rem 1rem 3rem rgba(0,0,0,0.5);
   box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
   text-decoration: none;
@@ -449,6 +450,7 @@ section {
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 35%;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
