@@ -181,13 +181,14 @@ $(window).scroll(function introvis() {
   }
 });
 
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 150) {
+$(window).scroll(function() {
+  if ($(window).scrollTop()) {
     $("nav").removeClass("bg-none");
     $("nav").addClass("bg-dark");
     $(".nav_ext").css("boxShadow", "0 0 10px 1px black");
+  } else {
+    $("nav").addClass("bg-none");
+    $("nav").removeClass("bg-dark");
+    $(".nav_ext").css("boxShadow", "0 0 0 0 transparent");
   }
-  $("nav").off("scroll");
 });
-
-

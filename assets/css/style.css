@@ -315,7 +315,7 @@ section {
 .section1 {
   width: 100%;
   height: auto;
-  padding: 0;
+  padding: 2rem;
   margin: 0;
   left: 0;
   top: 0;
@@ -328,6 +328,7 @@ section {
   );
   background: -webkit-linear-gradient(bottom left, #89f7fe, #66a6ff);
   background: -o-linear-gradient(bottom left, #89f7fe, #66a6ff);
+  background: -webkit-gradient(linear, left bottom, right top, from(#89f7fe), to(#66a6ff));
   background: linear-gradient(to top right, #89f7fe, #66a6ff);
   z-index: 10;
 }
@@ -339,7 +340,7 @@ section {
   margin: 5rem 50% 0rem 50%;
   height: auto;
   width: 50%;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   z-index: 99;
   -webkit-transform: translateX(-50%);
@@ -361,8 +362,8 @@ section {
   height: 30rem;
   border: 0.2rem solid white;
   background-color: lightgrey;
-  -webkit-box-shadow: 0 0 5rem black;
-  box-shadow: 0 0 5rem black;
+  -webkit-box-shadow: 0 1rem 5rem rgba(0,0,0,0.5) ;
+  box-shadow: 0 1rem 5rem rgba(0,0,0,0.5) ;
   overflow: hidden;
 }
 
@@ -401,24 +402,28 @@ section {
   width: 15rem;
   height: 5rem;
   cursor: pointer;
-  color: tomato;
-  background-color: black;
+  color: black;
+  background-color: white;
   border: none;
   border-radius: 1.5rem;
   text-decoration: underline;
   text-transform: uppercase;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .resume:hover {
   border-radius: 0.25rem;
-  color: black;
-  background-color: white;
-  -webkit-box-shadow: 0.5rem 0.5rem 1rem lightslategray;
-  box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+  color: tomato;
+  background-color: black;
+  -webkit-box-shadow: 0rem 1rem 3rem rgba(0,0,0,0.5);
+  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .resume:active {
@@ -445,6 +450,7 @@ section {
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 35%;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -455,8 +461,11 @@ section {
   border-radius: 0.5rem;
   color: tomato;
   background-color: black;
-  -webkit-box-shadow: 0.5rem 0.5rem 1rem lightslategray;
-  box-shadow: 0.5rem 0.5rem 1rem lightslategray;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0,0,0,0.5);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px)
 }
 
 .socialmedia > div > div > a > i:active {
@@ -535,7 +544,21 @@ section {
   font-size: 5rem;
 }
 
+.carousel-item {
+  padding: 5rem !important;
+}
+
+.carousel-item img {
+  margin:0 auto;
+  width: 80vw !important;
+  height: auto;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  /* border: 1rem solid white; */
+}
+
 /*Individual cards styled and positioned optimally*/
+
 
 .card {
   background-color: transparent;
@@ -579,6 +602,7 @@ section {
 }
 
 /* Set width to make card deck cards 100% width */
+
 @media (max-width: 992px) {
   .card-deck-wrapper {
     margin-right: 0;
@@ -610,7 +634,7 @@ section {
   padding-top: 1rem;
   font-weight: bold;
   color: crimson;
-}
+} 
 
 /* ****
 **** Contact Me Section
