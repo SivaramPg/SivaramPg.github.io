@@ -2,17 +2,21 @@
 ////// caching DOM items
 //
 
+const homeNavButton = document.getElementById("home");
 const aboutMeNavButton = document.getElementById("aboutme");
 const skillsNavButton = document.getElementById("skills");
 const portfolioNavButton = document.getElementById("portfolio");
+
 const navBarToggler = document.getElementById("navbar-toggler");
 const navbar = document.getElementById("navbar");
-const downPointer = document.getElementById("scrolldown");
-const goTop = document.getElementById("top");
-const aboutMeSection = document.getElementById("aboutmesection");
+
+const downPointer = document.getElementById("scrollout");
+const goTop = document.getElementById("scrollhome");
+
+const header = document.getElementById("header");
+const aboutMeSection = document.getElementById("about");
 const skillsSection = document.getElementById("skillssection");
 const portfolioSection = document.getElementById("portfoliosection");
-const beginning = document.getElementById("beginning");
 
 //
 ////// Functions
@@ -35,7 +39,7 @@ const goToPortfolio = () => {
 };
 
 const goToTop = () => {
-  beginning.scrollIntoView({ behavior: "smooth", block: "start" });
+  header.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 // Function to change display property of the goToTop button
@@ -62,6 +66,7 @@ window.addEventListener("scroll", hideOnScroll);
 window.addEventListener("load", hideOnScroll);
 window.addEventListener("resize", hideOnScroll);
 navBarToggler.addEventListener("click", changeNavBg);
+homeNavButton.addEventListener("click", goToTop);
 aboutMeNavButton.addEventListener("click", goToAbout);
 skillsNavButton.addEventListener("click", goToSkills);
 portfolioNavButton.addEventListener("click", goToPortfolio);
@@ -91,7 +96,7 @@ downPointer.addEventListener("mouseover", goToAbout);
 // }, 'slow');
 // });
 
-// $("#scrolldown").mouseover(() => {
+// $("#scrollouter(() => {
 //   $('html, body').animate({
 //     scrollTop: $('#aboutmesection').offset().top
 // }, 'slow');
@@ -99,7 +104,7 @@ downPointer.addEventListener("mouseover", goToAbout);
 
 // $("#top").click(() => {
 //   $('html, body').animate({
-//     scrollTop: $('#beginning').offset().top
+//     scrollTop: $('#header').offset().top
 // }, 'slow');
 // });
 
@@ -121,7 +126,7 @@ downPointer.addEventListener("mouseover", goToAbout);
 // })
 
 $(window).on("load", function() {
-  $(".contentheading").animate(
+  $(".header__content-heading").animate(
     {
       top: "0px",
       left: "0px",
@@ -131,17 +136,7 @@ $(window).on("load", function() {
     "linear"
   );
 
-  $(".mainpageseparation").css("visibility", "visible");
-  $(".mainpageseparation").animate(
-    {
-      left: "0px",
-      opacity: "1"
-    },
-    800,
-    "linear"
-  );
-
-  $(".contentmaterial").animate(
+  $(".header__content-greeting").animate(
     {
       top: "0px",
       left: "0px",
@@ -154,8 +149,8 @@ $(window).on("load", function() {
 
 $(window).scroll(function logovis() {
   if ($(window).scrollTop() >= 350) {
-    $(".myimg").css("visibility", "visible");
-    $(".myimg").animate(
+    $(".about__image").css("visibility", "visible");
+    $(".about__image").animate(
       {
         left: "0px",
         opacity: "1"
@@ -163,21 +158,21 @@ $(window).scroll(function logovis() {
       800,
       "linear"
     );
-    $(".myimg").off("scroll");
+    $(".about__image").off("scroll");
   }
 });
 
 $(window).scroll(function introvis() {
   if ($(window).scrollTop() >= 700) {
-    $(".intro").css("visibility", "visible");
-    $(".intro").animate(
+    $(".about__intro").css("visibility", "visible");
+    $(".about__intro").animate(
       {
         opacity: "1"
       },
       800,
       "linear"
     );
-    $(".intro").off("scroll");
+    $(".about__intro").off("scroll");
   }
 });
 
@@ -185,10 +180,10 @@ $(window).scroll(function() {
   if ($(window).scrollTop()) {
     $("nav").removeClass("bg-none");
     $("nav").addClass("bg-dark");
-    $(".nav_ext").css("boxShadow", "0 0 10px 1px black");
+    $(".navbar__style").css("boxShadow", "0 0 10px 1px black");
   } else {
     $("nav").addClass("bg-none");
     $("nav").removeClass("bg-dark");
-    $(".nav_ext").css("boxShadow", "0 0 0 0 transparent");
+    $(".navbar__style").css("boxShadow", "0 0 0 0 transparent");
   }
 });
