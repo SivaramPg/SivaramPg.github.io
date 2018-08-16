@@ -2,10 +2,10 @@
 ////// caching DOM items
 //
 
-const homeNavButton = document.getElementById("home");
-const aboutMeNavButton = document.getElementById("aboutme");
-const skillsNavButton = document.getElementById("skills");
-const portfolioNavButton = document.getElementById("portfolio");
+const homeNavButton = document.getElementById("home__link");
+const aboutMeNavButton = document.getElementById("about__link");
+const skillsNavButton = document.getElementById("skills__link");
+const portfolioNavButton = document.getElementById("portfolio__link");
 
 const navBarToggler = document.getElementById("navbar-toggler");
 const navbar = document.getElementById("navbar");
@@ -15,8 +15,8 @@ const goTop = document.getElementById("scrollhome");
 
 const header = document.getElementById("header");
 const aboutMeSection = document.getElementById("about");
-const skillsSection = document.getElementById("skillssection");
-const portfolioSection = document.getElementById("portfoliosection");
+const skillsSection = document.getElementById("skills");
+const portfolioSection = document.getElementById("portfolio");
 
 //
 ////// Functions

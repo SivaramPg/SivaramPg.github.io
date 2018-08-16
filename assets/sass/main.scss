@@ -6,7 +6,7 @@ $color-white: #fff;
 
 $color-name: #ffa07a;
 
-@mixin decoration($col) {
+@mixin heading_decoration($col) {
   content: "";
   display: block;
   position: absolute;
@@ -36,11 +36,9 @@ body {
   box-sizing: border-box;
 }
 
-
 // **************************************************************************
 // Go to Home.
 // **************************************************************************
-
 
 .scrollhome {
   display: none;
@@ -58,7 +56,6 @@ body {
   z-index: 99;
   transition: 0.5s;
 
-  
   &:hover {
     background: $color-black;
     box-shadow: 0 0 2rem $color-black;
@@ -67,7 +64,6 @@ body {
   }
 }
 
-
 /*This class gets added when the navbar-toggle is clicked, done using JavaScript*/
 .navbgblackonclick {
   background-color: $color-black;
@@ -75,32 +71,30 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-
 // **************************************************************************
 // Navbar
 // **************************************************************************
 
-
 .navbar__style {
   transition: 0.3s ease-in-out;
-  
+
   &-name {
     font-size: 3rem;
     padding: 1rem;
     color: $color-name !important;
   }
-  
+
   &-list {
     font-size: 1.5rem;
     padding: 1rem;
     z-index: 9999;
 
-    &  li {
+    & li {
       margin: 0 1rem;
       padding: 1rem 1rem;
       border-radius: 0.25rem;
       cursor: pointer;
-      
+
       &:hover {
         background-color: rgba($color-white, 0.1);
         color: rgba($color-white, 1);
@@ -115,8 +109,6 @@ body {
   }
 }
 
-
-
 .subbtn {
   font-size: 2rem;
   padding: 1rem;
@@ -124,21 +116,19 @@ body {
   border-radius: 0.25rem;
   text-align: center;
   transition: 0.15s ease;
-  
+
   &:hover {
     transform: scale(1.05, 1.05);
   }
-  
+
   &:focus {
     transform: scale(0.95, 0.95);
   }
 }
 
-
 // **************************************************************************
 // Header
 // **************************************************************************
-
 
 .header {
   margin: 0;
@@ -174,7 +164,7 @@ body {
       opacity: 0;
 
       &::after {
-        @include decoration($color-primary);
+        @include heading_decoration($color-primary);
       }
     }
 
@@ -223,17 +213,14 @@ body {
   }
 }
 
-
 /*Common property for all the sections.*/
 section {
   padding: 10rem 0rem;
 }
 
-
 // **************************************************************************
 // About
 // **************************************************************************
-
 
 .about {
   width: 100%;
@@ -242,7 +229,7 @@ section {
   margin: 0;
   background: linear-gradient(to top right, #89f7fe, #66a6ff);
   z-index: 10;
-  
+
   &__heading {
     padding: 2.5rem;
     margin: 5rem 50% 0rem 50%;
@@ -254,12 +241,12 @@ section {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-  
+
     &::after {
-      @include decoration($color-primary);
+      @include heading_decoration($color-primary);
     }
   }
-  
+
   &__image {
     display: block;
     visibility: hidden;
@@ -275,7 +262,7 @@ section {
     box-shadow: 0 1rem 5rem rgba($color-black, 0.5);
     overflow: hidden;
   }
-  
+
   &__intro {
     position: relative;
     visibility: hidden;
@@ -287,12 +274,12 @@ section {
     padding: 2rem 2rem;
     margin: 2rem auto;
     text-align: justify;
-  
+
     &-center {
       text-align: center;
     }
   }
-  
+
   &__resume {
     position: relative;
     margin: 0 auto;
@@ -306,36 +293,35 @@ section {
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
     transition: 0.5s;
     color: $color-black;
-  
+
     & a {
       color: inherit;
       font-size: 1.5rem;
-      text-decoration: underline;
+      text-heading_decoration: underline;
       text-transform: uppercase;
-  
+
       &:hover,
       &:focus {
-        text-decoration: inherit;
+        text-heading_decoration: inherit;
       }
     }
-  
+
     &:hover {
       border-radius: 0.25rem;
       color: $color-primary;
       background-color: black;
       box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
-      text-decoration: none;
+      text-heading_decoration: none;
       transform: translateY(-6px);
     }
-  
-    &:active, &:focus {
+
+    &:active,
+    &:focus {
       transform: translateY(-2px);
-      text-decoration: none;
+      text-heading_decoration: none;
     }
   }
 }
-
-
 
 .social {
   width: auto;
@@ -344,7 +330,7 @@ section {
   margin: 0;
   text-align: center;
   padding-bottom: 7.5rem;
-  
+
   & i {
     padding: 2.5rem;
     margin: 0.5rem auto;
@@ -354,7 +340,7 @@ section {
     box-shadow: 0 0.25rem 1rem rgba($color-black, 0.5);
     transition: 0.5s;
     color: initial;
-    
+
     &:hover {
       border-radius: 0.5rem;
       color: $color-primary;
@@ -362,52 +348,49 @@ section {
       box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
       transform: translateY(-10px);
     }
-    
+
     &:active {
       transform: scale(0.95, 0.95);
     }
   }
 }
 
-
 // **************************************************************************
 // Skills
 // **************************************************************************
-
 
 .skills {
   background: linear-gradient(135deg, #667eea, #764ba2);
   /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/
   /*8. Plum Plate*/
-  
+
   &__heading {
     font-size: 5rem;
     text-align: center;
-  
+
     &::after {
-      @include decoration($color-primary);
+      @include heading_decoration($color-primary);
     }
   }
-  
-  
+
   &__list-set {
     margin: 5rem auto;
     text-align: center;
-    
+
     & h1 {
       font-size: 3rem;
       font-weight: bold;
       color: white;
-    
+
       &::after {
-        @include decoration(darken($color-white, 30%));
+        @include heading_decoration(darken($color-white, 30%));
         margin-top: 1rem;
         height: 0.25rem;
         width: 7.5rem;
       }
     }
-    
-      & i {
+
+    & i {
       width: auto;
       height: auto;
       margin: 4rem 2rem 0rem 2rem;
@@ -416,7 +399,6 @@ section {
     }
   }
 }
-
 
 // **************************************************************************
 // Portfolio
@@ -438,7 +420,7 @@ section {
   font-size: 5rem;
 
   &::after {
-    @include decoration($color-primary);
+    @include heading_decoration($color-primary);
   }
 }
 
@@ -468,7 +450,7 @@ section {
 }
 
 .card a {
-  text-decoration: none;
+  text-heading_decoration: none;
 }
 
 .card:hover {
@@ -483,7 +465,6 @@ section {
   transform: scale(0.95, 0.95);
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 
 /*Portfolio card title*/
 
@@ -526,18 +507,16 @@ section {
   }
 }
 
-
 // **************************************************************************
 // Footer
 // **************************************************************************
-
 
 .footer {
   width: 100%;
   height: 100%;
   padding: 2.5rem;
   background-color: black;
-  
+
   & p {
     text-align: center;
     color: white;
