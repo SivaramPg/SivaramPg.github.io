@@ -225,7 +225,7 @@ section {
 .about {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 2rem 0rem;
   margin: 0;
   background: linear-gradient(to top right, #89f7fe, #66a6ff);
   z-index: 10;
@@ -234,12 +234,10 @@ section {
     padding: 2.5rem;
     margin: 5rem 50% 0rem 50%;
     height: auto;
-    width: 50%;
+    width: 100%;
     font-size: 5rem;
     text-align: center;
     z-index: 99;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 
     &::after {
