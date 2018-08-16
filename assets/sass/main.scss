@@ -297,12 +297,12 @@ section {
     & a {
       color: inherit;
       font-size: 1.5rem;
-      text-heading_decoration: underline;
+      text-decoration: underline;
       text-transform: uppercase;
 
       &:hover,
       &:focus {
-        text-heading_decoration: inherit;
+        text-decoration: inherit;
       }
     }
 
@@ -311,14 +311,14 @@ section {
       color: $color-primary;
       background-color: black;
       box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
-      text-heading_decoration: none;
+      text-decoration: none;
       transform: translateY(-6px);
     }
 
     &:active,
     &:focus {
       transform: translateY(-2px);
-      text-heading_decoration: none;
+      text-decoration: none;
     }
   }
 }
@@ -450,7 +450,7 @@ section {
 }
 
 .card a {
-  text-heading_decoration: none;
+  text-decoration: none;
 }
 
 .card:hover {

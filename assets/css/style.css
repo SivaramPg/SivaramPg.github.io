@@ -225,20 +225,20 @@ section {
     .about__resume a {
       color: inherit;
       font-size: 1.5rem;
-      text-heading_decoration: underline;
+      text-decoration: underline;
       text-transform: uppercase; }
       .about__resume a:hover, .about__resume a:focus {
-        text-heading_decoration: inherit; }
+        text-decoration: inherit; }
     .about__resume:hover {
       border-radius: 0.25rem;
       color: #ff6347;
       background-color: black;
       box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
-      text-heading_decoration: none;
+      text-decoration: none;
       transform: translateY(-6px); }
     .about__resume:active, .about__resume:focus {
       transform: translateY(-2px);
-      text-heading_decoration: none; }
+      text-decoration: none; }
 
 .social {
   width: auto;
@@ -347,7 +347,7 @@ section {
   cursor: pointer; }
 
 .card a {
-  text-heading_decoration: none; }
+  text-decoration: none; }
 
 .card:hover {
   box-shadow: 0 0 2rem black;
