@@ -1,0 +1,546 @@
+$color-primary: #ff6347;
+$color-secondary: #1e90ff;
+
+$color-black: #000;
+$color-white: #fff;
+
+$color-name: #ffa07a;
+
+@mixin heading_decoration($col) {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: 2rem 0;
+  width: 10rem;
+  height: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+  background: $col;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fira Sans", "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+}
+
+// **************************************************************************
+// Go to Home.
+// **************************************************************************
+
+.scrollhome {
+  display: none;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: 90vh 2rem 0 0;
+  right: 0;
+  text-align: center;
+  border-radius: 50%;
+  color: $color-primary;
+  background: rgba($color-white, 0.25);
+  cursor: pointer;
+  z-index: 99;
+  transition: 0.5s;
+
+  &:hover {
+    background: $color-black;
+    box-shadow: 0 0 2rem $color-black;
+    color: $color-secondary;
+    opacity: 0.75;
+  }
+}
+
+/*This class gets added when the navbar-toggle is clicked, done using JavaScript*/
+.navbgblackonclick {
+  background-color: $color-black;
+  border-bottom: 0.2rem solid $color-secondary;
+  transition: 0.3s ease-in-out;
+}
+
+// **************************************************************************
+// Navbar
+// **************************************************************************
+
+.navbar__style {
+  transition: 0.3s ease-in-out;
+
+  &-name {
+    font-size: 3rem;
+    padding: 1rem;
+    color: $color-name !important;
+  }
+
+  &-list {
+    font-size: 1.5rem;
+    padding: 1rem;
+    z-index: 9999;
+
+    & li {
+      margin: 0 1rem;
+      padding: 1rem 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($color-white, 0.1);
+        color: rgba($color-white, 1);
+      }
+    }
+  }
+
+  /*Styling collapsed navbar*/
+  & .container .navbar-collapse {
+    text-align: center;
+    z-index: 9999;
+  }
+}
+
+.subbtn {
+  font-size: 2rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem $color-black;
+  border-radius: 0.25rem;
+  text-align: center;
+  transition: 0.15s ease;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+  &:focus {
+    transform: scale(0.95, 0.95);
+  }
+}
+
+// **************************************************************************
+// Header
+// **************************************************************************
+
+.header {
+  margin: 0;
+  padding: 0rem;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/landingbackgroundbrightnessreduced-min.jpg);
+  background-color: rgba(51, 153, 255, 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+
+  &__content {
+    padding: 1rem;
+    position: absolute;
+    min-width: 80%;
+    min-height: 30vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    &-heading {
+      position: relative;
+      text-align: center;
+      font-size: 7rem;
+      padding: 1rem;
+      margin: 1rem;
+      color: $color-white;
+      word-wrap: break-word;
+      top: -100px;
+      opacity: 0;
+
+      &::after {
+        @include heading_decoration($color-primary);
+      }
+    }
+
+    &-greeting {
+      position: relative;
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+      margin: 4rem 1rem 1rem 1rem;
+      color: $color-white;
+      word-wrap: break-word;
+      top: 100px;
+      opacity: 0;
+    }
+  }
+
+  &__scrollout {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    padding: 2rem;
+    width: 10rem;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    text-align: center;
+    cursor: pointer;
+
+    & i {
+      animation: pointdown 1.5s infinite;
+    }
+  }
+}
+
+@keyframes pointdown {
+  0% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+  }
+  50% {
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+    transform: translateY(0rem);
+  }
+}
+
+/*Common property for all the sections.*/
+section {
+  padding: 10rem 0rem;
+}
+
+// **************************************************************************
+// About
+// **************************************************************************
+
+.about {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin: 0;
+  background: linear-gradient(to top right, #89f7fe, #66a6ff);
+  z-index: 10;
+
+  &__heading {
+    padding: 2.5rem;
+    margin: 5rem 50% 0rem 50%;
+    height: auto;
+    width: 50%;
+    font-size: 5rem;
+    text-align: center;
+    z-index: 99;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    &::after {
+      @include heading_decoration($color-primary);
+    }
+  }
+
+  &__image {
+    display: block;
+    visibility: hidden;
+    position: relative;
+    left: 20px;
+    opacity: 0;
+    margin: 7rem auto;
+    z-index: 99;
+    width: 30rem;
+    height: 30rem;
+    border: 0.2rem solid $color-white;
+    background-color: #d3d3d3;
+    box-shadow: 0 1rem 5rem rgba($color-black, 0.5);
+    overflow: hidden;
+  }
+
+  &__intro {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    word-spacing: 0.25rem;
+    padding: 2rem 2rem;
+    margin: 2rem auto;
+    text-align: justify;
+
+    &-center {
+      text-align: center;
+    }
+  }
+
+  &__resume {
+    position: relative;
+    margin: 0 auto;
+    width: 20rem;
+    height: 5rem;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background-color: $color-white;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    color: $color-black;
+
+    & a {
+      color: inherit;
+      font-size: 1.5rem;
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        text-decoration: inherit;
+      }
+    }
+
+    &:hover {
+      border-radius: 0.25rem;
+      color: $color-primary;
+      background-color: black;
+      box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      transform: translateY(-6px);
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+  }
+}
+
+.social {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 7.5rem;
+
+  & i {
+    padding: 2.5rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    background-color: rgba($color-white, 1);
+    border-radius: 35%;
+    box-shadow: 0 0.25rem 1rem rgba($color-black, 0.5);
+    transition: 0.5s;
+    color: initial;
+
+    &:hover {
+      border-radius: 0.5rem;
+      color: $color-primary;
+      background-color: $color-black;
+      box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+      transform: translateY(-10px);
+    }
+
+    &:active {
+      transform: scale(0.95, 0.95);
+    }
+  }
+}
+
+// **************************************************************************
+// Skills
+// **************************************************************************
+
+.skills {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/
+  /*8. Plum Plate*/
+
+  &__heading {
+    font-size: 5rem;
+    text-align: center;
+
+    &::after {
+      @include heading_decoration($color-primary);
+    }
+  }
+
+  &__list-set {
+    margin: 5rem auto;
+    text-align: center;
+
+    & h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: white;
+
+      &::after {
+        @include heading_decoration(darken($color-white, 30%));
+        margin-top: 1rem;
+        height: 0.25rem;
+        width: 7.5rem;
+      }
+    }
+
+    & i {
+      width: auto;
+      height: auto;
+      margin: 4rem 2rem 0rem 2rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+}
+
+// **************************************************************************
+// Portfolio
+// **************************************************************************
+
+.portfolio {
+  /*background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");*/
+  background-image: url("../img/portfoliobackgroundwhitetexture-min.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.portfolio__heading {
+  text-align: center;
+  color: black;
+  font-size: 5rem;
+
+  &::after {
+    @include heading_decoration($color-primary);
+  }
+}
+
+// .carousel-item {
+//   padding: 5rem !important;
+// }
+
+// .carousel-item img {
+//   margin: 0 auto;
+//   width: 80vw !important;
+//   height: auto;
+//   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+//   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+//   /* border: 1rem solid white; */
+// }
+
+/*Individual cards styled and positioned optimally*/
+
+.card {
+  background-color: transparent;
+  border: 0;
+  margin: 5rem auto;
+  padding: 1rem;
+  transition: 0.2s;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:hover {
+  box-shadow: 0 0 2rem black;
+  transform: scale(1.125, 1.125);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card:active {
+  box-shadow: 0 0 3rem black;
+  transform: scale(0.95, 0.95);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*Portfolio card title*/
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  color: crimson;
+}
+
+/*The entire card deck styled*/
+
+.card-deck {
+  margin: auto 5rem;
+}
+
+/* Set width to make card deck cards 100% width */
+
+@media (max-width: 992px) {
+  .card-deck-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .card-deck {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    table-layout: fixed;
+    border-spacing: 1.25rem 0;
+  }
+  .card-deck .card {
+    display: block;
+    margin-bottom: 0.75rem;
+    /* vertical-align: top; */
+  }
+
+  .card-deck .card:not(:first-child) {
+    margin-left: 0px;
+  }
+}
+
+// **************************************************************************
+// Footer
+// **************************************************************************
+
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  background-color: black;
+
+  & p {
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+
+    &:first-child {
+      margin-bottom: 3rem;
+    }
+
+    & i {
+      color: red;
+      margin-left: 1rem;
+      animation: heartbeat 0.8s infinite;
+    }
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5);
+  }
+}

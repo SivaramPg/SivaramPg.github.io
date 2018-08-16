@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta lang="English">
+  <meta charset="utf-8">
+  <meta lang="english">
   <meta name="description" content="Sivaram's professional website ">
   <meta name="keywords" content="HTML, CSS, JavaScript, Sivaram, Pg, Pandariganthan, Skills, portfolio, about, contact, subscribe, mailing list, social media links">
   <meta name="author" content="Sivaram Pandariganthan">
@@ -27,31 +27,36 @@
 </head>
 
 <body>
-  <div class="top" id="top">
+  <div class="scrollhome" id="scrollhome">
     <i class="fas fa-long-arrow-alt-up fa-2x"></i>
   </div>
   <!-- NAVBAR FROM BOOTSTRAP -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-none nav_ext fixed-top">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-none fixed-top navbar__style">
     <div class="container">
-      <a id="easteregg" class="navbar-brand" href="https://sivarampg.github.io">P.SIVARAM</a>
+      <a id="easteregg" class="navbar-brand navbar__style-name" href="https://sivarampg.github.io">P.SIVARAM</a>
       <button id="navbar-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto navbar__style-list">
           <li class="nav-item active">
-            <a id="aboutme" class="nav-link">
-              <i class="fas fa-user-graduate"></i>&nbspAbout Me
+            <a id="home__link" class="nav-link">
+              <i class="fas fa-home"></i>&nbspHome
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a id="skills" class="nav-link active">
+            <a id="about__link" class="nav-link">
+              <i class="fas fa-user-graduate"></i>&nbspAbout Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="skills__link" class="nav-link">
               <i class="far fa-file-code"></i>&nbspSkills</a>
           </li>
           <li class="nav-item">
-            <a id="portfolio" class="nav-link active">
+            <a id="portfolio__link" class="nav-link">
               <i class="fas fa-briefcase"></i>&nbspPortfolio</a>
           </li>
         </ul>
@@ -74,7 +79,7 @@
             id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
               <div class="clear">
-                <input type="submit" value="Subscribe" name="subscribe" class="btn btn-danger active my-2 my-sm-0">
+                <input type="submit" value="Subscribe" name="subscribe" class="btn btn-danger active my-2 my-sm-0 subbtn">
               </div>
             </div>
           </form>
@@ -83,52 +88,49 @@
       </div>
     </div>
   </nav>
-  <div id="beginning" class="container-fluid">
-    <div class="wrapper">
-      <div class="background">
-        <div class="backgroundoverlay"></div>
-      </div>
 
-      <div class="container content">
-        <h1 class="contentheading">
-          HEY THERE!
-        </h1>
-        <hr class="separation mainpageseparation">
-        <p class="contentmaterial">
-          <strong>Glad</strong>
-          you are here!
-        </p>
-      </div>
-      <div id="scrolldown" class="scrolldown">
-        <i class="fas fa-angle-double-up fa-3x"></i>
-      </div>
+  <header id="header" class="header">
+    <div class="container header__content">
+      <h1 class="header__content-heading">
+        HEY THERE!
+      </h1>
+      <p class="header__content-greeting">
+        <strong>Glad</strong>
+        you are here!
+      </p>
     </div>
-  </div>
-  <section id="aboutmesection" class="section1">
+    <div id="scrollout" class="header__scrollout">
+      <i class="fas fa-angle-double-up fa-3x"></i>
+    </div>
+  </header>
+
+
+
+  <section id="about" class="about">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-10 offset-sm-1 ">
-          <h1 class="aboutme">About Me</h1>
-          <hr class="separation">
-          <img src="assets/img/mylogowixsquare.jpg" alt="Sivaram Pg" class="myimg">
-        </div>
-        <p class="intro">
-          <strong>An Electronics Engineering Graduate</strong> who's very tech savvy and has a very keen interest in technology and
-          computers. Keeping updated and connected. Enthusiastic, Motivated and Passionate to achieve my goals. Getting things
-          done is how I roll. Quick learner and a sound listener solving problems and debugging my way through LIFE!. Aspiring
-          to be a full stack developer and contributing to this beautiful place called the WEB.</p>
-        <br>
-        <a class="resume_link" href="assets/docs/Sivaram Pandariganthan resume 11-06-2018.pdf" target="_blank">
-          <button class="resume">View My Resume</button>
-        </a>
-        <p class="intro">
-          <samp>"Things aren’t always
-            <code>#000000</code> and
-            <code>#FFFFFF</code>"
-          </samp>
-        </p>
+      <!-- <div class="row"> -->
+      <div class="col-12 col-sm-10 offset-sm-1 ">
+        <h1 class="about__heading">About Me</h1>
+        <img src="assets/img/mylogowixsquare.jpg" alt="Sivaram Pg" class="about__image">
       </div>
-      <div class="socialmedia">
+      <p class="about__intro">
+        <strong>An Electronics Engineering Graduate</strong> who's very tech savvy and has a very keen interest in technology
+        and computers. Keeping updated and connected. Enthusiastic, Motivated and Passionate to achieve my goals. Getting
+        things done is how I roll. Quick learner and a sound listener solving problems and debugging my way through LIFE!.
+        Aspiring to be a full stack developer and contributing to this beautiful place called the WEB.
+      </p>
+      <div class="about__resume">
+        <a href="assets/docs/Sivaram Pandariganthan resume 11-06-2018.pdf" target="_blank">
+          View My Resume
+        </a>
+      </div>
+      <p class="about__intro about__intro-center">
+        <samp>"Things aren’t always
+          <code>#000000</code> and
+          <code>#FFFFFF</code>"
+        </samp>
+      </p>
+      <div class="social">
         <div class="row">
           <div class="col-4 col-xl-1 offset-xl-3 col-lg-2 col-sm-4 col-md-2">
             <a href="https://github.com/SivaramPg" target="_blank">
@@ -164,16 +166,17 @@
       </div>
     </div>
   </section>
-  <section id="skillssection" class="section2">
+
+
+
+  <section id="skills" class="skills">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h1 class="skillheading">Skill Set</h1>
-          <hr class="separation">
+          <h1 class="skills__heading">Skill Set</h1>
         </div>
-        <div class="col-12 col-md-6 skills">
+        <div class="col-12 col-md-6 skills__list-set">
           <h1>Coding Skills</h1>
-          <hr class="minorseparation">
           <i class="fab fa-5x icon-html5" title="HTML5"></i>
           <i class="fab fa-5x icon-css3" title="CSS3"></i>
           <i class="fab fa-5x icon-javascript" title="JavaScript"></i>
@@ -187,9 +190,8 @@
           <i class="fab fa-5x icon-npm" title="NPM"></i>
           <i class="fab fa-5x icon-bootstrap" title="Bootstrap"></i>
         </div>
-        <div class="col-12 col-md-6 skills">
+        <div class="col-12 col-md-6 skills__list-set">
           <h1>Other Skills</h1>
-          <hr class="minorseparation">
           <i class="fab fa-5x icon-ubuntu" title="Ubuntu"></i>
           <i class="fab fa-5x fa-windows" title="Windows"></i>
           <i class="fab fa-5x icon-git" title="Git"></i>
@@ -200,19 +202,21 @@
       </div>
     </div>
   </section>
-  <section id="portfoliosection" class="section3">
+
+
+
+  <section id="portfolio" class="portfolio">
     <div class="container-fluid">
       <div class="row">
-        <div class="work_header col-xl-12">
+        <div class="col-xl-12 portfolio__heading">
           <p>My Portfolio</p>
         </div>
-        <hr class="separation">
       </div>
       <div class="row">
         <div class="card-deck">
           <div class="card">
             <a href="https://facerecognition-smart-brain.herokuapp.com/" target="_blank">
-              <img class="card-img-top" src="assets/img/FaceRecApp.png" alt="Card image cap">
+              <img class="card-img-top" src="assets/img/FaceRecAppFullRes-min.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Face and Demographic Detection using CLARIFAI</h5>
               </div>
@@ -220,7 +224,7 @@
           </div>
           <div class="card">
             <a href="https://sivarampg.github.io/JS_Snake_Game/" target="_blank">
-              <img class="card-img-top" src="assets/img/SnakeGame.PNG" alt="Card image cap">
+              <img class="card-img-top" src="assets/img/SnakeGameFullRes-min.PNG" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Vanilla JS Snake Game</h5>
               </div>
@@ -228,7 +232,7 @@
           </div>
           <div class="card">
             <a href="https://sivarampg.github.io/Swapi/" target="_blank">
-              <img class="card-img-top" src="assets/img/swapi.png" alt="Card image cap">
+              <img class="card-img-top" src="assets/img/swapiFullRes-min.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Star Wars API</h5>
               </div>
@@ -240,26 +244,26 @@
         <div class="card-deck">
           <div class="card">
             <a href="https://sivarampg.github.io/Gradient-Background-Generator/" target="_blank">
-              <img class="card-img-top" src="assets/img/randombackgroundgenerator.jpg" alt="Card image cap">
+              <img class="card-img-top" src="assets/img/randombackgroundgeneratorFullRes-min.PNG" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Random Background Gradient Generator</h5>
               </div>
             </a>
           </div>
           <div class="card">
-            <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/portfolio-min.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="assets/img/portfolio.png" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/portfolio-min.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
             </div>
           </div>
         </div>
-      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -295,66 +299,23 @@
           <span class="sr-only">Next</span>
         </a>
       </div> -->
-    </div>
-    </div>
-  </section>
-  <section id="contactmesection" class="section4">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="contactform ">
-            <!--                         <form action="POST">
-                            Name: <input type="text" name="name"><br>
-                            Email Id: <input type="text" name="emailid"><br>
-                            Message: <input type="textfield" name="message"><br>
-                        </form> -->
-            <form id="contact" action="" method="post">
-              <h3>Contact Me</h3>
-              <br>
-              <fieldset disabled>
-                <input placeholder="Your name" type="text" tabindex="1" required>
-              </fieldset>
-              <fieldset disabled>
-                <input placeholder="Your Email Address" type="email" tabindex="2" required>
-              </fieldset>
-              <fieldset disabled>
-                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-              </fieldset>
-              <fieldset disabled>
-                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-              </fieldset>
-              <fieldset disabled>
-                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-              </fieldset>
-              <fieldset disabled="">
-                <button name="submitform" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="contactdetails">
-            <h2>Interested in hiring me?</h2>
-            <br>
-            <p>Get in touch with me @</p>
-            <br>
-            <p id="contactemail">sivarampg95@gmail.com</p>
-            <br>
-            <!-- <p>Panvel, Navi Mumbai</p> -->
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer" id="ending">
-    <p>Made with &nbsp
+
+
+  <footer class="footer" id="footer">
+    <p>Made with
       <i class="fas fa-heart"></i>
     </p>
-    <br>
     <p>This is my website and is currently under construction. | Sivaram Pandariganthan 2018</p>
-    <p id="thankyou">A special thanks to Ameya, Gautam, Ashwin & Tinu!</p>
+    <p>A special thanks to Ameya, Gautam, Ashwin & Tinu!</p>
   </footer>
+
+
+
+
   <!-- BOOTSTRAP jQuery -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -368,6 +329,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <!-- Main script file -->
   <script type="text/JavaScript" src="assets/js/script.js" defer></script>
+
 </body>
 
 </html>

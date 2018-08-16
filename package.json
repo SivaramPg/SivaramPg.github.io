@@ -1,0 +1,22 @@
+{
+  "name": "sivarampg.github.io",
+  "version": "1.0.0",
+  "description": "Sivaram's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SivaramPg/SivaramPg.github.io.git"
+  },
+  "author": "Sivaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SivaramPg/SivaramPg.github.io/issues"
+  },
+  "homepage": "https://github.com/SivaramPg/SivaramPg.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
