@@ -40,8 +40,7 @@ body {
   transition: 0.3s ease-in-out; }
 
 .navbar__style {
-  transition: 0.3s ease-in-out;
-  /*Styling collapsed navbar*/ }
+  transition: 0.3s ease-in-out; }
   .navbar__style-name {
     font-size: 3rem;
     padding: 1rem;
