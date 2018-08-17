@@ -4,7 +4,13 @@
   "description": "Sivaram's Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
+    "devServer": "live-server",
+    "start": "npm-run-all --parallel devServer watch:sass",
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" assets/css/style.comp.css -o assets/css/style.prefix.css",
+    "compress:css": "node-sass assets/css/style.prefix.css assets/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +23,10 @@
   },
   "homepage": "https://github.com/SivaramPg/SivaramPg.github.io#readme",
   "devDependencies": {
-    "node-sass": "^4.9.3"
-  }
+    "autoprefixer": "^9.1.1",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0"
+  },
+  "dependencies": {}
 }
