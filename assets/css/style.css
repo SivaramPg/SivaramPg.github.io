@@ -78,7 +78,7 @@ body {
   padding: 0rem;
   width: 100%;
   height: 100vh;
-  background: url(../img/landingbackgroundbrightnessreduced-min.jpg);
+  background: url(../img/landingbackground_optimized.jpg);
   background-color: rgba(51, 153, 255, 0.3);
   background-blend-mode: multiply;
   background-size: cover;
@@ -310,7 +310,7 @@ section {
 
 .portfolio {
   /*background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");*/
-  background-image: url("../img/portfoliobackgroundwhitetexture-min.jpeg");
+  background-image: url("../img/portfoliobackground_optimized.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
@@ -333,60 +333,38 @@ section {
     border-radius: 100px;
     background: #ff6347; }
 
-/*Individual cards styled and positioned optimally*/
-.card {
-  background-color: transparent;
-  border: 0;
-  margin: 5rem auto;
-  padding: 1rem;
-  transition: 0.2s;
-  border-radius: 0.5rem;
-  cursor: pointer; }
-
-.card a {
-  text-decoration: none; }
-
-.card:hover {
-  box-shadow: 0 0 2rem black;
-  transform: scale(1.125, 1.125);
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.05); }
-
-.card:active {
-  box-shadow: 0 0 3rem black;
-  transform: scale(0.95, 0.95);
-  background-color: rgba(0, 0, 0, 0.1); }
-
-/*Portfolio card title*/
-.card-title {
-  text-align: center;
-  font-size: 2rem;
-  padding-top: 1rem;
-  font-weight: bold;
-  color: crimson; }
-
 /*The entire card deck styled*/
 .card-deck {
-  margin: auto 5rem; }
+  margin: auto 2.5rem; }
+  .card-deck:first-child {
+    margin-top: 5rem; }
+  .card-deck .card {
+    margin: 1rem 2.5rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s; }
+    .card-deck .card a {
+      text-decoration: none; }
+    .card-deck .card:hover {
+      box-shadow: 0 0 2rem black;
+      transform: scale(1.125, 1.125);
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.05); }
+    .card-deck .card:active {
+      box-shadow: 0 0 3rem black;
+      transform: scale(0.95, 0.95);
+      background-color: rgba(0, 0, 0, 0.1); }
+    .card-deck .card-title {
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 1rem;
+      font-weight: bold;
+      color: crimson; }
 
 /* Set width to make card deck cards 100% width */
-@media (max-width: 992px) {
-  .card-deck-wrapper {
-    margin-right: 0;
-    margin-left: 0; }
-  .card-deck {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.75rem;
-    table-layout: fixed;
-    border-spacing: 1.25rem 0; }
-  .card-deck .card {
-    display: block;
-    margin-bottom: 0.75rem;
-    /* vertical-align: top; */ }
-  .card-deck .card:not(:first-child) {
-    margin-left: 0px; } }
-
 .footer {
   width: 100%;
   height: 100%;
