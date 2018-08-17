@@ -200,15 +200,12 @@ body {
 
 @keyframes pointdown {
   0% {
-    -webkit-transform: translateY(0rem);
     transform: translateY(0rem);
   }
   50% {
-    -webkit-transform: translateY(1.5rem);
     transform: translateY(1.5rem);
   }
   100% {
-    -webkit-transform: translateY(0rem);
     transform: translateY(0rem);
   }
 }
@@ -391,7 +388,7 @@ section {
     i {
       width: auto;
       height: auto;
-      margin: 4rem 2rem 0rem 2rem;
+      margin: 4rem 2rem 2rem 2rem;
       padding: 1rem;
       text-align: center;
     }
@@ -430,7 +427,6 @@ section {
 //   margin: 0 auto;
 //   width: 80vw !important;
 //   height: auto;
-//   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
 //   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
 //   /* border: 1rem solid white; */
 // }
@@ -534,11 +530,9 @@ section {
 
 @keyframes heartbeat {
   0% {
-    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
   }
   100% {
-    -webkit-transform: scale(1.5, 1.5);
-    transform: scale(1.6, 1.6);
+    transform: scale(1.5, 1.5);
   }
 }
