@@ -240,7 +240,9 @@ body {
       rgba($color-bg-light, 0.25),
       rgba($color-bg-dark, 0.35)
     ),
-    url(../img/landingbackground_optimized.jpg);
+    url(../img/headerbtwhite.png);
+  background-color: rgba($color-black, 0.8);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
