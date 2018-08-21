@@ -1,0 +1,43 @@
+.section__portfolio {
+  &--card-deck {
+    margin: 1rem 2.5rem;
+  }
+
+  &--card {
+    margin: 1.5rem 1.75rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid rgba($color-black, 0.2);
+
+    a {
+      text-decoration: none;
+    }
+
+    &:hover {
+      box-shadow: 0 0 2rem rgba($color-black, 0.3);
+      transform: scale(1.1, 1.1);
+      z-index: 10;
+      background-color: rgba($color-black, 0.05);
+    }
+
+    &:active {
+      box-shadow: 0 0 3rem $color-black;
+      transform: scale(1.025, 1.025);
+      background-color: rgba($color-black, 0.1);
+    }
+
+    &-title {
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 1rem;
+      font-weight: bold;
+      color: #dc143c;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}

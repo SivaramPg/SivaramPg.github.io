@@ -1,0 +1,61 @@
+// TYPOGRAPHY
+.heading__primary {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: $color-white;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: bold;
+    animation: moveInLeft 1s ease-out;
+
+    &::after {
+      @include heading_decoration($color-primary);
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading__secondary {
+  display: block;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &::after {
+    @include heading_decoration($color-primary);
+  }
+}
+
+.heading__tertiary {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &::after {
+    @include heading_decoration(darken($color-white, 30%));
+    height: 0.25rem;
+  }
+}
+
+.paragraph {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3rem;
+  word-spacing: 0.25rem;
+  text-align: center;
+}

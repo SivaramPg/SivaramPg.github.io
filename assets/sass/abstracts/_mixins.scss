@@ -1,0 +1,11 @@
+// MIXINS
+@mixin heading_decoration($color) {
+  content: "";
+  display: block;
+  position: relative;
+  margin: 2rem auto;
+  width: 10rem;
+  height: 0.5rem;
+  border-radius: 100px;
+  background: $color;
+}
