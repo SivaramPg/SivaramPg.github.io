@@ -295,7 +295,7 @@ section {
 .about {
   width: 100%;
   height: auto;
-  padding-bottom: 20rem;
+  padding-bottom: 12rem;
   margin-bottom: -12rem;
   background: linear-gradient(to top right, #89f7fe, #66a6ff);
 
@@ -408,8 +408,7 @@ section {
 // **************************************************************************
 
 .skills {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+  margin-bottom: -12rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
   transform: skewY(-7deg);
 
@@ -418,7 +417,7 @@ section {
   }
 
   &__list-set {
-    margin: 2.5rem auto;
+    margin: 2.5rem auto 0 auto;
     padding: 0 2.5rem;
     text-align: center;
 
@@ -444,7 +443,7 @@ section {
 // **************************************************************************
 
 .portfolio {
-  margin-top: -12rem;
+  // margin-top: -12rem;
   padding-top: 20rem;
   background-image: url("../img/portfoliobackground_optimized.jpeg");
   background-repeat: no-repeat;

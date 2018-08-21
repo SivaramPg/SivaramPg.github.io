@@ -31,7 +31,7 @@ const goToAbout = () => {
 };
 
 const goToSkills = () => {
-  skillsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  skillsSection.scrollIntoView({ behavior: "smooth", block: "center" });
 };
 
 const goToPortfolio = () => {
