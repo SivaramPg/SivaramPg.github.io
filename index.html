@@ -15,8 +15,6 @@
   <!-- BOOTSTRAP CDN-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <!-- EXTERNAL STYLESHEET? -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- GOOGLE FONTS (ROBOTO,OPEN SANS) -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet">
   <!-- FONT AWESOME FONTS -->
@@ -24,6 +22,8 @@
     crossorigin="anonymous">
   <!-- font-mfizz glyphs found at http://fizzed.com/oss/font-mfizz extends Font Awesome Icons for adding missing icons to the skill section of the website -->
   <link rel="stylesheet" type="text/css" href="assets/css/font-mfizz/font-mfizz.css">
+  <!-- EXTERNAL STYLESHEET? -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -90,14 +90,11 @@
   </nav>
 
   <header id="header" class="header">
-    <div class="container header__content">
-      <h1 class="header__content-heading">
-        HEY THERE!
+    <div class="header__content-box">
+      <h1 class="heading__primary">
+        <span class="heading__primary--main">HEY THERE!</span>
+        <span class="heading__primary--sub"><strong>Glad</strong> you are here!</span>
       </h1>
-      <p class="header__content-greeting">
-        <strong>Glad</strong>
-        you are here!
-      </p>
     </div>
     <div id="scrollout" class="header__scrollout">
       <i class="fas fa-angle-double-up fa-3x"></i>
@@ -108,63 +105,62 @@
 
   <section id="about" class="about">
     <div class="container">
-      <!-- <div class="row"> -->
-      <div class="col-12 col-sm-10 offset-sm-1 ">
-        <h1 class="about__heading">About Me</h1>
-        <img src="assets/img/mylogowixsquare_optimized.jpg" alt="Sivaram Pg" class="about__image">
-      </div>
-      <p class="about__intro">
-        <strong>An Electronics Engineering Graduate</strong> who's very tech savvy and has a very keen interest in technology
-        and computers. Keeping updated and connected. Enthusiastic, Motivated and Passionate to achieve my goals. Getting
-        things done is how I roll. Quick learner and a sound listener solving problems and debugging my way through LIFE!.
-        Aspiring to be a full stack developer and contributing to this beautiful place called the WEB.
-      </p>
-      <div class="about__resume">
-        <a href="assets/docs/Sivaram Pandariganthan resume 11-06-2018.pdf" target="_blank">
-          View My Resume
-        </a>
-      </div>
-      <p class="about__intro about__intro-center">
-        <samp>"Things aren’t always
-          <code>#000000</code> and
-          <code>#FFFFFF</code>"
-        </samp>
-      </p>
-      <div class="social">
-        <div class="row">
-          <div class="col-4 col-xl-1 offset-xl-3 col-lg-2 col-sm-4 col-md-2">
-            <a href="https://github.com/SivaramPg" target="_blank">
-              <i class="fab fa-github fa-3x" title="Github"></i>
-            </a>
-          </div>
-          <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-            <a href="https://codepen.io/kaizoku_95/" target="_blank">
-              <i class="fab fa-codepen fa-3x" title="Codepen"></i>
-            </a>
-          </div>
-          <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-            <a href="https://www.linkedin.com/in/sivaram-pandariganthan-b753a2145/" target="_blank">
-              <i class="fab fa-linkedin-in fa-3x" title="LinkedIn"></i>
-            </a>
-          </div>
-          <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-            <a href="https://twitter.com/sivarampg95" target="_blank">
-              <i class="fab fa-twitter fa-3x" title="Twitter"></i>
-            </a>
-          </div>
-          <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-            <a href="https://plus.google.com/+sivarampg" target="_blank">
-              <i class="fab fa-google fa-3x" title="Google+"></i>
-            </a>
-          </div>
-          <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-            <a href="https://www.instagram.com/sivarampg/" target="_blank">
-              <i class="fab fa-instagram fa-3x" title="Instagram"></i>
-            </a>
+        <div class="col-12 col-sm-10 offset-sm-1 ">
+          <h2 class="heading__secondary">About Me</h2>
+          <img src="assets/img/mylogowixsquare_optimized.jpg" alt="Sivaram Pg" class="about__image">
+        </div>
+        <p class="about__intro">
+          <strong>An Electronics Engineering Graduate</strong> who's very tech savvy and has a very keen interest in technology
+          and computers. Keeping updated and connected. Enthusiastic, Motivated and Passionate to achieve my goals. Getting
+          things done is how I roll. Quick learner and a sound listener solving problems and debugging my way through LIFE!.
+          Aspiring to be a full stack developer and contributing to this beautiful place called the WEB.
+        </p>
+        <div class="about__resume">
+          <a href="assets/docs/Sivaram Pandariganthan resume 11-06-2018.pdf" target="_blank">
+            View My Resume
+          </a>
+        </div>
+        <p class="about__intro about__intro-center">
+          <samp>"Things aren’t always
+            <code>#000000</code> and
+            <code>#FFFFFF</code>"
+          </samp>
+        </p>
+        <div class="social">
+          <div class="row">
+            <div class="col-4 col-xl-1 offset-xl-3 col-lg-2 col-sm-4 col-md-2">
+              <a href="https://github.com/SivaramPg" target="_blank">
+                <i class="fab fa-github fa-3x" title="Github"></i>
+              </a>
+            </div>
+            <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+              <a href="https://codepen.io/kaizoku_95/" target="_blank">
+                <i class="fab fa-codepen fa-3x" title="Codepen"></i>
+              </a>
+            </div>
+            <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+              <a href="https://www.linkedin.com/in/sivaram-pandariganthan-b753a2145/" target="_blank">
+                <i class="fab fa-linkedin-in fa-3x" title="LinkedIn"></i>
+              </a>
+            </div>
+            <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+              <a href="https://twitter.com/sivarampg95" target="_blank">
+                <i class="fab fa-twitter fa-3x" title="Twitter"></i>
+              </a>
+            </div>
+            <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+              <a href="https://plus.google.com/+sivarampg" target="_blank">
+                <i class="fab fa-google fa-3x" title="Google+"></i>
+              </a>
+            </div>
+            <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+              <a href="https://www.instagram.com/sivarampg/" target="_blank">
+                <i class="fab fa-instagram fa-3x" title="Instagram"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
 
@@ -173,10 +169,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <h1 class="skills__heading">Skill Set</h1>
+          <h2 class="heading__secondary">Skill Set</h2>
         </div>
         <div class="col-12 col-md-6 skills__list-set">
-          <h1>Coding Skills</h1>
+          <h3 class="heading__tertiary color--white">Coding Skills</h3>
           <i class="fab fa-5x icon-html5" title="HTML5"></i>
           <i class="fab fa-5x icon-css3" title="CSS3"></i>
           <i class="fab fa-5x icon-javascript" title="JavaScript"></i>
@@ -193,7 +189,7 @@
           <i class="fab fa-5x icon-sass" title="SASS"></i>
         </div>
         <div class="col-12 col-md-6 skills__list-set">
-          <h1>Other Skills</h1>
+          <h3 class="heading__tertiary color--white">Other Skills</h3>
           <i class="fab fa-5x icon-ubuntu" title="Ubuntu"></i>
           <i class="fab fa-5x fa-windows" title="Windows"></i>
           <i class="fab fa-5x icon-git" title="Git"></i>
@@ -210,8 +206,8 @@
   <section id="portfolio" class="portfolio">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-12 portfolio__heading">
-          <p>My Portfolio</p>
+        <div class="col-xl-12">
+          <h2 class="heading__secondary">My Portfolio</h2>
         </div>
       </div>
       <div class="row">
@@ -321,14 +317,14 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <!-- BOOTSTRAP JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
   <!-- BOOTSTRAP Popper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <!-- Main script file -->
-  <script type="text/JavaScript" src="assets/js/script.js" defer></script>
+  <script type="text/JavaScript" src="assets/js/script.js"></script>
 
 </body>
 
