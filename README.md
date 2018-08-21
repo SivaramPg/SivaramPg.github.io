@@ -4,4 +4,4 @@ My Personal Portfolio Website built using __HTML5__, __CSS3__ and __JavaScript__
 
 It showcases my projects and skills that I have acquired until now.
 
-Update frequently to reflect my learnings and experiences with existing and newer technologies
+Updated frequently to reflect my learnings and experiences with existing and newer technologies

@@ -1,24 +1,28 @@
+// VARIABLES
 $color-primary: #ff6347;
 $color-secondary: #1e90ff;
+
+$color-bg-dark: #1f9fff;
+$color-bg-light: #99c5f1;
 
 $color-black: #000;
 $color-white: #fff;
 
 $color-name: #ffa07a;
 
-@mixin heading_decoration($col) {
+// MIXINS
+@mixin heading_decoration($color) {
   content: "";
   display: block;
-  position: absolute;
-  margin: 2rem 0;
+  position: relative;
+  margin: 2rem auto;
   width: 10rem;
   height: 0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
   border-radius: 100px;
-  background: $col;
+  background: $color;
 }
 
+// BASE
 *,
 *::before,
 *::after {
@@ -34,6 +38,95 @@ html {
 body {
   font-family: "Fira Sans", "Open Sans", "Arial", sans-serif;
   box-sizing: border-box;
+  margin: 0 2.5rem;
+  box-shadow: 0 0 0.5rem 0.5rem rgba($color-black, 0.3);
+}
+
+// TYPOGRAPHY
+.heading__primary {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: $color-white;
+  letter-spacing: 3px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: bold;
+    animation: moveInLeft 1s ease-out;
+
+    &::after {
+      @include heading_decoration($color-primary);
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(10%);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.heading__secondary {
+  display: block;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &::after {
+    @include heading_decoration($color-primary);
+  }
+}
+
+.heading__tertiary {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &::after {
+    @include heading_decoration(darken($color-white, 30%));
+    height: 0.25rem;
+  }
+}
+
+.color--white {
+  color: $color-white;
 }
 
 // **************************************************************************
@@ -53,7 +146,7 @@ body {
   color: $color-primary;
   background: rgba($color-white, 0.25);
   cursor: pointer;
-  z-index: 99;
+  z-index: 9;
   transition: 0.5s;
 
   &:hover {
@@ -77,6 +170,7 @@ body {
 
 .navbar__style {
   transition: 0.3s ease-in-out;
+  padding: 0;
 
   &-name {
     font-size: 3rem;
@@ -85,9 +179,9 @@ body {
   }
 
   &-list {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 1rem;
-    z-index: 9999;
+    z-index: 10;
 
     li {
       margin: 0 1rem;
@@ -105,7 +199,7 @@ body {
   //Styling collapsed navbar
   .container .navbar-collapse {
     text-align: center;
-    z-index: 9999;
+    z-index: 10;
   }
 }
 
@@ -131,59 +225,31 @@ body {
 // **************************************************************************
 
 .header {
-  margin: 0;
-  padding: 0rem;
+  position: relative;
   width: 100%;
   height: 100vh;
-  background: url(../img/landingbackground_optimized.jpg);
-  background-color: rgba(51, 153, 255, 0.3);
-  background-blend-mode: multiply;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-bg-light, 0.25),
+      rgba($color-bg-dark, 0.35)
+    ),
+    url(../img/landingbackground_optimized.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+  overflow-x: hidden;
 
-  &__content {
-    padding: 1rem;
+  &__content-box {
+    padding: 4rem;
     position: absolute;
-    min-width: 80%;
-    min-height: 30vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
-
-    &-heading {
-      position: relative;
-      text-align: center;
-      font-size: 7rem;
-      padding: 1rem;
-      margin: 1rem;
-      color: $color-white;
-      word-wrap: break-word;
-      top: -100px;
-      opacity: 0;
-
-      &::after {
-        @include heading_decoration($color-primary);
-      }
-    }
-
-    &-greeting {
-      position: relative;
-      text-align: center;
-      font-size: 2rem;
-      padding: 1rem;
-      margin: 4rem 1rem 1rem 1rem;
-      color: $color-white;
-      word-wrap: break-word;
-      top: 100px;
-      opacity: 0;
-    }
   }
 
   &__scrollout {
     position: absolute;
-    top: 92%;
+    bottom: 0;
     left: 50%;
     padding: 2rem;
     width: 10rem;
@@ -222,25 +288,9 @@ section {
 .about {
   width: 100%;
   height: auto;
-  padding: 2rem 0rem;
-  margin: 0;
+  padding-bottom: 20rem;
+  margin-bottom: -12rem;
   background: linear-gradient(to top right, #89f7fe, #66a6ff);
-  z-index: 10;
-
-  &__heading {
-    padding: 2.5rem;
-    margin: 5rem 50% 0rem 50%;
-    height: auto;
-    width: 100%;
-    font-size: 5rem;
-    text-align: center;
-    z-index: 99;
-    transform: translateX(-50%);
-
-    &::after {
-      @include heading_decoration($color-primary);
-    }
-  }
 
   &__image {
     display: block;
@@ -285,27 +335,23 @@ section {
     border-radius: 1.5rem;
     background-color: $color-white;
     cursor: pointer;
-    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25rem 1rem rgba($color-black, 0.5);
     transition: 0.5s;
     color: $color-black;
+    text-decoration: underline;
 
     a {
       color: inherit;
       font-size: 1.5rem;
-      text-decoration: underline;
       text-transform: uppercase;
-
-      &:hover,
-      &:focus {
-        text-decoration: inherit;
-      }
+      text-decoration: inherit;
     }
 
     &:hover {
       border-radius: 0.25rem;
       color: $color-primary;
-      background-color: black;
-      box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
+      background-color: $color-black;
+      box-shadow: 0rem 1rem 3rem rgba($color-black, 0.5);
       text-decoration: none;
       transform: translateY(-6px);
     }
@@ -355,42 +401,32 @@ section {
 // **************************************************************************
 
 .skills {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
-  /*https://digitalsynopsis.com/design/beautiful-color-gradients-backgrounds/*/
-  /*8. Plum Plate*/
+  transform: skewY(-7deg);
 
-  &__heading {
-    font-size: 5rem;
-    text-align: center;
-
-    &::after {
-      @include heading_decoration($color-primary);
-    }
+  & > .container-fluid > * {
+    transform: skewY(7deg);
   }
 
   &__list-set {
-    margin: 5rem auto;
+    margin: 2.5rem auto;
+    padding: 0 6rem;
     text-align: center;
-
-    h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      color: white;
-
-      &::after {
-        @include heading_decoration(darken($color-white, 30%));
-        margin-top: 1rem;
-        height: 0.25rem;
-        width: 7.5rem;
-      }
-    }
-
+    
     i {
       width: auto;
       height: auto;
+      color: $color-black;
       margin: 4rem 2rem 2rem 2rem;
       padding: 1rem;
-      text-align: center;
+      transition: all 0.2s linear;
+
+      &:hover {
+        transform: scale(1.75);
+        text-shadow: 0 0 3rem rgba($color-white, 0.5);
+      }
     }
   }
 }
@@ -400,41 +436,19 @@ section {
 // **************************************************************************
 
 .portfolio {
-  /*background-image: url("https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?cs=srgb&dl=bricks-brickwall-brickwork-1092364.jpg&fm=jpg");*/
+  margin-top: -12rem;
+  padding-top: 20rem;
   background-image: url("../img/portfoliobackground_optimized.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
-  overflow: hidden;
 }
-
-.portfolio__heading {
-  text-align: center;
-  color: black;
-  font-size: 5rem;
-  
-  &::after {
-    @include heading_decoration($color-primary);
-  }
-}
-
-// .carousel-item {
-//   padding: 5rem !important;
-// }
-
-// .carousel-item img {
-//   margin: 0 auto;
-//   width: 80vw !important;
-//   height: auto;
-//   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
-//   /* border: 1rem solid white; */
-// }
 
 /*The entire card deck styled*/
 
 .card-deck {
-  margin: auto 2.5rem;
+  margin: auto 5rem;
 
   &:first-child {
     margin-top: 5rem;
@@ -444,7 +458,7 @@ section {
     margin: 1rem 2.5rem;
     padding: 2rem;
     border-radius: 0.5rem;
-    border: 0;
+    border: none;
     background-color: transparent;
     cursor: pointer;
     transition: 0.2s;
@@ -454,16 +468,16 @@ section {
     }
 
     &:hover {
-      box-shadow: 0 0 2rem black;
+      box-shadow: 0 0 2rem $color-black;
       transform: scale(1.125, 1.125);
       z-index: 10;
-      background-color: rgba(0, 0, 0, 0.05);
+      background-color: rgba($color-black, 0.05);
     }
 
     &:active {
-      box-shadow: 0 0 3rem black;
+      box-shadow: 0 0 3rem $color-black;
       transform: scale(0.95, 0.95);
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba($color-black, 0.1);
     }
 
     &-title {
@@ -471,35 +485,10 @@ section {
       font-size: 2rem;
       padding-top: 1rem;
       font-weight: bold;
-      color: crimson;
+      color: #dc143c;
     }
   }
 }
-
-/* Set width to make card deck cards 100% width */
-
-// @media (max-width: 992px) {
-//   .card-deck-wrapper {
-//     margin-right: 0;
-//     margin-left: 0;
-//   }
-//   .card-deck {
-//     display: block;
-//     width: 100%;
-//     margin-bottom: 0.75rem;
-//     table-layout: fixed;
-//     border-spacing: 1.25rem 0;
-//   }
-//   .card-deck .card {
-//     display: block;
-//     margin-bottom: 0.75rem;
-//     /* vertical-align: top; */
-//   }
-
-//   .card-deck .card:not(:first-child) {
-//     margin-left: 0px;
-//   }
-// }
 
 // **************************************************************************
 // Footer
@@ -509,11 +498,11 @@ section {
   width: 100%;
   height: 100%;
   padding: 2.5rem;
-  background-color: black;
+  background-color: $color-black;
 
   p {
     text-align: center;
-    color: white;
+    color: $color-white;
     font-size: 1.1rem;
 
     &:first-child {
@@ -521,7 +510,7 @@ section {
     }
 
     i {
-      color: red;
+      color: #ff0000;
       margin-left: 1rem;
       animation: heartbeat 0.8s infinite;
     }
