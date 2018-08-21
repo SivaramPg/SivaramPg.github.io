@@ -1,0 +1,20 @@
+.list-set {
+  margin: 2.5rem auto 0 auto;
+  padding: 0 2.5rem;
+  text-align: center;
+
+  i {
+    font-size: 6rem;
+    width: auto;
+    height: auto;
+    color: $color-black;
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+    transition: all 0.2s linear;
+
+    &:hover {
+      transform: scale(1.75);
+      text-shadow: 0 0 3rem rgba($color-white, 0.5);
+    }
+  }
+}

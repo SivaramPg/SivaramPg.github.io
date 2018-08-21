@@ -1,0 +1,118 @@
+/*Common property for all the sections.*/
+section {
+  padding: 10rem 0rem;
+}
+
+.section {
+  &__about {
+    width: 100%;
+    height: auto;
+    padding-bottom: 12rem;
+    margin-bottom: -12rem;
+    background: linear-gradient(to top right, #89f7fe, #66a6ff);
+
+    &--image {
+      visibility: hidden;
+      left: 20px;
+      opacity: 0;
+      margin: 7rem auto;
+      border: 0.2rem solid $color-white;
+      background-color: #d3d3d3;
+      box-shadow: 0 1rem 5rem rgba($color-black, 0.5);
+    }
+
+    &--intro {
+      visibility: hidden;
+      opacity: 0;
+      padding: 2rem 2rem;
+      margin: 2rem auto;
+    }
+
+    &--resume {
+      width: 20rem;
+      height: 5rem;
+      border-radius: 1.5rem;
+      background-color: $color-white;
+      box-shadow: 0 0.25rem 1rem rgba($color-black, 0.5);
+      transition: 0.5s;
+      color: $color-black;
+      text-decoration: underline;
+
+      a {
+        color: inherit;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: inherit;
+      }
+
+      &:hover {
+        border-radius: 0.25rem;
+        color: $color-primary;
+        background-color: $color-black;
+        box-shadow: 0rem 1rem 3rem rgba($color-black, 0.5);
+        text-decoration: none;
+        transform: translateY(-6px);
+      }
+
+      &:active,
+      &:focus {
+        transform: translateY(-2px);
+        text-decoration: none;
+      }
+    }
+
+    &--social {
+      padding: 1rem;
+      text-align: center;
+      padding-bottom: 7.5rem;
+
+      i {
+        padding: 2.5rem;
+        margin: 0.5rem auto;
+        text-align: center;
+        background-color: rgba($color-white, 1);
+        border-radius: 35%;
+        box-shadow: 0 0.25rem 1rem rgba($color-black, 0.5);
+        transition: 0.5s;
+        color: initial;
+
+        &:hover {
+          border-radius: 0.5rem;
+          color: $color-primary;
+          background-color: $color-black;
+          box-shadow: 0 1rem 3rem rgba($color-black, 0.5);
+          transform: translateY(-10px);
+        }
+
+        &:active {
+          transform: scale(0.95, 0.95);
+        }
+      }
+    }
+  }
+
+  &__skills {
+    margin-bottom: -12rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transform: skewY(-7deg);
+
+    & > .container-fluid > * {
+      transform: skewY(7deg);
+    }
+  }
+
+  &__portfolio {
+    padding-top: 20rem;
+    background-image: url("../img/portfoliobackground_optimized.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: $color-black;
+}

@@ -1,0 +1,18 @@
+.button {
+  position: relative;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 2rem $color-black;
+  cursor: pointer;
+  transition: 0.15s ease;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+  &:focus {
+    transform: scale(0.95, 0.95);
+  }
+}

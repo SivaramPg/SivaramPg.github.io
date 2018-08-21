@@ -1,0 +1,50 @@
+/*This class gets added when the navbar-toggle is clicked, done using JavaScript*/
+.navbgblackonclick {
+  background-color: $color-black;
+  border-bottom: 0.2rem solid $color-secondary;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar__style {
+  transition: 0.3s ease-in-out;
+  padding: 0;
+
+  &-name {
+    font-size: 3rem;
+    padding: 1rem;
+    color: $color-name !important;
+  }
+
+  &-list {
+    font-size: 1.8rem;
+    padding: 1rem;
+    z-index: 10;
+
+    li {
+      margin: 0 1rem;
+      padding: 1rem 1rem;
+      border-radius: 0.25rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba($color-white, 0.1);
+      }
+
+      &:hover a,
+      &:hover i {
+        color: $color-white !important;
+      }
+    }
+  }
+
+  .navbar-toggler {
+    margin: 1rem;
+  }
+
+  //Styling collapsed navbar
+  .container .navbar-collapse {
+    text-align: center;
+    z-index: 10;
+    padding-bottom: 1rem;
+  }
+}

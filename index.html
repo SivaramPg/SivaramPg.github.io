@@ -21,9 +21,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <!-- font-mfizz glyphs found at http://fizzed.com/oss/font-mfizz extends Font Awesome Icons for adding missing icons to the skill section of the website -->
-  <link rel="stylesheet" type="text/css" href="assets/css/font-mfizz/font-mfizz.css">
+  <link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css">
   <!-- EXTERNAL STYLESHEET? -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -85,7 +85,7 @@
             id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
               <div class="clear">
-                <input type="submit" value="Subscribe" name="subscribe" class="btn btn-danger active my-2 my-sm-0 subbtn">
+                <input type="submit" value="Subscribe" name="subscribe" class="btn btn-danger my-2 my-sm-0 button">
               </div>
             </div>
           </form>
@@ -109,13 +109,13 @@
 
 
 
-  <section id="about" class="about">
+  <section id="about" class="section__about">
     <div class="container">
       <div class="col-12 col-sm-10 offset-sm-1 ">
         <h2 class="heading__secondary">About Me</h2>
-        <img src="assets/img/mylogowixsquare_optimized.jpg" alt="Sivaram Pg" class="about__image">
+        <img class="image section__about--image" src="assets/img/mylogowixsquare_optimized.jpg" alt="Sivaram Pg">
       </div>
-      <p class="about__intro">
+      <p class="paragraph section__about--intro u--text-justify">
         A <strong>Self-taught programmer</strong> with an aspiration to become a full-stack Web Developer who holds an <strong>Electronics
           Engineering Degree</strong>. A tech savvy individual with a keen interest in the lastest and the greatest gadgets
         and gizmos. Always Up-to-date with the latest happenings and connected with the world. Enthusiastic, Motivated and
@@ -123,18 +123,18 @@
         problems and debugging my way through LIFE!. Creating and maintaining excellent websites and applications for the
         internet is what I dream of.
       </p>
-      <div class="about__resume">
+      <div class="button section__about--resume u--center">
         <a href="assets/docs/SIVARAM PANDARIGANTHAN-20-Aug.pdf" target="_blank">
           View My Resume
         </a>
       </div>
-      <p class="about__intro about__intro-center">
+      <p class="paragraph section__about--intro u--text-center">
         <samp>"Things aren’t always
           <code>#000000</code> and
           <code>#FFFFFF</code>"
         </samp>
       </p>
-      <div class="social">
+      <div class="section__about--social">
         <div class="row">
           <div class="col-4 col-xl-1 offset-xl-3 col-lg-2 col-sm-4 col-md-2">
             <a href="https://github.com/SivaramPg" target="_blank">
@@ -173,14 +173,14 @@
 
 
 
-  <section id="skills" class="skills">
+  <section id="skills" class="section__skills">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <h2 class="heading__secondary">Skill Set</h2>
         </div>
-        <div class="col-12 col-md-6 skills__list-set">
-          <h3 class="heading__tertiary color--white">Coding Skills</h3>
+        <div class="col-12 col-md-6 list-set">
+          <h3 class="heading__tertiary u--color-white">Coding Skills</h3>
           <i class="fab fa-5x icon-html5" title="HTML5"></i>
           <i class="fab fa-5x icon-css3" title="CSS3"></i>
           <i class="fab fa-5x icon-javascript" title="JavaScript"></i>
@@ -196,8 +196,8 @@
           <i class="fab fa-5x icon-bootstrap" title="Bootstrap"></i>
           <i class="fab fa-5x icon-sass" title="SASS"></i>
         </div>
-        <div class="col-12 col-md-6 skills__list-set">
-          <h3 class="heading__tertiary color--white">Other Skills</h3>
+        <div class="col-12 col-md-6 list-set">
+          <h3 class="heading__tertiary u--color-white">Other Skills</h3>
           <i class="fab fa-5x icon-ubuntu" title="Ubuntu"></i>
           <i class="fab fa-5x fa-windows" title="Windows"></i>
           <i class="fab fa-5x icon-git" title="Git"></i>
@@ -211,7 +211,7 @@
 
 
 
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="section__portfolio">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xl-12">
@@ -219,53 +219,53 @@
         </div>
       </div>
       <div class="row">
-        <div class="card-deck">
-          <div class="card">
+        <div class="card-deck section__portfolio--card-deck">
+          <div class="card section__portfolio--card">
             <a href="https://facerecognition-smart-brain.herokuapp.com/" target="_blank">
               <img class="card-img-top" src="assets/img/FaceRecApp_optimized.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Face and Demographic Detection using CLARIFAI</h5>
+                <h5 class="card-title section__portfolio--card-title">Face and Demographic Detection using CLARIFAI</h5>
               </div>
             </a>
           </div>
-          <div class="card">
+          <div class="card section__portfolio--card">
             <a href="https://sivarampg.github.io/JS_Snake_Game/" target="_blank">
               <img class="card-img-top" src="assets/img/SnakeGame_optimized.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Vanilla JS Snake Game</h5>
+                <h5 class="card-title section__portfolio--card-title">Vanilla JS Snake Game</h5>
               </div>
             </a>
           </div>
-          <div class="card">
+          <div class="card section__portfolio--card">
             <a href="https://sivarampg.github.io/Swapi/" target="_blank">
               <img class="card-img-top" src="assets/img/swapi_optimized.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Star Wars API</h5>
+                <h5 class="card-title section__portfolio--card-title">Star Wars API</h5>
               </div>
             </a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="card-deck">
-          <div class="card">
+        <div class="card-deck section__portfolio--card-deck">
+          <div class="card section__portfolio--card">
             <a href="https://sivarampg.github.io/Gradient-Background-Generator/" target="_blank">
               <img class="card-img-top" src="assets/img/randombackgroundgenerator_optimized.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Random Background Gradient Generator</h5>
+                <h5 class="card-title section__portfolio--card-title">Random Background Gradient Generator</h5>
               </div>
             </a>
           </div>
-          <div class="card">
+          <div class="card section__portfolio--card">
             <img class="card-img-top" src="assets/img/portfolio_optimized.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title section__portfolio--card-title">Card title</h5>
             </div>
           </div>
-          <div class="card">
+          <div class="card section__portfolio--card">
             <img class="card-img-top" src="assets/img/portfolio_optimized.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title section__portfolio--card-title">Card title</h5>
             </div>
           </div>
         </div>
@@ -292,7 +292,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <!-- Main script file -->
-  <script type="text/JavaScript" src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
