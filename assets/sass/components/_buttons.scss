@@ -15,4 +15,8 @@
   &:focus {
     transform: scale(0.95, 0.95);
   }
+
+  &-green {
+    background-color: green;
+  }
 }
