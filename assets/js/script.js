@@ -75,8 +75,8 @@ downPointer.addEventListener("mouseover", goToAbout);
 
 $(window).scroll(function logovis() {
   if ($(window).scrollTop() >= 350) {
-    $(".section__about--image").css("visibility", "visible");
-    $(".section__about--image").animate(
+    $(".section--about__image").css("visibility", "visible");
+    $(".section--about__image").animate(
       {
         left: "0px",
         opacity: "1"
@@ -84,21 +84,21 @@ $(window).scroll(function logovis() {
       800,
       "linear"
     );
-    $(".section__about--image").off("scroll");
+    $(".section--about__image").off("scroll");
   }
 });
 
 $(window).scroll(function introvis() {
   if ($(window).scrollTop() >= 700) {
-    $(".section__about--intro").css("visibility", "visible");
-    $(".section__about--intro").animate(
+    $(".section--about__intro").css("visibility", "visible");
+    $(".section--about__intro").animate(
       {
         opacity: "1"
       },
       800,
       "linear"
     );
-    $(".section__about--intro").off("scroll");
+    $(".section--about__intro").off("scroll");
   }
 });
 

@@ -4,14 +4,14 @@ section {
 }
 
 .section {
-  &__about {
+  &--about {
     width: 100%;
     height: auto;
     padding-bottom: 12rem;
     margin-bottom: -12rem;
     background: linear-gradient(to top right, #89f7fe, #66a6ff);
 
-    &--image {
+    &__image {
       visibility: hidden;
       left: 20px;
       opacity: 0;
@@ -21,14 +21,13 @@ section {
       box-shadow: 0 1rem 5rem rgba($color-black, 0.5);
     }
 
-    &--intro {
+    &__intro {
       visibility: hidden;
       opacity: 0;
-      padding: 2rem 2rem;
-      margin: 2rem auto;
+      padding: 2rem;
     }
 
-    &--resume {
+    &__resume {
       width: 20rem;
       height: 5rem;
       border-radius: 1.5rem;
@@ -61,7 +60,7 @@ section {
       }
     }
 
-    &--social {
+    &__social {
       padding: 1rem;
       text-align: center;
       padding-bottom: 7.5rem;
@@ -91,7 +90,7 @@ section {
     }
   }
 
-  &__skills {
+  &--skills {
     margin-bottom: -12rem;
     background: linear-gradient(135deg, #667eea, #764ba2);
     transform: skewY(-7deg);
@@ -101,7 +100,7 @@ section {
     }
   }
 
-  &__portfolio {
+  &--portfolio {
     padding-top: 20rem;
     background-image: url("../img/portfoliobackground_optimized.jpeg");
     background-repeat: no-repeat;

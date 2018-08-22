@@ -5,17 +5,17 @@
   transition: 0.3s ease-in-out;
 }
 
-.navbar__style {
+.navigation {
   transition: 0.3s ease-in-out;
   padding: 0;
 
-  &-name {
+  &__name {
     font-size: 3rem;
     padding: 1rem;
     color: $color-name !important;
   }
 
-  &-list {
+  &__list {
     font-size: 1.8rem;
     padding: 1rem;
     z-index: 10;
@@ -37,12 +37,12 @@
     }
   }
 
-  .navbar-toggler {
+  &__toggler {
     margin: 1rem;
   }
 
   //Styling collapsed navbar
-  .container .navbar-collapse {
+  &__collapsed {
     text-align: center;
     z-index: 10;
     padding-bottom: 1rem;
