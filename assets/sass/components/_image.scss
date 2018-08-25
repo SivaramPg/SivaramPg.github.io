@@ -2,7 +2,18 @@
   display: block;
   position: relative;
   z-index: 99;
-  width: 30rem;
-  height: 30rem;
+  width: 40%;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .image {
+      width: 60%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image {
+      width: 90%;
+  }
 }
