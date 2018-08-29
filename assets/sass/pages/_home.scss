@@ -22,9 +22,10 @@ section {
     }
 
     &__intro {
+      // display: block;
       visibility: hidden;
       opacity: 0;
-      padding: 2rem;
+      padding: 2rem 3rem;
     }
 
     &__resume {
