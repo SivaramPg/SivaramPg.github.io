@@ -1,4 +1,4 @@
-# [__SivaramPg.github.io__](https://sivarampg.github.io)
+# [__SivaramPg.github.io__](https://sivarampg.com)
 
 My Personal Portfolio Website built using __HTML5__, __CSS3__ and __JavaScript__ and made responsive using __Bootstrap__ library.
 
