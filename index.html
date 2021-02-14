@@ -1,378 +1,286 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta lang="english" />
-		<meta
-			name="description"
-			content="Sivaram's portfolio website showing all of my projects and a brief on the skills I have gained in my pursuit to become a full-stack developer. "
-		/>
-		<meta
-			name="keywords"
-			content="HTML, CSS, JavaScript, Sivaram, Pg, Pandariganthan, Skills, portfolio, about, contact, subscribe, mailing list, social media links"
-		/>
-		<meta name="author" content="Sivaram Pandariganthan" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-		<title>Sivaram's Website</title>
-		<!-- Adding a favicon to the title -->
-		<link
-			rel="icon"
-			href="assets/img/mylogo.png"
-			sizes="16x16"
-			type="image/png"
-		/>
-		<!-- BOOTSTRAP CDN-->
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous"
-		/>
-		<!-- GOOGLE FONTS (ROBOTO,OPEN SANS) -->
-		<link
-			rel="preload"
-			href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans"
-			as="stylesheet"
-		/>
-		<!-- FONT AWESOME FONTS -->
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-			integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-			crossorigin="anonymous"
-		/>
-		<!-- font-mfizz glyphs found at http://fizzed.com/oss/font-mfizz extends Font Awesome Icons for adding missing icons to the skill section of the website -->
-		<link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css" />
-		<!-- EXTERNAL STYLESHEET? -->
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-167586432-1"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
 
-			gtag('config', 'UA-167586432-1');
-		</script>
-	</head>
+<head>
+    <meta charset="UTF-8" />
+    <meta lang="english" />
+    <meta name="description"
+        content="Sivaram's portfolio website showing all of my projects and a brief on the skills I have gained in my pursuit to become a full-stack developer. " />
+    <meta name="keywords"
+        content="HTML, CSS, JavaScript, Sivaram, Pg, Pandariganthan, Skills, portfolio, about, contact, subscribe, mailing list, social media links" />
+    <meta name="author" content="Sivaram Pandariganthan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <title>Sivaram's Website</title>
+    <!-- Adding a favicon to the title -->
+    <link rel="icon" href="assets/img/mylogo.png" sizes="16x16" type="image/png" />
+    <!-- BOOTSTRAP CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS (ROBOTO,OPEN SANS) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" as="stylesheet" />
+    <!-- FONT AWESOME FONTS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+    <!-- font-mfizz glyphs found at http://fizzed.com/oss/font-mfizz extends Font Awesome Icons for adding missing icons to the skill section of the website -->
+    <link rel="stylesheet" href="assets/css/font-mfizz/font-mfizz.css" />
+    <!-- EXTERNAL STYLESHEET? -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167586432-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-	<body>
-		<div class="scrollhome" id="scrollhome">
-			<i class="fas fa-long-arrow-alt-up fa-2x"></i>
-		</div>
-		<!-- NAVBAR FROM BOOTSTRAP -->
-		<nav
-			id="navbar"
-			class="navbar navbar-expand-lg navbar-dark bg-none fixed-top navigation"
-		>
-			<div class="container">
-				<a
-					id="easteregg"
-					class="navbar-brand navigation__name"
-					href="https://sivarampg.com"
-					>P.SIVARAM</a
-				>
-				<button
-					id="navbar-toggler"
-					class="navbar-toggler navigation__toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse navigation__collapsed"
-					id="navbarSupportedContent"
-				>
-					<ul class="navbar-nav ml-auto navigation__list">
-						<li class="nav-item">
-							<a id="home__link" class="nav-link">
-								<i class="fas fa-home"></i>
-								&nbsp; Home
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a id="about__link" class="nav-link">
-								<i class="fas fa-user-graduate"></i>
-								&nbsp; About Me
-							</a>
-						</li>
-						<li class="nav-item">
-							<a id="skills__link" class="nav-link">
-								<i class="far fa-file-code"></i>
-								&nbsp; Skills
-							</a>
-						</li>
-						<li class="nav-item">
-							<a id="portfolio__link" class="nav-link">
-								<i class="fas fa-briefcase"></i>
-								&nbsp; Portfolio
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+        gtag('config', 'UA-167586432-1');
+    </script>
+</head>
 
-		<header id="header" class="header">
-			<div class="bg-video">
-				<video
-					class="bg-video__content"
-					autoplay
-					autobuffer
-					muted
-					loop
-					playsinline
-				>
-					<source src="assets/img/Typing/Typing.mp4" type="video/mp4" />
-					<source src="assets/img/Typing/Typing.webm" type="video/webm" />
-					<img
-						src="assets/img/Typing/Typing.jpg"
-						title="Your browser doesn't support the <video> tag"
-						width="100px"
-						height="100px"
-						alt="Unsupported browser"
-					/>
-				</video>
-			</div>
-			<div class="header__content-box">
-				<h1 class="heading__primary">
-					<span class="heading__primary--main">HEY THERE!</span>
-					<span class="heading__primary--sub"
-						><strong>Glad</strong> you are here!</span
-					>
-				</h1>
-			</div>
-			<div id="scrollout" class="header__scrollout">
-				<i class="fas fa-angle-double-up fa-3x"></i>
-			</div>
-		</header>
+<body>
+    <div class="scrollhome" id="scrollhome">
+        <i class="fas fa-long-arrow-alt-up fa-2x"></i>
+    </div>
+    <!-- NAVBAR FROM BOOTSTRAP -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-none fixed-top navigation">
+        <div class="container">
+            <a id="easteregg" class="navbar-brand navigation__name" href="https://sivaramp.com">P.SIVARAM</a>
+            <button id="navbar-toggler" class="navbar-toggler navigation__toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navigation__collapsed" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navigation__list">
+                    <li class="nav-item">
+                        <a id="home__link" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            &nbsp; Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="about__link" class="nav-link">
+                            <i class="fas fa-user-graduate"></i>
+                            &nbsp; About Me
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="skills__link" class="nav-link">
+                            <i class="far fa-file-code"></i>
+                            &nbsp; Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="portfolio__link" class="nav-link">
+                            <i class="fas fa-briefcase"></i>
+                            &nbsp; Portfolio
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<section id="about" class="section--about">
-			<div class="container">
-				<div class="col-12 col-sm-10 offset-sm-1">
-					<h2 class="heading__secondary">About Me</h2>
-					<img
-						class="image section--about__image"
-						src="assets/img/mylogowixsquare_optimized.jpg"
-						alt="Sivaram Pg"
-					/>
-				</div>
-				<p class="section--about__intro paragraph u--text-justify">
-					A <strong>Self-taught programmer</strong> with an aspiration to become
-					a full-stack Web Developer who holds an
-					<strong>Electronics Engineering Degree</strong>. A tech savvy
-					individual with a keen interest in the lastest and the greatest
-					gadgets and gizmos. Always Up-to-date with the latest happenings and
-					connected with the world. Enthusiastic, Motivated and Passionate to
-					achieve my life goals. Getting things done is how I roll. Quick
-					learner and a sound listener, Solving problems and debugging my way
-					through LIFE!. Creating and maintaining excellent websites and
-					applications for the internet is what I dream of.
-				</p>
-				<p class="section--about__intro paragraph u--text-center">
-					<samp
-						>"Things aren’t always <code>#000000</code> and
-						<code>#FFFFFF</code>"
-					</samp>
-				</p>
-				<div class="section--about__social">
-					<div class="row">
-						<div class="col-4 col-xl-1 offset-xl-3 col-lg-2 col-sm-4 col-md-2">
-							<a href="https://github.com/SivaramPg" target="_blank">
-								<i class="fab fa-github fa-3x" title="Github"></i>
-							</a>
-						</div>
-						<div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-							<a href="https://codepen.io/kaizoku_95/" target="_blank">
-								<i class="fab fa-codepen fa-3x" title="Codepen"></i>
-							</a>
-						</div>
-						<div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-							<a
-								href="https://www.linkedin.com/in/sivaram-pandariganthan-b753a2145/"
-								target="_blank"
-							>
-								<i class="fab fa-linkedin-in fa-3x" title="LinkedIn"></i>
-							</a>
-						</div>
-						<div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-							<a href="https://twitter.com/sivarampg95" target="_blank">
-								<i class="fab fa-twitter fa-3x" title="Twitter"></i>
-							</a>
-						</div>
-						<div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-							<a href="https://plus.google.com/+sivarampg" target="_blank">
-								<i class="fab fa-google fa-3x" title="Google+"></i>
-							</a>
-						</div>
-						<div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
-							<a href="https://www.instagram.com/sivarampg/" target="_blank">
-								<i class="fab fa-instagram fa-3x" title="Instagram"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <header id="header" class="header">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay autobuffer muted loop playsinline>
+                <source src="assets/img/Typing/Typing.mp4" type="video/mp4" />
+                <source src="assets/img/Typing/Typing.webm" type="video/webm" />
+                <img src="assets/img/Typing/Typing.jpg" title="Your browser doesn't support the <video> tag"
+                    width="100px" height="100px" alt="Unsupported browser" />
+            </video>
+        </div>
+        <div class="header__content-box">
+            <h1 class="heading__primary">
+                <span class="heading__primary--main">HEY THERE!</span>
+                <span class="heading__primary--sub"><strong>Glad</strong> you are here!</span>
+            </h1>
+        </div>
+        <div id="scrollout" class="header__scrollout">
+            <i class="fas fa-angle-double-up fa-3x"></i>
+        </div>
+    </header>
 
-		<section id="skills" class="section--skills">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="heading__secondary">Skill Set</h2>
-					</div>
-					<div class="col-12 col-md-6 list-set">
-						<h3 class="heading__tertiary u--color-white">Coding Skills</h3>
-						<i class="fab fa-5x icon-html5" title="HTML5"></i>
-						<i class="fab fa-5x icon-css3" title="CSS3"></i>
-						<i class="fab fa-5x icon-javascript" title="JavaScript"></i>
-						<i class="fab fa-5x icon-python" title="Python"></i>
-						<i class="fab fa-5x fa-php" title="PHP"></i>
-						<i class="fab fa-5x icon-jquery" title="jQuery"></i>
-						<i class="fab fa-5x icon-reactjs" title="React.js"></i>
-						<i class="fab fa-5x icon-angular-alt" title="Angular 6"></i>
-						<i class="fab fa-5x fa-node" title="Node.js"></i>
-						<i class="fab fa-5x icon-mysql" title="MySQL"></i>
-						<i class="fab fa-5x icon-postgres-alt" title="PostgreSQL"></i>
-						<i class="fab fa-5x icon-npm" title="NPM"></i>
-						<i class="fab fa-5x icon-bootstrap" title="Bootstrap"></i>
-						<i class="fab fa-5x icon-sass" title="SASS"></i>
-					</div>
-					<div class="col-12 col-md-6 list-set">
-						<h3 class="heading__tertiary u--color-white">Other Skills</h3>
-						<i class="fab fa-5x icon-ubuntu" title="Ubuntu"></i>
-						<i class="fab fa-5x fa-windows" title="Windows"></i>
-						<i class="fab fa-5x icon-git" title="Git"></i>
-						<i class="fab fa-5x fa-github-square" title="Github"></i>
-						<i class="fab fa-5x icon-heroku" title="Heroku"></i>
-						<i class="fab fa-5x icon-shell" title="Terminal"></i>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="about" class="section--about">
+        <div class="container">
+            <div class="col-12 col-sm-10 offset-sm-1">
+                <h2 class="heading__secondary">About Me</h2>
+                <img class="image section--about__image" src="assets/img/mylogowixsquare_optimized.jpg"
+                    alt="Sivaram Pg" />
+            </div>
+            <p class="section--about__intro paragraph u--text-justify">
+                A <strong>Self-taught programmer</strong> with an aspiration to become
+                a full-stack Web Developer who holds an
+                <strong>Electronics Engineering Degree</strong>. A tech savvy
+                individual with a keen interest in the lastest and the greatest
+                gadgets and gizmos. Always Up-to-date with the latest happenings and
+                connected with the world. Enthusiastic, Motivated and Passionate to
+                achieve my life goals. Getting things done is how I roll. Quick
+                learner and a sound listener, Solving problems and debugging my way
+                through LIFE!. Creating and maintaining excellent websites and
+                applications for the internet is what I dream of.
+            </p>
+            <p class="section--about__intro paragraph u--text-center">
+                <samp>"Things aren’t always <code>#000000</code> and
+                    <code>#FFFFFF</code>"
+                </samp>
+            </p>
+            <div class="section--about__social">
+                <div class="row">
+                    <div class="col-4 col-xl-1 offset-xl-3 col-lg-2 col-sm-4 col-md-2">
+                        <a href="https://github.com/SivaramPg" target="_blank">
+                            <i class="fab fa-github fa-3x" title="Github"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+                        <a href="https://codepen.io/kaizoku_95/" target="_blank">
+                            <i class="fab fa-codepen fa-3x" title="Codepen"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+                        <a href="https://www.linkedin.com/in/sivaram-pandariganthan-b753a2145/" target="_blank">
+                            <i class="fab fa-linkedin-in fa-3x" title="LinkedIn"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+                        <a href="https://twitter.com/sivarampg95" target="_blank">
+                            <i class="fab fa-twitter fa-3x" title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+                        <a href="https://plus.google.com/+sivarampg" target="_blank">
+                            <i class="fab fa-google fa-3x" title="Google+"></i>
+                        </a>
+                    </div>
+                    <div class="col-4 col-xl-1 col-lg-2 col-sm-4 col-md-2">
+                        <a href="https://www.instagram.com/sivarampg/" target="_blank">
+                            <i class="fab fa-instagram fa-3x" title="Instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<section id="portfolio" class="section--portfolio">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xl-12">
-						<h2 class="heading__secondary">My Portfolio</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="card-deck section--portfolio__card-deck">
-						<div class="card section--portfolio__card">
-							<a href="https://faceapp.sivarampg.com" target="_blank">
-								<img
-									class="card-img-top"
-									src="assets/img/FaceRecApp_optimized.png"
-									alt="Card image cap"
-								/>
-								<div class="card-body">
-									<h5 class="card-title section--portfolio__card-title">
-										Face and Demographic Detection using CLARIFAI
-									</h5>
-								</div>
-							</a>
-						</div>
-						<div class="card section--portfolio__card">
-							<a href="https://snake.sivarampg.com" target="_blank">
-								<img
-									class="card-img-top"
-									src="assets/img/SnakeGame_optimized.png"
-									alt="Card image cap"
-								/>
-								<div class="card-body">
-									<h5 class="card-title section--portfolio__card-title">
-										Vanilla JS Snake Game
-									</h5>
-								</div>
-							</a>
-						</div>
-						<div class="card section--portfolio__card">
-							<a href="https://swapi.sivarampg.com" target="_blank">
-								<img
-									class="card-img-top"
-									src="assets/img/swapi_optimized.png"
-									alt="Card image cap"
-								/>
-								<div class="card-body">
-									<h5 class="card-title section--portfolio__card-title">
-										Star Wars API
-									</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="card-deck section--portfolio__card-deck">
-						<div class="card section--portfolio__card">
-							<a
-								href="https://background-generator.sivarampg.com"
-								target="_blank"
-							>
-								<img
-									class="card-img-top"
-									src="assets/img/randombackgroundgenerator_optimized.png"
-									alt="Card image cap"
-								/>
-								<div class="card-body">
-									<h5 class="card-title section--portfolio__card-title">
-										Random Background Gradient Generator
-									</h5>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <section id="skills" class="section--skills">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="heading__secondary">Skill Set</h2>
+                </div>
+                <div class="col-12 col-md-6 list-set">
+                    <h3 class="heading__tertiary u--color-white">Coding Skills</h3>
+                    <i class="fab fa-5x icon-html5" title="HTML5"></i>
+                    <i class="fab fa-5x icon-css3" title="CSS3"></i>
+                    <i class="fab fa-5x icon-javascript" title="JavaScript"></i>
+                    <i class="fab fa-5x icon-python" title="Python"></i>
+                    <i class="fab fa-5x fa-php" title="PHP"></i>
+                    <i class="fab fa-5x icon-jquery" title="jQuery"></i>
+                    <i class="fab fa-5x icon-reactjs" title="React.js"></i>
+                    <i class="fab fa-5x icon-angular-alt" title="Angular 6"></i>
+                    <i class="fab fa-5x fa-node" title="Node.js"></i>
+                    <i class="fab fa-5x icon-mysql" title="MySQL"></i>
+                    <i class="fab fa-5x icon-postgres-alt" title="PostgreSQL"></i>
+                    <i class="fab fa-5x icon-npm" title="NPM"></i>
+                    <i class="fab fa-5x icon-bootstrap" title="Bootstrap"></i>
+                    <i class="fab fa-5x icon-sass" title="SASS"></i>
+                </div>
+                <div class="col-12 col-md-6 list-set">
+                    <h3 class="heading__tertiary u--color-white">Other Skills</h3>
+                    <i class="fab fa-5x icon-ubuntu" title="Ubuntu"></i>
+                    <i class="fab fa-5x fa-windows" title="Windows"></i>
+                    <i class="fab fa-5x icon-git" title="Git"></i>
+                    <i class="fab fa-5x fa-github-square" title="Github"></i>
+                    <i class="fab fa-5x icon-heroku" title="Heroku"></i>
+                    <i class="fab fa-5x icon-shell" title="Terminal"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<footer class="footer" id="footer">
-			<p>
-				Made with
-				<i class="fas fa-heart"></i>
-			</p>
-			<p>Sivaram Pandariganthan 2020</p>
-		</footer>
+    <section id="portfolio" class="section--portfolio">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h2 class="heading__secondary">My Portfolio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck section--portfolio__card-deck">
+                    <div class="card section--portfolio__card">
+                        <a href="https://faceapp.sivaramp.com" target="_blank">
+                            <img class="card-img-top" src="assets/img/FaceRecApp_optimized.png" alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title section--portfolio__card-title">
+                                    Face and Demographic Detection using CLARIFAI
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card section--portfolio__card">
+                        <a href="https://snake.sivaramp.com" target="_blank">
+                            <img class="card-img-top" src="assets/img/SnakeGame_optimized.png" alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title section--portfolio__card-title">
+                                    Vanilla JS Snake Game
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card section--portfolio__card">
+                        <a href="https://swapi.sivaramp.com" target="_blank">
+                            <img class="card-img-top" src="assets/img/swapi_optimized.png" alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title section--portfolio__card-title">
+                                    Star Wars API
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck section--portfolio__card-deck">
+                    <div class="card section--portfolio__card">
+                        <a href="https://background-generator.sivaramp.com" target="_blank">
+                            <img class="card-img-top" src="assets/img/randombackgroundgenerator_optimized.png"
+                                alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title section--portfolio__card-title">
+                                    Random Background Gradient Generator
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- jQuery -->
-		<script
-			defer
-			src="https://code.jquery.com/jquery-3.3.1.min.js"
-			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-			crossorigin="anonymous"
-		></script>
-		<!-- BOOTSTRAP Popper.js -->
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"
-		></script>
-		<!-- BOOTSTRAP JS -->
-		<script
-			defer
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-			crossorigin="anonymous"
-		></script>
-		<!-- Main script file -->
-		<script defer src="assets/js/script.js"></script>
-	</body>
+    <footer class="footer" id="footer">
+        <p>
+            Made with
+            <i class="fas fa-heart"></i>
+        </p>
+        <p>Sivaram Pandariganthan 2020</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP Popper.js -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS -->
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Main script file -->
+    <script defer src="assets/js/script.js"></script>
+</body>
+
 </html>
